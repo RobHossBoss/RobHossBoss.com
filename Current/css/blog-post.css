@@ -1,0 +1,124 @@
+html,
+body{
+	background-color: #ECECEC;
+}
+::selection {
+  background: #303030; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #303030; /* Gecko Browsers */
+}
+hr{
+	border-color: #404040;
+}
+p{
+	font-family: 'lora', georgia, serif;
+	text-align: left;
+	font-size: 14pt;
+	color: #404040;
+}
+p.source{
+	font-size: 11pt;
+	text-align: right;
+}
+p a{
+	color: #0099CC;
+}
+article p{
+	text-indent: 50px;
+	line-height: 1.8em;
+	
+}
+article a{
+	color: #0099CC;
+}
+article p,ul,iframe,h1,blockquote,span.caption,hr,img.align{
+	font-size: 14pt;
+	margin-left: 10em;
+	margin-right: -5em; 
+}
+article h1{
+	margin-left: 5em;
+	font-family: 'norwester';
+	font-size: 24pt;
+}
+
+@media (max-width: 970px){
+	article p,img.align,ul,iframe,span.caption,h1,hr{
+		margin-left: 0em;
+		margin-right: 0em; 
+	}
+}
+
+@media (max-width: 970px){
+	.post-heading{
+		margin-top: 50px;
+		text-align: center;
+	}
+}
+@media (max-width: 970px){
+	.title{
+		font-size: 28pt;
+	}
+}
+@media (max-width: 970px){
+	.post-heading p,a.author{
+		background-color: #404040;
+		color: #F0F0F0;
+		font-size: 14pt;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.navbar-custom .nav li a {
+  		color: #404040;
+  		padding: 20px;
+}
+.subheading {
+	position: absolute;
+	top:
+}
+.post-heading h1,h2,h3,h4,h5,h6,span{
+	font-family: 'norwester';
+	margin-left: 0em;
+	margin-right: 0em;
+	text-align: center;
+	font-size: 42pt;
+}
+.post-heading p,a.author{
+	background-color: #404040;
+	color: #F0F0F0;
+	font-size: 14pt;
+	text-align: center;
+}
+.post-heading{
+	padding-top: 100px;
+	padding-bottom: 25px;
+}
+.post-heading hr{
+	border-color: #404040
+}
+h1.title{
+	font-size: 48pt;
+}
+iframe{
+	margin-right: 0em;
+	margin-left: 0em;
+}
+.centerup{
+	margin-left: 0em;
+	margin-right: 0em;
+}
+.fa-inverse{
+	background-color:#404040;
+}
+.caption{
+	font-family: helvetica, sans-serif;
+	font-size: 6pt;
+	color: #b2b2b2;
+	padding-top: 0.1em;
+	padding-bottom: 2em;
+	border-left: 5px, solid;
+	text-align: right;
+}

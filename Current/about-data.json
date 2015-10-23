@@ -1,0 +1,82 @@
+{
+  "like": [
+    {
+      "thing": "coffee",
+      "url": "coffee.png"
+    },
+    {
+      "thing": "photography",
+      "url": "camera.png"
+    },
+    {
+      "thing": "Flat UI",
+      "url": "keyboard.png"
+    },
+    {
+      "thing": "bicycling",
+      "url": "bicycle.png"
+    },
+    {
+      "thing": "PCs",
+      "url": "computer.png"
+    },
+    {
+      "thing": "Adventure Time",
+      "url": "adventuretime.png"
+    },
+    {
+      "thing": "Breaking Bad",
+      "url": "breakingbad.png"
+    },
+    {
+      "thing": "Tinkering",
+      "url": "book.png"
+    },
+    {
+      "thing": "hacking",
+      "url": "lock.png"
+    },
+    {
+      "thing": "Android",
+      "url": "android.png"
+    },
+    {
+      "thing": "3D printing",
+      "url": "3dprinting.png"
+    },
+    {
+      "thing": "Bitcoin",
+      "url": "bitcoin.png"
+    },
+    {
+      "thing": "Bootstrap",
+      "url": "bootstrap.png"
+    },
+    {
+      "thing": "jQuery",
+      "url": "jquery.png"
+    }
+  ],
+  "know": [
+    {
+      "what": "Python",
+      "stats": "1 Project"
+    },
+    {
+      "what": "HTML",
+      "stats": "2 Websites"
+    },
+    {
+      "what": "CSS",
+      "stats": "2 Websites"
+    },
+    {
+      "what": "JavaScript",
+      "stats": "2 Websites"
+    },
+    {
+      "what": "AJAX",
+      "stats": "2 Websites"
+    }
+  ]
+}

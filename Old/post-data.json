@@ -1,0 +1,136 @@
+[
+    {
+        "title": "Entrepreneurship for the Public Good Week 8 Summary",
+        "description": "Out with a bang.",
+        "date": "July 7, 2015",
+        "url": "posts/epg-week8.html",
+        "img": "img/epg/bg8.jpg",
+        "index": "7"
+    },
+    {
+        "title": "Entrepreneurship for the Public Good Week 7 Summary",
+        "description": "It ain't over till its over.",
+        "date": "June 27, 2015",
+        "url": "epg-week7.html",
+        "img": "img/epg/bg7.jpg",
+        "series": "epg",
+        "index": "6"
+    },
+    {
+        "title": "Entrepreneurship for the Public Good Week 6 Summary",
+        "description": "Too tired to come up with something clever.",
+        "date": "June 21, 2015",
+        "url": "posts/epg-week6.html",
+        "img": "img/epg/bg6.jpg",
+        "series": "epg",
+        "index": "5"
+    },
+    {
+        "title": "Entrepreneurship for the Public Good Week 5 Summary",
+        "description": "Climbing to Success.",
+        "date": "June 14, 2015",
+        "url": "posts/epg-week5.html",
+        "img": "img/epg/bg5.jpg",
+        "series": "epg",
+        "index": "4"
+    },
+    {
+        "title": "Entrepreneurship for the Public Good Week 4 Summary",
+        "description": "Class, Class, Class, Work, Work, Work.",
+        "date": "June 7, 2015",
+        "url": "posts/epg-week4.html",
+        "img": "img/epg/bg4.jpg",
+        "series": "epg",
+        "index": "3"
+    },
+    {
+        "title": "Entrepreneurship for the Public Good Week 3 Summary",
+        "description": "On the road to Damascus.",
+        "date": "May 30, 2015",
+        "url": "posts/epg-week3.html",
+        "img": "img/epg/bg3.jpg",
+        "series": "epg",
+        "index": "2"
+    },
+    {
+        "title": "Entrepreneurship for the Public Good Week 2 Summary",
+        "description": "Getting out of the building and into city hall.",
+        "date": "May 24, 2015",
+        "url": "posts/epg-week2.html",
+        "img": "img/epg/bg2.jpg",
+        "series": "epg",
+        "index": "1"
+    },
+    {
+        "title": "Learning the ropes of Bootstrap and finding the need for more knowledge of HTML, CSS, and JavaScript",
+        "description": "My eyes have been opened. There is so much to learn about the web. Its time to take matters into my own hands and learn EVERYTHING!",
+        "date": "May 20, 2015",
+        "url": "posts/personal-website p3.html",
+        "img": "img/squarespace/post.jpg",
+        "index": "2"
+    },
+    {
+        "title": "Entrepreneurship for the Public Good Week 1 Summary",
+        "description": "Learning how to bring economic progress to Appalachia.",
+        "date": "May 15, 2015",
+        "url": "posts/epg-week1.html",
+        "img": "img/epg/bg1.jpg",
+        "index": "0"
+    },
+    {
+        "title": "My Android Homescreen Layout - Spring 2015",
+        "description": "Android allows for some amazing customization of the home screen. This article hilights my phone's customizations and how I made them.",
+        "date": "May 3, 2015",
+        "url": "posts/homescreen-spring2015.html",
+        "img": "img/homescreen-spring2015/homescreen-spring2015-bg.jpg",
+        "index": "0"
+    },
+    {
+        "title": "What is Cyanognemod?",
+        "description": "With Apple and Google representing the major smartphone manufacturers and OS developers, can a startup really hope to make it in the market?",
+        "date": "May 1, 2015",
+        "url": "posts/cyanogen.html",
+        "img": "img/cyannogen/cyannogen.jpg",
+        "index": "0"
+    },
+    {
+        "title": "Dropping Squarespace for Bootstrap",
+        "description": "Forget Squarespace. The programmer in me wants more. Bootstrap seems like a good place to start.",
+        "date": "April 27, 2015",
+        "url": "posts/personal-website p2.html",
+        "img": "img/squarespace/personal-website p2-bg.jpg",
+        "index": "1"
+    },
+    {
+        "title": "Lock your PC when you leave the room with BluLocker",
+        "description": "Have a look at the orgins of my first major software project. BluLocker pairs your phone to your PC via Bluetooth and when your phone goes out of range, your computer will lock.",
+        "date": "April 27, 2015",
+        "url": "posts/introducing-blulocker.html",
+        "img": "img/blulocker/blulocker-bg.jpg",
+        "index": "1"
+    },
+    {
+        "title": "My thoughts on smartwatches - Spring 2015",
+        "description": "Smartwatches are beginning to really take off. What do I think of teh current offerings and who makes the best smartwatch today?",
+        "date": "April 15, 2015",
+        "url": "posts/thoughts-on-smartwatches.html",
+        "img": "img/smartwatches/pebble-time.jpg",
+        "index": "0"
+    },
+    {
+        "title": "Getting off the ground with Squarespace",
+        "description": "The start of my great journey in learning web development.",
+        "date": "April 10, 2015",
+        "url": "posts/personal-website p1.html",
+        "img": "img/squarespace/home.jpg",
+        "index": "0"
+    },
+    {
+        "title": "Turn your backpack into a tech survivial kit",
+        "description": "I made an ordinary canvas backpack into a solar charging powercell for all my tech needs.",
+        "date": "April 8, 2015",
+        "url": "posts/tech-backpack.html",
+        "img": "img/backpack/bg.jpg",
+        "index": "0"
+    }
+]

@@ -1,0 +1,172 @@
+/* this is a custom css stylesheet */
+html,
+body{
+	background-color: #ECECEC;
+}
+
+::selection {
+  background: #303030; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #303030; /* Gecko Browsers */
+}
+
+.navbar-custom .navbar-brand {
+	color: #777;
+	font-family: "Lobster";
+	font-size: 24pt;
+}
+
+hr{
+	border-color: #404040;
+}
+
+p{
+	font-family: 'Playfair Display', serif;
+	text-align: left;
+	font-size: 14pt;
+	color: #404040;
+}
+
+p a{
+	color: #0099CC;
+}
+article p{
+	text-indent: 50px;
+}
+article a{
+	color: #0099CC;
+}
+
+@media only screen and (min-width: 768px){
+	.navbar-custom .nav li a {
+  		color: #404040;
+  		padding: 20px;
+}
+
+
+#about{
+	background-color: #FFFFFF;
+	padding-bottom: 1.2em;
+}
+
+#portfolio{
+	background-color: #6A6A6A;
+	padding-bottom: 1.2em;
+}
+
+
+#blog{
+	background-color: #F7F7F7;
+	padding-bottom: 1.2em;
+}
+
+#contact{
+	background-color: #6A6A6A;
+	padding-bottom: 1.2em;
+}
+
+.row-background{
+	background-color: #F7F7F7;
+  	border: none;
+}
+
+/**  Carousel Fade **/
+
+.carousel.fade {
+    opacity: 1;
+}
+
+.carousel.fade .item {
+    transition: opacity ease-out 2s;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: block;
+}
+
+.carousel.fade .item:first-child {
+    top: auto;
+    opacity: 0;
+    position: relative;
+}
+
+.carousel.fade .item.active {
+    opacity: 1;
+}
+
+.carousel-control {
+    opacity: 0;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+#featured .item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+	background-color: #404040;
+}
+.page h1{
+	font-size: 18pt;
+}
+.page a {
+	color: #F7F7F7;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+.page ul{
+	margin-left: 0em;
+	margin-right: 0em;
+}
+
+.page h1, h2, h3, h4{
+	margin-right: 0em;
+	margin-left: 0em;
+	font-family: 'Questrial', sans-serif;
+	text-align: center;
+}
+.page h4{
+	margin-left: 0em;
+	margin-right: 0em;
+	font-size: 14pt;
+}
+
+.alert-danger{
+	color: #303030 ;
+	background-color: #D16666;
+	border-color: #303030 ;
+}
+.pager .next>a, 
+.pager .next>span{
+	float: none;
+	background-color: #404040;
+}
+.subheading {
+	position: absolute;
+	top:
+}
+
+.form-control{
+	color: #404040;
+}
+
+h1.title{
+	font-size: 48pt;
+}
+
+.404{
+	margin-right: 0em;
+	margin-left: 0em;
+	text-align: center;
+}
+
