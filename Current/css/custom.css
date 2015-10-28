@@ -41,7 +41,7 @@ p{
 
 /* Footer */
 footer {
-	background-color:#0097A7;
+	background-color:#404040;
   	padding: 25px 0 25px;
 }
 footer .list-inline {
@@ -54,6 +54,7 @@ footer .copyright {
 	font-size: 14px;
   text-align: center;
   margin: 0;
+  text-indent: 0;
 }
 .fa-circle{
 	color:#FFC107;
@@ -359,6 +360,8 @@ a.carousel-btn{
 	color: #000
 }
 .black-row{
+  background-repeat:no-repeat;
+  background-size: 100%, 100%;
 	background-color:#212121;
   padding-bottom: 20px;
 }
@@ -517,7 +520,7 @@ a{
   padding: .1em;
   margin-bottom: 10px;
   text-align: center;
-  background-color:#00BCD4;
+  background-color:#FFF;
 }
 #iLike > div > div > h1{
   color:#212121;
@@ -570,18 +573,18 @@ table{
   padding-bottom:20px; 
 }
 .error{
-  top:50%;
+  padding-top:15%;
 }
 .error h1{
   color: #000;
-  font-family: 'helvetica';
-  font-size: 180pt;
+  font-family: 'lora';
+  font-size:120pt;
   text-align: center;
 }
 .error h2{
   color:#727272;
-  font-family: 'lora';
-  font-size: 34pt;
+  font-family: 'Montserrat';
+  font-size: 25pt;
   text-align: center;
 }
 .table-label{
@@ -604,29 +607,130 @@ table{
   padding:5px;
 }
 .profile-card{
-  background-color:#212121;
+  background-color:#DDD;
   margin-top: 50px;
   margin-bottom: 50px;
   padding-bottom: 5px;
 }
 .profile-card h1{
   text-align: center;
-  color: #fff;
+  color: #404040;
+  font-family: 'Montserrat';
 }
 .bio-card{
-  background-color:#212121;
+  background-color:#DDD;
   margin-top: 50px;
   margin-bottom: 50px;
   padding-bottom: 5px;
 }
 .bio-card h1{
-  color:#fff;
+  color:#404040;
+  font-family: 'Montserrat';
 }
 .bio-card p{
-  color:#fff;
+  color:#404040;
+  font-family: 'lora';
+  font-size: 14pt;
+  line-height: 1.8em;
 }
 .postcard{
-  background-color: #00BCD4;
+  background-color: #EEE;
+  font-family: "lora";
+  color: #404040;
   padding: 50px;
   margin: 50px;
+}
+.postcard label{
+  font-family: "lora";
+  color: #404040;
+  font-size: 20pt;
+}
+.postcard-border{
+  border-style: solid;
+  border-right: thick #404040;
+  border-bottom: thick #404040;
+  border-top: thick #404040;
+  margin-left: 50px;
+}
+.transparent-input {
+   background-color: rgba(0, 0, 0, 0);
+}
+.resume-item{
+  margin-bottom: 150px;
+  background-color: rgba(0,0,0,.5);
+}
+.resume-right{
+  text-align: left;
+  margin-top: 150px;
+}
+.resume-right ul{
+    list-style-type: none;
+    color: #fff;
+    padding-left: 30px;
+    font-size: 12pt;
+    padding-top: 15px;
+}
+.resume-right h1{
+  margin: 0;
+  padding-left: 30px;
+  color: #fff;
+  font-family: lora, georgia, serif;
+  font-size: 32px;
+}
+.resume-right h2{
+  margin: 0;
+  padding-left: 30px;
+  color: #fff;
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 14pt;
+  padding-top: 5px;
+}
+.resume-right h3{
+  background-color:#fff; 
+  margin:5px;
+  padding: 2px;
+  padding-left: 30px;
+  color: #404040;
+  font-family: lora, georgia, serif;
+  font-size: 12pt;
+}
+
+.resume-left{
+  border-style: solid;
+  border-color: #fff;
+  border-left: thick #fff;
+  border-bottom: thick #fff;
+  border-top: thick #fff;
+  text-align: right;
+}
+.resume-left ul{
+  font-size: 12pt;
+    list-style-type: none;
+     color: #fff;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+.resume-left h1{
+  margin: 0;
+  padding-right: 30px;
+  color: #fff;
+  font-family: lora, georgia, serif;
+  font-size: 32px;
+}
+.resume-left h2{
+  margin: 0;
+  padding-right: 30px;
+  color: #fff;
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 14pt;
+  padding-top: 5px;
+}
+.resume-left h3{
+  background-color:#fff; 
+  margin:5px;
+  padding: 2px;
+  padding-right: 30px;
+  color: #404040;
+  font-family: lora, georgia, serif;
+  font-size: 12pt;
 }

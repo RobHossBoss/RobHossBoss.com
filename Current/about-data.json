@@ -1,23 +1,23 @@
 {
   "like": [
     {
-      "thing": "coffee",
+      "thing": "Coffee",
       "url": "coffee.png"
     },
     {
-      "thing": "photography",
+      "thing": "Photography",
       "url": "camera.png"
     },
     {
-      "thing": "Flat UI",
+      "thing": "Button up Shirts",
       "url": "keyboard.png"
     },
     {
-      "thing": "bicycling",
+      "thing": "Bicycling",
       "url": "bicycle.png"
     },
     {
-      "thing": "PCs",
+      "thing": "Electronic Music",
       "url": "computer.png"
     },
     {
@@ -33,12 +33,8 @@
       "url": "book.png"
     },
     {
-      "thing": "hacking",
+      "thing": "Hacking",
       "url": "lock.png"
-    },
-    {
-      "thing": "Android",
-      "url": "android.png"
     },
     {
       "thing": "3D printing",
@@ -49,12 +45,8 @@
       "url": "bitcoin.png"
     },
     {
-      "thing": "Bootstrap",
+      "thing": "Neckties",
       "url": "bootstrap.png"
-    },
-    {
-      "thing": "jQuery",
-      "url": "jquery.png"
     }
   ],
   "know": [
@@ -73,6 +65,18 @@
     {
       "what": "JavaScript",
       "stats": "2 Websites"
+    },
+    {
+      "what": "HDL",
+      "stats": "Learning"
+    },
+    {
+      "what": "C",
+      "stats": "Learning"
+    },
+    {
+      "what": "C++",
+      "stats": "Learning"
     },
     {
       "what": "AJAX",
