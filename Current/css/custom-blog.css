@@ -1,6 +1,6 @@
 html,
 body{
-	background-color: #ECECEC;
+	background-color: #252120;
 }
 
 .navbar-custom .navbar-brand {
@@ -17,7 +17,7 @@ p{
 	font-family: 'Montserrat', helvetica, serif;
 	text-align: left;
 	font-size: 14pt;
-	color: #404040;
+	color: #FFF;
 }
 p.source{
 	font-size: 11pt;

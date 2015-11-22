@@ -2,85 +2,112 @@
   "like": [
     {
       "thing": "Coffee",
-      "url": "coffee.png"
+      "url": "#e5dfc5"
     },
     {
       "thing": "Photography",
-      "url": "camera.png"
+      "url": "#91c7a9"
     },
     {
-      "thing": "Button up Shirts",
-      "url": "keyboard.png"
+      "thing": "Suits",
+      "url": "#E57373"
     },
     {
-      "thing": "Bicycling",
-      "url": "bicycle.png"
+      "thing": "Longboarding",
+      "url": "#B39DDB"
     },
     {
-      "thing": "Electronic Music",
-      "url": "computer.png"
+      "thing": "Meditation",
+      "url": "#9FA8DA"
     },
     {
       "thing": "Adventure Time",
-      "url": "adventuretime.png"
+      "url": "#FF6E4"
     },
     {
-      "thing": "Breaking Bad",
-      "url": "breakingbad.png"
+      "thing": "Mathematics",
+      "url": "#18FFFF"
     },
     {
       "thing": "Tinkering",
-      "url": "book.png"
+      "url": "#FFD54F"
     },
     {
       "thing": "Hacking",
-      "url": "lock.png"
+      "url": "#00E676"
     },
     {
       "thing": "3D printing",
-      "url": "3dprinting.png"
+      "url": "#03A9F4"
     },
     {
       "thing": "Bitcoin",
-      "url": "bitcoin.png"
+      "url": "#FFB300"
     },
     {
       "thing": "Neckties",
-      "url": "bootstrap.png"
+      "url": "#91c7a9"
     }
   ],
   "know": [
     {
+      "what": "HTML & CSS",
+      "stats": "2 Websites",
+      "description": "Expert",
+      "color":"#e5dfc5",
+      "strength": 300
+    },
+    {
       "what": "Python",
-      "stats": "1 Project"
-    },
-    {
-      "what": "HTML",
-      "stats": "2 Websites"
-    },
-    {
-      "what": "CSS",
-      "stats": "2 Websites"
+      "stats": "2 Courses, 1 Project",
+      "description": "Proficient",
+      "color":"#E57373",
+      "strength": 200
     },
     {
       "what": "JavaScript",
-      "stats": "2 Websites"
+      "stats": "2 Websites, 1 Webapp",
+      "description": "Skilled",
+      "color":"#B39DDB",
+      "strength": 175
     },
     {
       "what": "HDL",
-      "stats": "Learning"
+      "stats": "1 Virtual CPU",
+      "description": "Average",
+      "color":"#9FA8DA",
+      "strength": 130,
+      "rotate": ""
     },
     {
-      "what": "C",
-      "stats": "Learning"
+      "what": "C & C++",
+      "stats": "1 Course, 1 Project",
+      "description": "Average",
+      "color":"#FF6E4",
+      "strength": 130
     },
     {
-      "what": "C++",
-      "stats": "Learning"
+      "what": "Linux",
+      "stats": "Regular Use",
+      "description": "Average",
+      "color":"#FFD54F",
+      "strength": 115
     },
     {
-      "what": "AJAX",
-      "stats": "2 Websites"
+      "what": "Git",
+      "stats": "Regular Use",
+      "description": "Average",
+      "color":"#E57373",
+      "strength": 115
+    },
+    {
+      "what": "Rails",
+      "stats": "Learning",
+      "description": "Learning",
+      "color":"#FFD54F",
+      "strength": 20
     }
+
+
   ]
 }

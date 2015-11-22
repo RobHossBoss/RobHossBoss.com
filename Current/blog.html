@@ -52,6 +52,14 @@
                         <a href="portfolio.html">PORTFOLIO</a>
                     </li>
                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">APPS<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/apps/speedread/speedread.html">Speed Reader</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">BLOG <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
@@ -83,17 +91,18 @@
         </div>
     </header>    
      <div class="search-navbar">
+     <div class="center-block">
         <input type="search" name="search" id="search" placeholder="&#128269; Search"/>
+        </div>
     </div>
+
 	
 
     <!-- Main Content -->
     <div class="container">
         <div class="row">
-            <div class="title-heading">
-                <h1>Posts:</h1>
-            </div>
-            <hr>
+             
+    
             <div id="fillup">
 	
             </div>
@@ -105,14 +114,14 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <ul class="list-inline text-center">
-                            <li>
-                                <a href="https://twitter.com/RobHossBoss" target="_blank">
-                                    <span class="fa-stack fa-2x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-twitter fa-stack-1x"></i>
-                                    </span>
-                                </a>
-                            </li>
+                         <li>
+                        <a href="https://github.com/RobHossBoss" target="_blank">
+                        <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-github fa-stack-1x"></i>
+                        </span>
+                        </a>
+                     </li>
                             <li>
                                 <a href="https://instagram.com/robhossboss" target="_blank">
                                     <span class="fa-stack fa-2x">
@@ -138,8 +147,8 @@
 
 
     <script id="post-prev-temp" type="text/template">
-        <div class="col-md-12" 
-            <div class="col-md-8 col-md-offset-2">
+        
+            <div class="col-sm-4">
                 <div class="preview-wrapper center-block" style="background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('{{img}}')">
                     <a style="display:block" href="{{url}}">
                         <div class="post-preview">
@@ -151,8 +160,6 @@
                     </a>
                 </div>
             </div>
-        </div>
-        <hr>
 
     </script>
 
