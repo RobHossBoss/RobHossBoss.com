@@ -8,7 +8,9 @@
 # Site settings
 title: Robert
 email: roberthosking96@gmail.com
+
 description: Designer, Programmer, Entrepreneur. Robert Hosking's personal website. Find his portfolio, blog, and bio here.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.robhossboss.com" # the base hostname & protocol for your site
 twitter_username: robhossboss
