@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <link rel="shortcut icon" type="image/x-icon" href="img/logo-small.ico" />
-    <title>Robert Hosking</title>
+    <title>RobHossBlog</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -77,65 +77,52 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Header Carousel -->
-    <header id="featured" class="carousel faded" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-        </ol>
-
-        <!-- Slide Deck -->
-        <div class="carousel-inner fullheight">
-            <div class="item active">
-                <img src="img/slidedeck/wood.jpg">
-                <div class="carousel-caption">
-                    <h1>Hi. I'm Robert.</h1>
-                    <hr class="small">
-                    <h2>Let the awesome begin!</h2>
-                    <a class="btn carousel-btn-alt" href="about.html">What's my deal?</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/slidedeck/computer.jpg">
-                <div class="carousel-caption">
-                    <h1>I write code.</h1>
-                    <hr class="small">
-                    <h2>And work on some awesome projects!</h2>
-                    <a class="btn carousel-btn-alt" href="/portfolio.html">More about me!</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/slidedeck/station.jpg">
-                <div class="carousel-caption">
-                    <h1>I like tech.</h1>
-                    <hr class="small">
-                    <h2>... and other things too.</h2>
-                    <a class="btn carousel-btn-alt" href="about.html">Let's go!</a>
+      <header class="intro-header" style="background-image: url('img/blog.jpg')">
+        <div style="background: rgba(0,0,0, 0.5);">
+            <div class="container">
+                <div class="row">
+                    <div class="site-heading">
+                        <h1>BLOG</h1>
+                        <hr class="small">
+                        <h2 class="subheading">Have a coffee. It's on me!</h2>
+                    </div>
                 </div>
             </div>
         </div>
-       <!-- Controls -->
-        <a class="left carousel-control" href="#featured" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#featured" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
+    </header>    
+     <div class="search-navbar">
+     <div class="center-block">
+        <input type="search" name="search" id="search" placeholder="&#128269; Search"/>
+        </div>
+    </div>
 
-        <!-- Footer -->
+	
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+             
+    
+            <div id="fillup">
+	
+            </div>
+        </div>
+    </div>
+
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <ul class="list-inline text-center">
-                           <li>
+                         <li>
                         <a href="https://github.com/RobHossBoss" target="_blank">
                         <span class="fa-stack fa-2x">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-github fa-stack-1x"></i>
                         </span>
                         </a>
-                     </li>                            <li>
+                     </li>
+                            <li>
                                 <a href="https://instagram.com/robhossboss" target="_blank">
                                     <span class="fa-stack fa-2x">
                                         <i class="fa fa-circle fa-stack-2x"></i>
@@ -158,18 +145,48 @@
             </div>
         </footer>
 
-    </div>
-    <!-- /.container -->
+
+    <script id="post-prev-temp" type="text/template">
+        
+            <div class="col-sm-4">
+                <div class="preview-wrapper center-block" style="background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('{{img}}')">
+                    <a style="display:block" href="{{url}}">
+                        <div class="post-preview">
+                            <h1>{{title}}</h1>
+                            <hr>
+                            <h2>{{description}}</h2>
+                            <h3>{{date}}</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+    </script>
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom JavaScript -->
+    <!-- Mustache.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.3/mustache.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
     <script src="js/custom.js"></script>
 
+
 </body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63023290-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </html>
