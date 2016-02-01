@@ -3,6 +3,7 @@ layout: page
 title:  "Android Homescreen Layout #1"
 date:   2015-05-03 13:34:17 -0500
 categories: homescreen
+image: "homescreen-spring2015/homescreen-spring2015-bg"
 ---
 Welcome to the first installment of my Android home screen setup series. In this series I will post pictures and animations showing off my current home screen setup. A new entry to this series will be made whenever I make a major change in the layout.
 

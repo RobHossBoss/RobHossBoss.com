@@ -8,9 +8,29 @@
   <link rel="stylesheet" href="http://nomorecharitablestatus.com/css/normalize.css">
   <link rel="stylesheet" href="http://nomorecharitablestatus.com/css/solo.css">
 </head>
+
+
 <body>
+<style>
+body{
+  margin:0px;
+  height: 100%;
+}
+#element {
+    background: url('../../../../img/{{page.image}}.jpg') no-repeat center;
+    background-size:cover;
+    display: block;
+    height:500px;
+    width: 100%;
+}
+</style>
+
+<div id="element">
+
+</div>
 
   <article>
+
    <div class="container">
     <h3>{{ page.title }}</h3>
     <em>{{ page.date | date: "%b %-d, %Y" }} by <a href="http://www.robhossboss.com">Robert Hosking</a></em>
