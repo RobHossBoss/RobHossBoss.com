@@ -2,7 +2,9 @@
 layout: page
 title:  "Personal Website Part 3"
 date:   2015-05-20 13:34:17 -0500
-categories: site
+categories: My Site
+image: "squarespace/homepage"
+abstract: "Bye Bye templates. It nothing but code from here on out."
 ---
 The past two weeks have been overwhelmingly busy and productive. The first week (known at my college as "Gap Week") was a week off from classes where I spent a good deal of my time watching HTML and CSS tutorials on YouTube while also taking the occasional casual bike ride to clear my head. My progress in web development is something to be proud of. I am starting to feel like I have an actual control over the layout of a webpage instead of relying heavily on a template and simply replacing text strings and image directories. This report marks a major step in my web development process. I have been working nearly all week on perfecting my "Home" page on [robhossboss.com](robhossboss.com) and just moments before starting this blog post I discovered that mere HTML and CSS are not enough to achieve my dream for the page. I have found the need for JavaScript.
 

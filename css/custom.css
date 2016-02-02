@@ -80,8 +80,8 @@ footer .copyright {
 -o-transition: background-color 0.5s ease-in-out;
 transition: background-color 0.5s ease-in-out;
 }
-ul.nav a:hover { 
-	color: #f0f0f0; 
+ul.nav a:hover {
+	color: #f0f0f0;
 }
 .navbar-nav .open .dropdown-menu {
     background-color: #727272;
@@ -174,7 +174,7 @@ hr.small{
     font-size: 24pt;
   }
 }
-.carousel-control .icon-prev, 
+.carousel-control .icon-prev,
 .carousel-control .icon-next {
     font-size: 100px;
 }
@@ -195,14 +195,14 @@ a.carousel-btn:hover{
     -webkit-transition: background-color  ease-in-out .5s;
     -moz-transition: background-color  ease-in-out .5s;
     -o-transition: background-color  ease-in-out .5s;
-    transition: background-color ease-in-out .5s; 
+    transition: background-color ease-in-out .5s;
 }
 a.carousel-btn{
   font-weight: bold;
 	color: #fff;
 	font-size: 12pt;
   text-decoration: none;
-} 
+}
 /* make sharp edges on carousel button*/
 .carousel-btn{
   -webkit-border-radius: 0 !important;
@@ -230,14 +230,14 @@ a.carousel-btn-alt:hover{
     -webkit-transition: background-color  ease-in-out .5s;
     -moz-transition: background-color  ease-in-out .5s;
     -o-transition: background-color  ease-in-out .5s;
-    transition: background-color ease-in-out .5s; 
+    transition: background-color ease-in-out .5s;
 }
 a.carousel-btn-alt{
   font-weight: bold;
   color: #fff;
   font-size: 12pt;
   text-decoration: none;
-} 
+}
 /* make sharp edges on carousel button*/
 .carousel-btn-alt{
   -webkit-border-radius: 0 !important;
@@ -457,7 +457,7 @@ a.carousel-btn-alt{
 }
 input, textarea {
 
-  background-color : #404040; 
+  background-color : #404040;
 
 }
 
@@ -614,25 +614,25 @@ body > div.container > div > div.title-heading > h1{
 .portfolio-title-light h1{
   font-family: "lora", georgia, serif;
   font-size: 24pt;
-  color: #f0f0f0; 
-  margin-bottom: 10px; 
+  color: #f0f0f0;
+  margin-bottom: 10px;
 }
 .portfolio-title-light h2{
   font-family: "lora", georgia, serif;
   font-size: 12pt;
   color: #666666;
-  margin-top: 0px; 
+  margin-top: 0px;
 }
 .portfolio-title-dark h1{
   font-family: "lora", georgia, serif;
   font-size: 24pt;
   color:#f0f0f0;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 .portfolio-title-dark h2{
   font-family: "lora", georgia, serif;
   font-size: 12pt;
-  color: #666666; 
+  color: #666666;
   margin-top: 0px;
 }
 th{
@@ -642,11 +642,11 @@ th{
   padding-right: 7px;
   border-style: solid;
   border-width: 1px;
-  border-right-color: #808080; 
+  border-right-color: #808080;
 }
 table{
   padding-top: 7px;
-  padding-bottom:20px; 
+  padding-bottom:20px;
 }
 .error{
   padding-top:15%;
@@ -696,7 +696,7 @@ table{
 .bio-card{
   background-color:#1c1f24;
   margin-top: 50px;
-  
+
   padding-bottom: 5px;
 }
 .bio-card h1{
@@ -766,7 +766,7 @@ table{
   padding-top: 5px;
 }
 .resume-right h3{
-  background-color:#f0f0f0; 
+  background-color:#f0f0f0;
   margin:5px;
   padding: 2px;
   padding-left: 30px;
@@ -806,7 +806,7 @@ table{
   padding-top: 5px;
 }
 .resume-left h3{
-  background-color:#fff; 
+  background-color:#fff;
   margin:5px;
   padding: 2px;
   padding-right: 30px;
@@ -818,7 +818,7 @@ table{
   background-color: #f0f0f0;
   max-width: 300px;
   position:relative;
-  
+
 }
 .popout p{
   color: #404040;
@@ -863,7 +863,7 @@ table{
     position:absolute;
     top:0;
     left:0;
-    height: 180px; 
+    height: 180px;
     width:180px;
     border-radius:100%;
     border:10px solid;
@@ -875,7 +875,7 @@ table{
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);*/
-    transform: rotate(90deg); 
+    transform: rotate(90deg);
     display: inline-block;
 }
 .arc_end {

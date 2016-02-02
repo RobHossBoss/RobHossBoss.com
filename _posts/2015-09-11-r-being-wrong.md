@@ -2,8 +2,9 @@
 layout: page
 title:  "Reflection: On Being Wrong"
 date:   2015-09-11 13:34:17 -0500
-categories: reflection
+categories:  Reflection
 image: "reflection/coffee-beans"
+abstract: "Being wrong is the first step to being right."
 ---
 Kathryn Schultz’ TED talk, “On Being Wrong” has been very popular on TED.com, totalling nearly 3,000,000 views. On a site about “ideas worth spreading” this gem seems to have been well worth it indeed.
 

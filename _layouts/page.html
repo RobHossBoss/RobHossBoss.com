@@ -13,12 +13,24 @@
 
 <body>
 <style>
+@font-face {
+    font-family: 'norwester';
+    src: url('../../../../fonts/norwester/norwester-webfont.eot');
+    src: url('../../../../fonts/norwester/norwester-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../../fonts/norwester/norwester-webfont.woff2') format('woff2'),
+         url('../../../../fonts/norwester/norwester-webfont.woff') format('woff'),
+         url('../../../../fonts/norwester/norwester-webfont.ttf') format('truetype'),
+         url('../../../../fonts/norwester/norwester-webfont.svg#norwesterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body{
   margin:0px;
   height: 100%;
 }
 #element {
-    background: url('../../../../img/{{page.image}}.jpg') no-repeat center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../../../img/{{page.image}}.jpg') no-repeat center;
     background-size:cover;
     display: block;
     height:500px;
@@ -27,7 +39,7 @@ body{
 </style>
 
 <div id="element">
-
+<h1 style="font-size:12em; padding-bottom:20px; margin-bottom:20px;text-decoration:none; font-weight:normal;color:#fff; font-family:norwester; text-align:center; padding-top:100px;">{{ page.categories }}</h1>
 </div>
 
   <article>
