@@ -17,6 +17,10 @@ layout: default
   color:#000;
   margin-left:3em;
 }
+.post .title {
+  font-weight: bolder;
+  padding-bottom: 15px;
+}
 .post, p{
   color:#000;
   margin-top: 1.5em;
@@ -33,6 +37,16 @@ layout: default
   display:block;
   text-decoration: none;
 }
+.fade {
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+   .fade:hover {
+      opacity: 0.7;
+      }
 </style>
 <div style="padding-top:75px;" class="container">
   <span><h1 class="page-heading">Posts</h1> <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p></span>
@@ -43,11 +57,11 @@ layout: default
         <li>
         <a href="{{ post.url | prepend: site.baseurl }}">
 
-        <div class="post col-sm-8 col-sm-offset-2">
+        <div class="post fade col-sm-8 col-sm-offset-2">
           <h4>{{post.categories}}</h4>
-          <h2>
+          <h1 class="title">
             {{ post.title }}
-          </h2>
+          </h1>
           <em><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span></em>
 <div class="col-sm-3">
 <img width="150px" src="img/{{post.image}}.jpg"/>

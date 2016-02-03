@@ -19,3 +19,6 @@ github_username:  robhossboss
 # Build settings
 markdown: kramdown
 
+gems:
+- mini_magick
+- jekyll-thumbnail

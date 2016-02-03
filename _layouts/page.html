@@ -6,13 +6,18 @@
   <link rel="shortcut icon" type="image/x-icon" href="../../../../img/logo-small.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="http://nomorecharitablestatus.com/css/normalize.css">
-  <link rel="stylesheet" href="http://nomorecharitablestatus.com/css/solo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+  <link rel="stylesheet" href="../../../../css/normalize.css">
+  <link rel="stylesheet" href="../../../../css/solo.css">
+
+
 </head>
 
 
 <body>
+
 <style>
+
 @font-face {
     font-family: 'norwester';
     src: url('../../../../fonts/norwester/norwester-webfont.eot');
@@ -36,10 +41,33 @@ body{
     height:500px;
     width: 100%;
 }
+
+@media (max-width: @screen-xs) {
+    .post-header{
+      font-size: 40px;
+    }
+}
+
+@media (max-width: @screen-sm) {
+    .post-header{
+      font-size: 80px;
+    }
+}
+.post-header{
+  font-size: 18vw;
+  padding-bottom:20px;
+   margin-bottom:20px;
+   text-decoration:none;
+   font-weight:normal;
+   color:#fff;
+   font-family:norwester;
+   text-align:center;
+  padding-top:100px;
+}
 </style>
 
 <div id="element">
-<h1 style="font-size:12em; padding-bottom:20px; margin-bottom:20px;text-decoration:none; font-weight:normal;color:#fff; font-family:norwester; text-align:center; padding-top:100px;">{{ page.categories }}</h1>
+<h1 class="post-header">{{ page.categories }}</h1>
 </div>
 
   <article>
@@ -51,8 +79,30 @@ body{
     {{ content }}
      </div>
    </article>
+   <div class="container" id="disqus_thread"></div>
+   <script>
+       /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+        */
+       /*
+       var disqus_config = function () {
+           this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+           this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+       };
+       */
+       (function() {  // DON'T EDIT BELOW THIS LINE
+           var d = document, s = d.createElement('script');
 
+           s.src = '//robhossboss.disqus.com/embed.js';
+
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+       })();
+   </script>
+   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </body>
+
 </html>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
