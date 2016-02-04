@@ -3,7 +3,7 @@ layout: page
 title:  "Android Homescreen Layout - Spring 2015"
 date:   2015-05-03 13:34:17 -0500
 categories: My Tech
-image: "homescreen-spring2015/homescreen-spring2015-bg"
+image: "homescreen-spring2015-bg"
 abstract: "My favorite part about Android? The customization. This is my home screen design and layout."
 ---
 Welcome to the first installment of my Android home screen setup series. In this series I will post pictures and animations showing off my current home screen setup. A new entry to this series will be made whenever I make a major change in the layout.

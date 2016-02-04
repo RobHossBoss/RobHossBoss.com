@@ -3,7 +3,7 @@ layout: page
 title:  "Cyanogenmod: A new Player in the Smartphone Market?"
 date:   2015-05-01 13:34:17 -0500
 categories: Thoughts
-image: "cyanogen/cyanogen"
+image: "cyanogen"
 
 ---
 I love Android. When I get a new phone my first steps are downloading my favorite launcher and installing customization tools like [Multi-Picture Live Wallpaper](https://play.google.com/store/apps/details?id=org.tamanegi.wallpaper.multipicture&hl=en) and [Zooper Widget Pro](https://play.google.com/store/apps/details?id=org.zooper.zwpro&hl=en). I then spend hours creating custom widgets, setting up custom animations for wallpapers and tweaking every available aesthetic aspect available to my liking. The result is often a devise which none of my friends can use when asked to do something as simple as launch the camera app. But to me, my phone is just as personal as ascetically pleasing and functional. I have often pondered [rooting](https://en.wikipedia.org/wiki/Rooting_(Android_OS)) my [HTC One M8](http://www.cnet.com/products/htc-one-m8/) but have either not had the time or was just too scared of [bricking](https://en.wikipedia.org/wiki/Brick_(electronics)) the device. Why root? To flash a new [ROM](http://www.cnet.com/how-to/hack-your-android-like-a-pro-rooting-and-roms-explained/) of course.

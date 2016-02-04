@@ -4,7 +4,7 @@ title:  "Raspberry Pi Google Cloud Print Server"
 date:   2015-12-14 13:34:17 -0500
 categories: How-To
 image: "howto/pi"
-abstract: "How to turn your Raspberry Pi into a low-cost, always on, printing server using Google Cloud Print and CUPS."
+abstract: "Turn your Raspberry Pi into a low-cost, always on, printing server using Google Cloud Print and CUPS."
 ---
 This comprehensive guide gives you the steps and the resources required to turn your Raspberry Pi into an always on, low power Google Cloud printing server.
 
