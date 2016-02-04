@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Cyanogenmod: A new Player in the Smartphone Market?"
+title:  "Cyanogen&shy;mod: A new Player in the Smartphone Market?"
 date:   2015-05-01 13:34:17 -0500
 categories: Thoughts
 image: "cyanogen"
