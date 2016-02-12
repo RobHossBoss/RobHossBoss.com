@@ -1,14 +1,14 @@
 import os
 from PIL import Image
-resize_method = Image.ANTIALIAS
+resize_method = Image.BILINEAR
     #Image.NEAREST)  # use nearest neighbour
     #Image.BILINEAR) # linear interpolation in a 2x2 environment
     #Image.BICUBIC) # cubic spline interpolation in a 4x4 environment
     #Image.ANTIALIAS) # best down-sizing filter
 
 
-max_height= 1200
-max_width= 150
+max_height= 100
+max_width= 500
 extensions= ['JPG']
 
 path= os.path.abspath(".")+"/img/cover"
@@ -22,7 +22,7 @@ def adjusted_size(width,height):
     else:
         return width,height
 
-	
+
 if __name__ == "__main__":
     for f in os.listdir(path):
         if os.path.isfile(os.path.join(path,f)):

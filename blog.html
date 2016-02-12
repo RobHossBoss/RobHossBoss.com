@@ -2,32 +2,48 @@
 layout: default
 ---
 <style>
+a{
+  text-decoration: none !important;
+}
 .post {
-  transition: background-color 0.5s ease;
-  background-color:#EEE ;
+  background-color:#FFF ;
+  box-shadow: 5px 5px 2px #ccc;
   padding:10px;
   margin:35px;
   border-left: 10px solid #000;
+  transition: background-color .5s ease-in-out;
+  -moz-transition: background-color .5s ease-in-out;
+  -webkit-transition: background-color .5s ease-in-out;
 }
 .post:hover {
   background-color: #FFF;
+  transition: background-color .5s ease-in-out;
+  -moz-transition: background-color .5s ease-in-out;
+  -webkit-transition: background-color .5s ease-in-out;
 }
 .post, em{
   text-decoration:none;
   color:#000;
-  margin-left:3em;
+  margin-left:0em;
 }
 .post .title {
+  color: #000;
   font-weight: bolder;
   padding-bottom: 15px;
 }
-.post, p{
+.post p{
+  font-family: serif;
   color:#000;
-  margin-top: 1.5em;
+  margin: 1em;
+  font-size: 12pt;
+  text-decoration: none;
 }
 .post h4{
   color: #6abed8;
   font-weight: bold;
+  font-size: 1.5em;
+  margin: 0em;
+  padding-bottom: 0;
 }
 .post-list, li{
   text-decoration:none;
@@ -37,36 +53,66 @@ layout: default
   display:block;
   text-decoration: none;
 }
+.post-data{
+  color: #909090;
+  text-indent: 0;
+  padding:0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
 .fade {
    opacity: 1;
-   transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
+   transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
    }
 
    .fade:hover {
       opacity: 0.7;
+      transition: opacity .5s ease-in-out;
+      -moz-transition: opacity .5s ease-in-out;
+      -webkit-transition: opacity .5s ease-in-out;
+      }
+
+      .post-data {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          margin-right: 2em;
+          margin-bottom: 1em;
+          font-size: .25em;
+      }
+      .bookmark{
+        height: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 2em;
       }
 </style>
 <div style="padding-top:75px;" class="container">
-  <span><h1 class="page-heading">Posts</h1> <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p></span>
-
+ <a style="display:block;" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+   <img style="height:3em;" src="/img/svg/rss.svg" alt="" />
+ </a>
   <ul class="post-list">
     {% for post in site.posts %}
+
       <div class="row" >
         <li>
         <a href="{{ post.url | prepend: site.baseurl }}">
 
-        <div class="post fade col-sm-8 col-sm-offset-2">
-          <h4>{{post.categories}}</h4>
+        <div class="post fade col-sm-8">
+          <span><h4>{{post.categories}}</h4></span>
           <h1 class="title">
             {{ post.title }}
           </h1>
-          <em><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span></em>
-<div class="col-sm-3">
-<img width="150px" src="img/thumbnail/{{post.image}}.jpg"/>
-</div>
-<div class="col-sm-9">
+          <p style="font-family:sans-serif;" class="post-data"> {{ post.date | date: "%b %-d, %Y" }} &bull; {{post.time}} min read</p>
+
+          <div style="background-image: url('img/thumbnail/{{post.image}}.jpg'); height:200px; background-size:cover; background-repear: no-repeat; background-position: center; margin-left:1em; margin-right:1em; margin-bottom:1.5em;">
+
+          </div>
+
 {% if post.abstract %}
           <p>{{post.abstract}}</p>
 {% else %}
@@ -74,14 +120,17 @@ layout: default
     {{ post.content | strip_html | truncatewords:20 }}
   </p>
 {% endif %}
-</div>
+<p style="font-family:sans-serif; padding-bottom:2em;">
+  <a href="{{ post.url | prepend: site.baseurl }}">
+ Read more...
+  </a>
+</p>
+<img src="/img/svg/bookmark.svg" class="bookmark"/>
       </div>
       </a>
       </li>
       </div>
     {% endfor %}
   </ul>
-
-
 
 </div>
