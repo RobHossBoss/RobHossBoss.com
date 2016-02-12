@@ -2,6 +2,7 @@
 layout: page
 title:  "Android Homescreen Layout - Spring 2015"
 date:   2015-05-03 13:34:17 -0500
+time: 4
 categories: Project
 image: "homescreen-spring2015-bg"
 abstract: "My favorite part about Android? The customization. This is my home screen design and layout."

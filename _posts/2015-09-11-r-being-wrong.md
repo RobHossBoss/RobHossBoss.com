@@ -2,6 +2,7 @@
 layout: page
 title:  "Reflection: On Being Wrong"
 date:   2015-09-11 13:34:17 -0500
+time: 2
 categories:  Reflection
 image: "coffee-beans"
 ---

@@ -2,6 +2,7 @@
 layout: page
 title:  "Thoughts on Smart&shy;watches"
 date:   2015-04-15 13:34:17 -0500
+time: 3
 categories: Thoughts
 image: watches-bg
 
