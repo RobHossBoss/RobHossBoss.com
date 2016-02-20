@@ -9,7 +9,7 @@ resize_method = Image.ANTIALIAS
 
 max_height= 99999999
 max_width= 1200
-extensions= ['JPG']
+extensions= ['JPG', 'JPEG', 'PNG']
 
 path= os.path.abspath(".")+"/img/cover"
 
