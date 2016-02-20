@@ -21,4 +21,3 @@ markdown: kramdown
 
 gems:
 - mini_magick
-- jekyll-thumbnail
