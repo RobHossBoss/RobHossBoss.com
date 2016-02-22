@@ -8,7 +8,7 @@ resize_method = Image.BILINEAR
 
 
 max_height= 100
-max_width= 500
+max_width= 700
 extensions= ['JPG']
 
 path= os.path.abspath(".")+"/img/cover"
