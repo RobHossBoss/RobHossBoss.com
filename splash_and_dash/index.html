@@ -33,29 +33,41 @@
 <body>
 
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
-            </li>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
-            </li>
-            <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-            </li>
-        </ul>
+
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#volunteer">VOLUNTEER</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">SPONSORS</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">EVENT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
 
     <!-- Header -->
@@ -65,7 +77,7 @@
             <img class="img-responsive center-block" style="top:20%; display:block;" width="75%" src="img/logo.png" alt="" />
           </div>
             <br>
-            <h1 style="color:#fff;">We need volenteers!</h1>
+            <h1 style="color:#fff;">We need volunteers!</h1>
             <br>
             <div style="margin-top:50px;" class="container">
               <div class="row">
@@ -82,6 +94,9 @@
         </div>
     </header>
     <style>
+    .nav{
+      color:#fff;
+    }
     button{
       font-size: 14pt;
     }
@@ -109,7 +124,13 @@
         width: auto;
       }
     }
-
+.nav > li > a{
+  color: #FFF;
+  font-weight: bold;
+}
+.nav > li > a:hover{
+  color: #404040;
+}
     /* Medium devices (desktops, 992px and up) */
     @media (min-width: 992px) {
       .logo-container{
@@ -123,6 +144,11 @@
         width: 750px;
       }
     }
+    .grid-item{
+      max-width: 300px;
+      max-height: 200px;
+      padding: 20px;
+    }
     .sharp-corners{
       -webkit-border-radius: 0 !important;
      -moz-border-radius: 0 !important;
@@ -130,6 +156,9 @@
     }
     .service-item{
       height: 300px
+    }
+    .fa-linkedin, .fa-facebook, .fa-twitter, .fa-instagram{
+      color:#fff;
     }
     </style>
     <!-- About -->
@@ -139,6 +168,45 @@
                 <div class="col-lg-12 text-center">
                     <h2>Support your child close up and help all the other participants reach the finish!</h2>
                     <p class="lead">Don't worry, we'll tell you where to go!</p>
+
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                       <ul class="list-inline text-center">
+                          <li>
+                             <a href="https://github.com/RobHossBoss" target="_blank">
+                             <span class="fa-stack fa-2x">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-facebook fa-stack-1x"></i>
+                             </span>
+                             </a>
+                          </li>
+                          <li>
+                             <a href="https://instagram.com/robhossboss" target="_blank">
+                             <span class="fa-stack fa-2x">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-instagram fa-stack-1x"></i>
+                             </span>
+                             </a>
+                          </li>
+                          <li>
+                             <a href="https://www.linkedin.com/in/robhossboss">
+                             <span class="fa-stack fa-2x">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-linkedin fa-stack-1x"></i>
+                             </span>
+                             </a>
+                          </li>
+                          <li>
+                             <a href="https://www.linkedin.com/in/robhossboss">
+                             <span class="fa-stack fa-2x">
+                             <i class="fa fa-circle fa-stack-2x"></i>
+                             <i class="fa fa-instagram fa-stack-1x"></i>
+                             </span>
+                             </a>
+                          </li>
+                       </ul>
+                    </div>
+
+                    </div>
                 </div>
             </div>
             <!-- /.row -->
@@ -148,21 +216,21 @@
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
+    <section id="volunteer" class="services bg-primary">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Volunteer roles include:</h2>
+                    <h2>Volunteer</h2>
                     <hr class="small">
                     <div class="row">
                       <div class="col-md-4 col-sm-6">
                           <div class="service-item">
                               <span class="fa-stack fa-4x">
                               <i class="fa fa-circle fa-stack-2x"></i>
-                              <i class="fa fa-medkit fa-stack-1x text-primary"></i>
+                              <i class="fa fa-flag-checkered fa-stack-1x text-primary"></i>
                           </span>
                               <h4>
-                                  <strong>Support</strong>
+                                  <strong>Setup</strong>
                               </h4>
                               <p>Helping at pre-race clinics and events.</p>
                               <a href="#" class="btn btn-light">Sign Up</a>
@@ -172,13 +240,13 @@
                           <div class="service-item">
                               <span class="fa-stack fa-4x">
                               <i class="fa fa-circle fa-stack-2x"></i>
-                              <i class="fa fa-flag-checkered fa-stack-1x text-primary"></i>
+                              <i class="fa fa-ticket fa-stack-1x text-primary"></i>
                           </span>
                               <h4>
-                                  <strong>Support</strong>
+                                  <strong>Distributuion</strong>
                               </h4>
                               <p>Finish Line support. Wave them in the finish!</p>
-                              <a href="#" class="btn btn-light">Sign Up</a>
+                              <a href="EPGCohort13SplashandDashLeadershipRolesandResponsibilities.pdf" target="_blank" class="btn btn-light">Sign Up</a>
                           </div>
                       </div>
                       <div class="col-md-4 col-sm-6">
@@ -194,200 +262,33 @@
                               <a href="#" class="btn btn-light">Sign Up</a>
                           </div>
                       </div>
-                      <div class="col-md-3 col-sm-6">
-                          <div class="service-item">
-                              <span class="fa-stack fa-4x">
-                              <i class="fa fa-circle fa-stack-2x"></i>
-                              <i class="fa fa-map-o fa-stack-1x text-primary"></i>
-                          </span>
-                              <h4>
-                                  <strong>Setup</strong>
-                              </h4>
-                              <p>Pre-race preparation including hanging posters, running errands, and stuffing packets</p>
-                              <a href="#" class="btn btn-light">Sign Up</a>
-                          </div>
-                      </div>
-                      <div class="col-md-3 col-sm-6">
-                          <div class="service-item">
-                              <span class="fa-stack fa-4x">
-                              <i class="fa fa-circle fa-stack-2x"></i>
-                              <i class="fa fa-map-signs fa-stack-1x text-primary"></i>
-                          </span>
-                              <h4>
-                                  <strong>Setup</strong>
-                              </h4>
-                              <p>Course set-up and teardown</p>
-                              <a href="#" class="btn btn-light">Sign Up</a>
-                          </div>
-                      </div>
-                      <div class="col-md-3 col-sm-6">
-                          <div class="service-item">
-                              <span class="fa-stack fa-4x">
-                              <i class="fa fa-circle fa-stack-2x"></i>
-                              <i class="fa fa-car fa-stack-1x text-primary"></i>
-                          </span>
-                              <h4>
-                                  <strong>Setup</strong>
-                              </h4>
-                              <p>Traffic and parking management</p>
-                              <a href="#" class="btn btn-light">Sign Up</a>
-                          </div>
-                      </div>
-                      <div class="col-md-3 col-sm-6">
-                          <div class="service-item">
-                              <span class="fa-stack fa-4x">
-                              <i class="fa fa-circle fa-stack-2x"></i>
-                              <i class="fa fa-money  fa-stack-1x text-primary"></i>
-                          </span>
-                              <h4>
-                                  <strong>Setup</strong>
-                              </h4>
-                              <p>Merchandise sales</p>
-                              <a href="#" class="btn btn-light">Sign Up</a>
-                          </div>
-                      </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-tint fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Distribution</strong>
-                                </h4>
-                                <p>Racers need water! Help out with water distribution.</p>
-                                <a href="#" class="btn btn-light">Sign Up</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-clock-o fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Distribution</strong>
-                                </h4>
-                                <p>On your marks! Hand out timing chips!</p>
-                                <a href="#" class="btn btn-light">Sign Up</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-newspaper-o fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Distribution</strong>
-                                </h4>
-                                <p>Packet pick up.</p>
-                                <a href="#" class="btn btn-light">Sign Up</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shopping-cart fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Distribution</strong>
-                                </h4>
-                                <p>Whats a race without snacks? After the race, reward them with snacks.</p>
-                                <a href="#" class="btn btn-light">Sign Up</a>
-                            </div>
-                        </div>
                     </div>
                     <!-- /.row (nested) -->
                 </div>
                 <!-- /.col-lg-10 -->
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>View all roles and descriptions</h3>
+                    <a href="EPGCohort13SplashandDashLeadershipRolesandResponsibilities.pdf" class="btn btn-lg btn-light">Click Me!</a>
+                </div>
             </div>
             <!-- /.row -->
         </div>
         <!-- /.container -->
     </section>
 
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Volunteers are what make these events possible!</h1>
-        </div>
-    </aside>
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>Race day would not be possible without an incredible team of dedicated, enthusiastic volunteers! From set-up to teardown, the Daniel Boone Splash and Dash volunteers support our events every step of the way.</h3>
-                    <hr class="small">
-                    <h4>All volunteers will receive a Splash and Dash tech-shirt to wear on race day, water and snacks, and a full day of excitement! 
-If you are interested in joining the fun, please click the button below. Thank you for helping making the First Daniel Boone Splash and Dash event safe and enjoyable for everyone involved; we couldn't do it without you!</h4>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Ready?</h2>
-                    <hr class="small">
-                    <div class="row">
-                      <form class="form-horizontal">
-<fieldset>
-
-<!-- Form Name -->
 
 
-<!-- Text input-->
-<div class="form-group">
-<label class="col-md-4 control-label" for="textinput">First Name</label>
-<div class="col-md-5">
-<input id="textinput" name="textinput" placeholder="Name" class="form-control input-md" required="" type="text">
-<span class="help-block">We'd like to get to know you!</span>
-</div>
-</div>
-
-<!-- Select Basic -->
-<div class="form-group">
-<label class="col-md-4 control-label" for="selectbasic">Volenteer Role</label>
-<div class="col-md-4">
-  <select id="selectbasic" name="selectbasic" class="form-control">
-    <option value="1">Merchandise sales</option>
-    <option value="2">Finish line support</option>
-    <option value="3">Post-race water and snack distribution</option>
-    <option value="4">Traffic and parking management</option>
-    <option value="5">Handing out water on the course</option>
-    <option value="6">Assisting and motivating athletes</option>
-    <option value="7">Distributing timing chips</option>
-    <option value="8">Packet pick-up</option>
-    <option value="9">Course set-up and teardown</option>
-    <option value="10">Helping at pre-race clinics and events</option>
-    <option value="11">Pre-race preparation</option>
-  </select>
-</div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-<label class="col-md-4 control-label" for="textinput">Email</label>
-<div class="col-md-5">
-<input id="textinput" name="textinput" placeholder="email@example.com" class="form-control input-md" required="" type="text">
-<span class="help-block">We'll send you more information.</span>
-</div>
-</div>
-
-</fieldset>
-</form>
                     </div>
                     <!-- /.row (nested) -->
+
                 </div>
+
                 <!-- /.col-lg-10 -->
             </div>
             <!-- /.row -->
+
         </div>
         <!-- /.container -->
     </section>
@@ -395,15 +296,31 @@ If you are interested in joining the fun, please click the button below. Thank 
     <!-- Call to Action -->
     <aside class="call-to-action bg-primary">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                </div>
-            </div>
+
         </div>
     </aside>
+    <section id="sponsors">
+      <div class="container">
+        <div class="row text-center">
+        <div class="col-lg-10 col-lg-offset-1">
+            <h2>Sponsors</h2>
+            <hr class="small">
+      <div class="masonry-grid">
+        <img class="grid-item" src="img/sponsors/mcd.jpg" alt="" />
+        <img class="grid-item" src="img/sponsors/darpa.jpg" alt="" />
+        <img class="grid-item" src="img/sponsors/nike.jpg" alt="" />
+        <img class="grid-item" src="img/sponsors/md.jpg" alt="" />
+        <img class="grid-item" src="img/sponsors/tyson.jpg" alt="" />
+        <img class="grid-item" src="img/sponsors/starbucks.jpg" alt="" />
+        <img class="grid-item" src="img/sponsors/monsanto.jpg" alt="" />
+        <img class="grid-item" src="img/sponsors/doritos.jpg" alt="" />
+        <img class="grid-item" src="img/sponsors/bbt.jpg" alt="" />
+        <img class="grid-item" src="img/sponsors/walmart.jpg" alt="" />
+      </div>
+      </div>
+    </div>
+
+    </section>
 
     <!-- Map -->
     <section id="contact" class="map">
@@ -483,10 +400,16 @@ If you are interested in joining the fun, please click the button below. Thank 
             }
         });
     });
+    var $container = jQuery('#masonry-grid');
+    // initialize
+    $container.masonry({
+      columnWidth: 200,
+      itemSelector: '.grid-item'
+    });
     </script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-554024cd47b43846" async="async"></script>
-
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
 
 </body>
 
