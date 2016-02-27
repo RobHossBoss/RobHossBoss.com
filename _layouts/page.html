@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -7,18 +8,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
-  <link rel="stylesheet" href="../../../../css/normalize.css">
-  <link rel="stylesheet" href="../../../../css/solo.css">
-  <link rel="stylesheet" href="../../../../css/prism.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/solo.css">
+  <link rel="stylesheet" href="/css/prism.css">
 
 
 </head>
 
 
 <body>
-  
+
 <style>
 
+.navbar{
+	background-color:#252120;
+}
+.nav>li>a{
+  font-weight: bold;
+}
+.nav>li>a:focus,
+.nav>li>a:hover {
+  background-color: #6abed8;
+  -webkit-transition: background-color 0.5s ease-in-out;
+-moz-transition: background-color 0.5s ease-in-out;
+-o-transition: background-color 0.5s ease-in-out;
+transition: background-color 0.5s ease-in-out;
+}
+ul.nav a:hover {
+	color: #f0f0f0;
+}
+.navbar-nav .open .dropdown-menu {
+    background-color: #727272;
+  }
+ ul > li.dropdown.open > ul > li > a:hover{
+  color:#000;
+ }
+.nav .open>a, .nav .open>a:focus, .nav .open:hover {
+	background-color:#6abed8;
+
+}
+.navbar a{
+	color:#f0f0f0;
+}
+.nav.navbar-nav{
+	font-color:#f0f0f0;
+}
+.list-inline a{
+	color:#727272;
+}
+.dropdown-menu>li>a{
+	color:#f0f0f0;
+}
+.navbar-brand{
+	margin: 0;
+	padding: 0;
+  top:0;
+}
+.icon-bar {
+  color: #f0f0f0;
+  border-color: #f0f0f0;
+  background-color: #f0f0f0;
+}
 @font-face {
     font-family: 'norwester';
     src: url('../../../../fonts/norwester/norwester-webfont.eot');
@@ -109,7 +159,7 @@ body{
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-554024cd47b43846" async="async"></script>
-<script type="text/javascript" src="../../../../js/prism.js"></script>
+<script type="text/javascript" src="/js/prism.js"></script>
 
 
 <script>
