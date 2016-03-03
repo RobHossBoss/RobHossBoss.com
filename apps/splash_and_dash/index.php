@@ -13,6 +13,7 @@
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,19 +39,22 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="index.html">HOME</a>
+              <a href="#home">HOME</a>
             </li>
             <li>
               <a href="#about">ABOUT</a>
             </li>
             <li>
+              <a href="#scholarships">SCHOLARSHIPS</a>
+            </li>
+	    <li>
               <a href="#volunteer">VOLUNTEER</a>
             </li>
             <li>
-              <a href="blog.html">SPONSORS</a>
+              <a href="#sponsors">SPONSORS</a>
             </li>
             <li>
-              <a href="blog.html">EVENT</a>
+              <a href="#event">EVENT</a>
             </li>
           </ul>
         </div>
@@ -59,7 +63,7 @@
       <!-- /.container -->
     </nav>
     <!-- Header -->
-    <header style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/b.jpg') center no-repeat;" id="top" class="header">
+    <header style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/b.jpg') center no-repeat;" id="home" class="header">
       <div class="text-vertical-center">
         <div class="logo-container center-block">
           <img class="img-responsive center-block" style="top:20%; display:block;" width="75%" src="img/logo.png" alt="" />
@@ -202,7 +206,107 @@
       </div>
       <!-- /.container -->
     </section>
-    <!-- Services -->
+    <section id="scholarships" class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+
+            <h2>Scholarships</h2>
+            <hr class="small">
+            <p class="lead">
+              We have twenty scholarships availible. If you are interested, fill out the scholarship form and tell us why you think you should earn one. The scholarships are provided by local small businesses so you will be asked to have a photo taken with your sponsor. Scholarships for this event will be accepted until June 3, 2016 and winners will be notified the following week.
+            </p>
+            <a data-toggle="collapse" data-target="#scholarship-form"class="btn btn-light">Apply</a>
+          </div>
+          <div class="text-center">
+
+
+
+            <form id="scholarship-form"class="form-horizontal collapse">
+            <fieldset>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="firstname">First Name</label>
+              <div class="col-md-4">
+              <input id="firstname" name="firstname" placeholder="First Name" class="form-control input-md" required="" type="text">
+
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="lastname">Last Name</label>
+              <div class="col-md-4">
+              <input id="lastname" name="lastname" placeholder="Last Name" class="form-control input-md" required="" type="text">
+
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="email">Email</label>
+              <div class="col-md-4">
+              <input id="email" name="email" placeholder="email@example.com" class="form-control input-md" required="" type="text">
+
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="county">County of Residence</label>
+              <div class="col-md-4">
+              <input id="county" name="county" placeholder="County Name" class="form-control input-md" required="" type="text">
+
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="telephone">Phone Number</label>
+              <div class="col-md-4">
+              <input id="telephone" name="telephone" placeholder="(555)555-5555" class="form-control input-md" required="" type="text">
+
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="school">School Name</label>
+              <div class="col-md-4">
+              <input id="school" name="school" placeholder="School Name" class="form-control input-md" required="" type="text">
+
+              </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="achievements">Athletic Activities or Achievement</label>
+              <div class="col-md-4">
+                <textarea class="form-control" id="achievements" name="achievements"></textarea>
+              </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="why">Why do you want to participate in the Daniel Boone Splash and Dash?</label>
+              <div class="col-md-4">
+                <textarea class="form-control" id="why" name="why"></textarea>
+              </div>
+            </div>
+
+            </fieldset>
+            </form>
+
+
+
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <section id="volunteer" class="services bg-primary">
       <div class="container">
@@ -211,6 +315,10 @@
             <h2>Volunteer</h2>
             <hr class="small">
             <div class="row">
+              <div class="col-lg-12 text-center">
+                <h3>View all roles and descriptions</h3>
+                <a style="margin-bottom:5em;" href="EPGCohort13SplashandDashLeadershipRolesandResponsibilities.pdf" class="btn btn-lg btn-light">Click Me!</a>
+              </div>
               <div class="col-md-4 col-sm-6">
                 <div class="service-item">
                   <span class="fa-stack fa-4x">
@@ -221,7 +329,7 @@
                     <strong>Setup</strong>
                   </h4>
                   <p>Helping at pre-race clinics and events.</p>
-                  <a href="#" class="btn btn-light">Sign Up</a>
+                  <a data-toggle="collapse" data-target="#volunteer-form"class="btn btn-light">Sign Up</a>
                 </div>
               </div>
               <div class="col-md-4 col-sm-6">
@@ -234,7 +342,7 @@
                     <strong>Distributuion</strong>
                   </h4>
                   <p>Finish Line support. Wave them in the finish!</p>
-                  <a href="EPGCohort13SplashandDashLeadershipRolesandResponsibilities.pdf" target="_blank" class="btn btn-light">Sign Up</a>
+                  <a data-toggle="collapse" data-target="#volunteer-form"class="btn btn-light">Sign Up</a>
                 </div>
               </div>
               <div class="col-md-4 col-sm-6">
@@ -247,7 +355,7 @@
                     <strong>Support</strong>
                   </h4>
                   <p>Assisting and motivating athletes within an assigned area: swim, transition, run, Photo Central, expo</p>
-                  <a href="#" class="btn btn-light">Sign Up</a>
+                  <a data-toggle="collapse" data-target="#volunteer-form"class="btn btn-light">Sign Up</a>
                 </div>
               </div>
             </div>
@@ -256,12 +364,10 @@
           <!-- /.col-lg-10 -->
         </div>
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <h3>View all roles and descriptions</h3>
-            <a href="EPGCohort13SplashandDashLeadershipRolesandResponsibilities.pdf" class="btn btn-lg btn-light">Click Me!</a>
-          </div>
-          <div class="col-lg-12 text-center">
-            <form class="form-horizontal">
+
+
+	 <div class="col-lg-12 text-center">
+            <form id="volunteer-form" name="volunteer-form" method="post" action="volunteer.php" class="form-horizontal collapse">
               <fieldset>
                 <!-- Text input-->
                 <div class="form-group">
@@ -279,9 +385,9 @@
                 </div>
                 <!-- Select Basic -->
                 <div class="form-group">
-                  <label class="col-md-4 control-label" for="selectbasic">Role</label>
+                  <label class="col-md-4 control-label" for="role">Role</label>
                   <div class="col-md-4">
-                    <select id="selectbasic" name="selectbasic" class="form-control">
+                    <select id="selectbasic" name="role" class="form-control">
                       <option value="1">Race Day Director</option>
                       <option value="2">USAT Sanctioning Coordinator</option>
                       <option value="3">Swim Coordinator</option>
@@ -317,7 +423,7 @@
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="submit"></label>
                   <div class="col-md-4">
-                    <button id="submit" name="submit" class="btn btn-lg btn-light">Submit</button>
+                    <button id="submit"type="submit"value="submit" name="submit" class="btn btn-lg btn-light">Submit</button>
               </fieldset>
             </form>
             </div>
@@ -347,17 +453,19 @@
           <h2>Sponsors</h2>
           <hr class="small">
           <div class="masonry-grid">
-            <img class="grid-item" src="img/sponsors/mcd.jpg" alt="" />
-            <img class="grid-item" src="img/sponsors/darpa.jpg" alt="" />
-            <img class="grid-item" src="img/sponsors/nike.jpg" alt="" />
-            <img class="grid-item" src="img/sponsors/md.jpg" alt="" />
-            <img class="grid-item" src="img/sponsors/tyson.jpg" alt="" />
-            <img class="grid-item" src="img/sponsors/starbucks.jpg" alt="" />
-            <img class="grid-item" src="img/sponsors/monsanto.jpg" alt="" />
-            <img class="grid-item" src="img/sponsors/doritos.jpg" alt="" />
-            <img class="grid-item" src="img/sponsors/bbt.jpg" alt="" />
-            <img class="grid-item" src="img/sponsors/walmart.jpg" alt="" />
-          </div>
+
+<?php
+
+$dir = "img/sponsors/*";
+$images = glob($dir);
+
+foreach($images as $image):
+	echo "<img src='".$image."'class='grid-item'/>";
+endforeach;
+
+
+?>
+</div>
         </div>
       </div>
     </section>
