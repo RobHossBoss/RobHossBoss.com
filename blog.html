@@ -2,135 +2,168 @@
 layout: default
 ---
 <style>
-a{
-  text-decoration: none !important;
-}
-.post {
-  background-color:#FFF ;
-  box-shadow: 5px 5px 2px #ccc;
-  padding:10px;
-  margin:35px;
-  border-left: 10px solid #000;
-  transition: background-color .5s ease-in-out;
-  -moz-transition: background-color .5s ease-in-out;
-  -webkit-transition: background-color .5s ease-in-out;
-}
-.post:hover {
-  background-color: #FFF;
-  transition: background-color .5s ease-in-out;
-  -moz-transition: background-color .5s ease-in-out;
-  -webkit-transition: background-color .5s ease-in-out;
-}
-.post, em{
-  text-decoration:none;
-  color:#000;
-  margin-left:0em;
-}
-.post .title {
-  color: #000;
-  font-weight: bolder;
-  padding-bottom: 15px;
-}
-.post p{
-  font-family: serif;
-  color:#000;
-  margin: 1em;
-  font-size: 12pt;
-  text-decoration: none;
-}
-.post h4{
-  color: #6abed8;
-  font-weight: bold;
-  font-size: 1.5em;
-  margin: 0em;
-  padding-bottom: 0;
-}
-.post-list, li{
-  text-decoration:none;
-  list-style-type: none;
-}
-.post-list, a{
-  display:block;
-  text-decoration: none;
-}
-.post-data{
-  color: #909090;
-  text-indent: 0;
-  padding:0;
-  margin: 0;
-  font-family: sans-serif;
-}
-
-.fade {
+   a{
+   text-decoration: none !important;
+   }
+   .post {
+   margin: 20px;
+   background-color:#FFF ;
+   box-shadow: 5px 5px 2px #ccc;
+   transition: background-color .5s ease-in-out;
+   -moz-transition: background-color .5s ease-in-out;
+   -webkit-transition: background-color .5s ease-in-out;
+   }
+   .post:hover {
+   background-color: #FFF;
+   transition: background-color .5s ease-in-out;
+   -moz-transition: background-color .5s ease-in-out;
+   -webkit-transition: background-color .5s ease-in-out;
+   }
+   .post, em{
+   text-decoration:none;
+   color:#000;
+   margin-left:0em;
+   }
+   .post .title {
+   font-size: 1.8em;
+   color: #000;
+   font-weight: bolder;
+   padding-bottom: 15px;
+   font-family: helvetica;
+   padding-bottom: 0;
+   margin-bottom: 0;
+   }
+   .post p{
+   font-family: helvetica;
+   color:#404040;
+   font-size: 12pt;
+   text-decoration: none;
+   }
+   .post h4{
+   color: rgb(25,189,225);
+   font-weight: bold;
+   font-size: 1.2em;
+   margin: 0em;
+   padding-bottom: 0;
+   }
+   .post-list, li{
+   text-decoration:none;
+   list-style-type: none;
+   }
+   .post-list, a{
+   display:block;
+   text-decoration: none;
+   }
+   .post-data{
+   color: #909090;
+   text-indent: 0;
+   padding:0;
+   margin: 0;
+   font-family: sans-serif;
+   }
+   .fade {
    opacity: 1;
    transition: opacity .5s ease-in-out;
    -moz-transition: opacity .5s ease-in-out;
    -webkit-transition: opacity .5s ease-in-out;
    }
-
    .fade:hover {
-      opacity: 0.7;
-      transition: opacity .5s ease-in-out;
-      -moz-transition: opacity .5s ease-in-out;
-      -webkit-transition: opacity .5s ease-in-out;
-      }
-
-      .post-data {
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          margin-right: 2em;
-          margin-bottom: 1em;
-          font-size: .25em;
-      }
-      .bookmark{
-        height: 50px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-right: 2em;
-      }
+   opacity: 0.7;
+   transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
+   }
+   .post-data {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   margin-right: 2em;
+   margin-bottom: 1em;
+   font-size: 8pt;
+   }
+   .bookmark{
+   height: 50px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   margin-right: 2em;
+   }
+   .container{
+   margin: auto;
+   width: 70%;
+   padding: 10px;
+   }
+   .text-content{
+   padding: 1em;
+   }
+   .date-text{
+   text-indent: none;
+   font-size: 1em;
+   color: #EEE;
+   }
+   h6{
+   font-size: 1.2em;
+   font-family: helvetica;
+   color: #404040;
+   line-height: 1.4em;
+   }
+   .btn{
+   padding:5px;
+   padding-left: 15px;
+   padding-right: 15px;
+   background-color: rgb(25,189,225);
+   color:#FFF;
+   border-radius: 0px;
+   }
 </style>
-<div style="padding-top:75px;" class="container">
- <a style="display:block;" href="{{ "/feed.xml" | prepend: site.baseurl }}">
-   <img style="height:3em;" src="/img/svg/rss.svg" alt="" />
- </a>
-  <ul class="post-list">
-    {% for post in site.posts %}
 
-      <div class="row" >
-        <li>
-        <a href="{{ post.url | prepend: site.baseurl }}">
-
-        <div class="post fade col-sm-8">
-          <span><h4>{{post.categories}}</h4></span>
-          <h1 class="title">
-            {{ post.title }}
-          </h1>
-          <p style="font-family:sans-serif;" class="post-data"> {{ post.date | date: "%b %-d, %Y" }} &bull; {{post.time}} min read</p>
-
-          <div style="background-image: url('img/thumbnail/{{post.image}}.jpg'); height:200px; background-size:cover; background-repear: no-repeat; background-position: center; margin-left:1em; margin-right:1em; margin-bottom:1.5em;">
-
-          </div>
-
-{% if post.abstract %}
-          <p>{{post.abstract}}</p>
-{% else %}
-  <p>
-    {{ post.content | strip_html | truncatewords:20 }}
-  </p>
-{% endif %}
-<p style="font-family:sans-serif; padding-bottom:2em;">
-  <a href="{{ post.url | prepend: site.baseurl }}">
- Read more...
-  </a>
-</p>
-<img src="/img/svg/bookmark.svg" class="bookmark"/>
-      </div>
-      </a>
+<div style="padding-top:75px;" class="container masonry-grid">
+   <ul class="post-list">
+      {% for post in site.posts %}
+      <li>
+         <a href="{{ post.url | prepend: site.baseurl }}">
+            <div style="width:300px;"class="fade post grid-item">
+               <div style="background-image: url('img/thumbnail/{{post.image}}.jpg'); height:0;padding-top: 54.166666666667%; width:100%; background-size:cover; background-repeat: no-repeat; background-position: center;"></div>
+               {% if forloop.index == 1 %}
+               <img src="/img/svg/bookmark.svg" class="bookmark"/>
+               {% endif %}
+               <div class="text-content">
+                  <span>
+                     <h4>{{post.categories}}</h4>
+                  </span>
+                  <h1 class="title">
+                     {{ post.title | upcase}}
+                  </h1>
+                  <h6 style="color:#999;"class="date-text">
+                     {{ post.date | date: "%b %-d, %Y" }}
+                  </h6>
+                  {% if post.abstract %}
+                  <h6>{{post.abstract}}</h6>
+                  {% else %}
+                  <h6>
+                     {{ post.content | strip_html | truncatewords:20 }}
+                  </h6>
+                  {% endif %}
+         <a class="btn">
+         VIEW
+         </a>
+         <p style="font-family:sans-serif; font-size:8pt;" class="post-data"> {{post.time}} min read</p>
+         </div>
+         </div>
+         </a>
       </li>
-      </div>
-    {% endfor %}
-  </ul>
-
+      {% endfor %}
+   </ul>
+   <a style="display:block;" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+   <img style="height:3em;" src="/img/svg/rss.svg" alt="" />
+   </a>
 </div>
+<script src="/js/jquery.js"></script>
+<script src="/js/masonry.min.js"></script>
+<script type="text/javascript">
+   $('.masonry-grid').masonry({
+     // options
+     itemSelector: '.grid-item'
+     //columnWidth:
+   });
+</script>

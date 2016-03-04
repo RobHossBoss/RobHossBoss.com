@@ -32,5 +32,5 @@ if __name__ == "__main__":
                 print f
                 image = Image.open(os.path.join(path,f))
                 width, height= image.size
-                image = image.resize(adjusted_size(width, height))
+                image = image.resize(adjusted_size(width, height) )
                 image.save(os.path.join(os.path.abspath(".")+"/img/cover",f))
