@@ -144,7 +144,7 @@ layout: default
                      {{ post.content | strip_html | truncatewords:20 }}
                   </h6>
                   {% endif %}
-         <a class="btn">
+         <a href="{{ post.url | prepend: site.baseurl }}" class="btn">
          VIEW
          </a>
          <p style="font-family:sans-serif; font-size:8pt;" class="post-data"> {{post.time}} min read</p>
