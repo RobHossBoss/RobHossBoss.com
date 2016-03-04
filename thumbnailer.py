@@ -7,8 +7,8 @@ resize_method = Image.BILINEAR
     #Image.ANTIALIAS) # best down-sizing filter
 
 
-max_height= 100
-max_width= 700
+max_height= 1000
+max_width= 400
 extensions= ['JPG']
 
 path= os.path.abspath(".")+"/img/cover"
