@@ -7,11 +7,11 @@ categories: Reflection
 image: hand-block
 ---
 
-I have never considered communication to be my strong suit. In fact it's been quite the opposite. I grew up as an only child in rural/backwoods North Carolina. I didn't speak much with my parents about day to day things. I attended a small private school after 2 years of homeschooling. I had only three fantastic friends until high-school. My high school was a slightly larger charter school. Still less than a thousand enrolled students but it felt huge to me. 
+I have never considered communication to be my strong suit. In fact, it's been quite the opposite. I grew up as an only child in rural/backwoods North Carolina. I didn't speak much with my parents about day to day things. I attended a small private school after 2 years of homeschooling. I had only three fantastic friends until high school. My high school was a slightly larger charter school. Still less than a thousand enrolled students but it felt huge to me.
 
-During this period I had maybe five friends but I would only talk and visit with two of them regularly. I didn't participate in sports, clubs, or any other activities. Nor did I attend any school or local events. To be honest, my primary reason for not doing these things was that it would subtract from the time that I could spend playing Halo: Reach and Minecraft.
+During this period, I had maybe five friends but I would only talk and visit with two of them regularly. I didn't participate in sports, clubs, or any other activities. Nor did I attend any school or local events. To be honest, my primary reason for not doing these things was that it would subtract from the time that I could spend playing Halo: Reach and Minecraft.
 
-My secondary reason (as if a teenage boy needed another) was that these events terrified me. The idea of being part of a crowd and not belonging. Having to talk to strangers. What would I talk about. I’ve spent years of childhood with everyone I talked to. I knew my friends as well as I knew myself. But I had never had any practice talking to strangers.
+My secondary reason (as if a teenage boy needed another) was that these events terrified me. The idea of being part of a crowd and not belonging. Having to talk to strangers. What would I talk about? I’ve spent years of childhood with everyone I talked to. I knew my friends, as well as I, knew myself. But I had never had any practice talking to strangers.
 
 This wasn’t an issue for me for most of my life to this point. I was comfortable and happy playing video games all day to care about my social abilities. This all started to change when I moved out of my comfort zone and into college.
 
@@ -27,7 +27,7 @@ Besides other personal accomplishments I walked out of Startup Weekend feeling i
 
 Soon after I was beginning to see the value of networking. This seemed impossible to me and I still haven't quite figured it out. I’ve attended a handful of networking events and come into contact with some highly influential people. But I have failed to make any meaningful connections. Not because I failed at communication but because I failed to even try.
 
-I may be a special case but even everyday speech, small talk and pleasantries didn't feel natural to me for the longest time.
+I may be a special case but even everyday speech, small talk, and pleasantries didn't feel natural to me for the longest time.
 
 Most of my day to day communication was email correspondence and the occasional phone call or scheduled meeting. These conversations had a distinctly defined and often urgent purpose and small talk and pleasantries were kept to a minimum.
 

@@ -13,7 +13,7 @@ This post will be divided into three sections: Android Wear in general, The Appl
 
 ### [Android Wear](https://www.android.com/intl/en_us/wear/)
 
-For me, [Android Wear](https://www.android.com/intl/en_us/wear/) as an OS takes the cake. It works seamlessly with Android phones (and more recently iOS devices) offering voice controls and a beautiful card style navigation. The drawback, however, comes with the types of devices that are capable to run the OS. While LCD or OLED displays are beautiful they do require a lot of power to operate. With such a small form-factor and current battery technology, the types of watches that run Android Wear just aren't up to snuff.
+For me, [Android Wear](https://www.android.com/intl/en_us/wear/) as an OS takes the cake. It works seamlessly with Android phones (and more recently iOS devices) offering voice controls and a beautiful card style navigation. The drawback, however, comes with the types of devices that are capable of running the OS. While LCD or OLED displays are beautiful they do require a lot of power to operate. With such a small form-factor and current battery technology, the types of watches that run Android Wear just aren't up to snuff.
 
 ![Android wear OS examples](../../../../img/smartwatches/android-wear.jpg)
 
@@ -33,12 +33,12 @@ The Apple Watch will likely be a success because of the resounding customer loya
 
 ### [Pebble](https://getpebble.com/pebble_time)
 
-Last summer I was tempted to buy the "Pebble Classic" as they are calling it now. But I was turned turned off by the black and white e-paper screen that reminded me of those calculator watches from the 80's. What made me want one was the always on screen and week long battery life. With Pebble announcing its new Pebble Time smartwatch on Kickstarter this spring, I instantly jumped on the Pebble train.
+Last summer I was tempted to buy the "Pebble Classic" as they are calling it now. But I was turned off by the black and white e-paper screen that reminded me of those calculator watches from the 80's. What made me want one was the always on screen and week long battery life. With Pebble announcing its new Pebble Time smartwatch on Kickstarter this spring, I instantly jumped on the Pebble train.
 
-The [Pebble Time](https://getpebble.com/pebble_time)'s tagline "No Compromises" holds true. The full color e-paper display is beautiful, low power, and daylight visible. The battery life is exceptional and the announcement of smartstraps (interchangeable hardware straps that bring extra functionality to the Pebble Time) make the Pebble watch an excellent contender in the growing smartwatch market.
+The [Pebble Time](https://getpebble.com/pebble_time)'s tagline "No Compromises" holds true. The full-color e-paper display is beautiful, low power, and daylight visible. The battery life is exceptional and the announcement of smart straps (interchangeable hardware straps that bring extra functionality to the Pebble Time) make the Pebble watch an excellent contender in the growing smartwatch market.
 
 ![Pebble time models](../../../../img/smartwatches/pebble-time.jpg)
 
-The Pebble Time meets all my criteria. Its an always on display with 7 days batter life. It is extremely customizable. Its easy to develop for and design new watch faces. And I'm super excited to see what third party developers will do with smart straps. I think that of all the smartwatch companies, Pebble is doing it right. They make a watch first and a smartphone accessory second.
+The Pebble Time meets all my criteria. It's an always on display with 7 days battery life. It is extremely customizable. It is easy to develop for and design new watch faces. And I'm super excited to see what third-party developers will do with smart straps. I think that of all the smartwatch companies, Pebble is doing it right. They make a watch first and a smartphone accessory second.
 
-For the dozens of times everyday that I fish around in my pocket for my phone during the day, a smartwatch seems like a natural move away from the antiquated habit of removing my phone just to check for notifications. Plus, the added functionality like activity tracker and voice control make smartwatches a natural companion with any smartphone. Smartwatches are still in their infancy and are likely to change drastically in the coming years until they are nearly as ubiquitous as smartphones.
+For the dozens of times every day that I fish around in my pocket for my phone during the day, a smartwatch seems like a natural move away from the antiquated habit of removing my phone just to check for notifications. Plus, the added functionality like activity tracker and voice control make smartwatches a natural companion with any smartphone. Smartwatches are still in their infancy and are likely to change drastically in the c

@@ -1,128 +1,273 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" href="/css/animate.css" media="screen" title="no title" charset="utf-8">
 <style>
-   a{
-   text-decoration: none !important;
-   }
-   .post {
-   margin: 20px;
-   background-color:#FFF ;
-   box-shadow: 5px 5px 2px #ccc;
-   transition: background-color .5s ease-in-out;
-   -moz-transition: background-color .5s ease-in-out;
-   -webkit-transition: background-color .5s ease-in-out;
-   }
-   .post:hover {
-   background-color: #FFF;
-   transition: background-color .5s ease-in-out;
-   -moz-transition: background-color .5s ease-in-out;
-   -webkit-transition: background-color .5s ease-in-out;
-   }
-   .post, em{
-   text-decoration:none;
-   color:#000;
-   margin-left:0em;
-   }
-   .post .title {
-   font-size: 1.8em;
-   color: #000;
-   font-weight: bolder;
-   padding-bottom: 15px;
-   font-family: helvetica;
-   padding-bottom: 0;
-   margin-bottom: 0;
-   }
-   .post p{
-   font-family: helvetica;
-   color:#404040;
-   font-size: 12pt;
-   text-decoration: none;
-   }
-   .post h4{
-   color: rgb(25,189,225);
-   font-weight: bold;
-   font-size: 1.2em;
-   margin: 0em;
-   padding-bottom: 0;
-   }
-   .post-list, li{
-   text-decoration:none;
-   list-style-type: none;
-   }
-   .post-list, a{
-   display:block;
-   text-decoration: none;
-   }
-   .post-data{
-   color: #909090;
-   text-indent: 0;
-   padding:0;
-   margin: 0;
-   font-family: sans-serif;
-   }
-   .fade {
-   opacity: 1;
-   transition: opacity .5s ease-in-out;
-   -moz-transition: opacity .5s ease-in-out;
-   -webkit-transition: opacity .5s ease-in-out;
-   }
-   .fade:hover {
-   opacity: 0.7;
-   transition: opacity .5s ease-in-out;
-   -moz-transition: opacity .5s ease-in-out;
-   -webkit-transition: opacity .5s ease-in-out;
-   }
-   .post-data {
-   position: absolute;
-   bottom: 0;
-   right: 0;
-   margin-right: 2em;
-   margin-bottom: 1em;
-   font-size: 8pt;
-   }
-   .bookmark{
-   height: 50px;
-   position: absolute;
-   top: 0;
-   right: 0;
-   margin-right: 2em;
-   }
-  
-   .text-content{
-   padding: 1em;
-   }
-   .date-text{
-   text-indent: none;
-   font-size: 1em;
-   color: #EEE;
-   }
-   h6{
-   font-size: 1.2em;
-   font-family: helvetica;
-   color: #404040;
-   line-height: 1.4em;
-   }
-   .btn{
-   padding:5px;
-   padding-left: 15px;
-   padding-right: 15px;
-   background-color: rgb(25,189,225);
-   color:#FFF;
-   border-radius: 0px;
-   }
+  a {
+    text-decoration: none !important;
+  }
+
+  .post:hover {
+    background-color: #FFF;
+    transition: background-color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out;
+  }
+
+  .post,
+  em {
+    text-decoration: none;
+    color: #000;
+    margin-left: 0em;
+  }
+
+  .post .title {
+    font-size: 1.8em;
+    color: #000;
+    font-weight: bolder;
+    padding-bottom: 15px;
+    font-family: helvetica;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .post p {
+    font-family: helvetica;
+    color: #404040;
+    font-size: 12pt;
+    text-decoration: none;
+  }
+
+  .post h4 {
+    color: rgb(25, 189, 225);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0em;
+    padding-bottom: 0;
+  }
+
+  .post-list,
+  li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .post-list,
+  a {
+    display: block;
+    text-decoration: none;
+  }
+
+  .post-data {
+    color: #909090;
+    text-indent: 0;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+  .fade {
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+  }
+
+  .fade:hover {
+    opacity: 0.7;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+  }
+
+  .post-data {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    font-size: 8pt;
+  }
+
+  .bookmark {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 2em;
+  }
+
+  .text-content {
+    padding: 1em;
+  }
+
+  .date-text {
+    text-indent: none;
+    font-size: 1em;
+    color: #EEE;
+  }
+
+  h6 {
+    font-size: 1.2em;
+    font-family: helvetica;
+    color: #404040;
+    line-height: 1.4em;
+  }
+
+  .btn {
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(25, 189, 225);
+    color: #FFF;
+    border-radius: 0px;
+  }
+
+  .btn:hover {
+    color: #fff;
+    background-color: rgb(0, 114, 199);
+  }
+
+  #fa-facebook {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 1.6em;
+    color: rgb(25, 189, 225);
+  }
+
+  #fa-twitter {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    font-size: 1.6em;
+    color: rgb(25, 189, 225);
+  }
+
+  #fa-twitter:hover {
+    color: rgb(0, 114, 199);
+  }
+
+  #fa-facebook:hover {
+    color: rgb(0, 114, 199);
+  }
+
+  .hvr-radial-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+    background:  rgb(25, 189, 225);
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+
+  .hvr-radial-out:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:#2098d1;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+
+  .hvr-radial-out:hover,
+  .hvr-radial-out:focus,
+  .hvr-radial-out:active {
+    color: #ffffff;
+  }
+
+  .hvr-radial-out:hover:before,
+  .hvr-radial-out:focus:before,
+  .hvr-radial-out:active:before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+  .hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #2098d1;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+  .post {
+    margin: 20px;
+    background-color: #FFF;
+    box-shadow: 5px 5px 2px #ccc;
+    transition: background-color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out;
+  }
 </style>
 
 <div style="padding-top:75px;" class="container masonry-grid">
    <ul class="post-list">
       {% for post in site.posts %}
       <li>
-         <a href="{{ post.url | prepend: site.baseurl }}">
-            <div style="width:300px;"class="fade post grid-item">
+
+            <div style="width:300px;"class="hvr-underline-from-center  post grid-item {% if forloop.index > 3 %} wow fadeInLeftBig {% endif %}">
+
+              <a style="display:block;" target="_blank" href="http://www.twitter.com/share?url=http://www.robhossboss.com{{ post.url }}">
+                <i id="fa-twitter" class="fa fa-twitter"></i>
+             </a>
+              <a style="display:block;" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.robhossboss.com{{ post.url }}">
+                <i id="fa-facebook"class="fa fa-facebook"></i>
+            </a>
+            <a style="display:block;" href="{{ post.url | prepend: site.baseurl }}">
+
                <div style="background-image: url('img/thumbnail/{{post.image}}.jpg'); height:0;padding-top: 54.166666666667%; width:100%; background-size:cover; background-repeat: no-repeat; background-position: center;"></div>
+
+</a>
                {% if forloop.index == 1 %}
                <img src="/img/svg/bookmark.svg" class="bookmark"/>
                {% endif %}
+
+
+
                <div class="text-content">
                   <span>
                      <h4>{{post.categories}}</h4>
@@ -140,26 +285,44 @@ layout: default
                      {{ post.content | strip_html | truncatewords:20 }}
                   </h6>
                   {% endif %}
-         <a href="{{ post.url | prepend: site.baseurl }}" class="btn">
+         <a href="{{ post.url | prepend: site.baseurl }}" class="btn hvr-radial-out">
          VIEW
          </a>
          <p style="font-family:sans-serif; font-size:8pt;" class="post-data"> {{post.time}} min read</p>
          </div>
          </div>
-         </a>
       </li>
       {% endfor %}
    </ul>
-   <a style="display:block;" href="{{ "/feed.xml" | prepend: site.baseurl }}">
-   <img style="height:3em;" src="/img/svg/rss.svg" alt="" />
+   <a style="display:block; position:fixed; right:10px; bottom:10px;" href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">
+       <span class="fa-stack fa-2x hidden">
+           <i style="color:rgb(25,189,225);text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);" class="fa fa-circle fa-stack-2x"></i>
+           <i style="color:#fff" class="fa fa-rss fa-stack-1x"></i>
+       </span>
    </a>
 </div>
-<script src="/js/jquery.js"></script>
+<script src="/js/jquery.js">
+</script>
+<script src="/js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
 <script src="/js/masonry.min.js"></script>
 <script type="text/javascript">
-   $('.masonry-grid').masonry({
-     // options
-     itemSelector: '.grid-item'
-     //columnWidth:
-   });
+  $('.masonry-grid').masonry({
+    // options
+    itemSelector: '.grid-item'
+      //columnWidth:
+  });
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    //>=, not <=
+    if (scroll >= 50) {
+      //clearHeader, not clearheader - caps H
+      $(".fa-stack").removeClass("hidden");
+
+      $(".fa-stack").addClass("animated fadeInDownBig");
+    }
+  }); //missing );
 </script>

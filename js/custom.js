@@ -1,4 +1,4 @@
-$(function(){ 
+$(function(){
     //Variables
     var slideqty = $('#featured .item').length; //get the number of slides in the carousel deck
     var wheight = $(window).height(); //get the height of the window
@@ -34,7 +34,7 @@ $(function(){
         wheight = $(window).height(); //get the height of the window
         $('.fullheight').css('height', (wheight)); //set to window tallness
     });
-    
+
     //adjust the interval of the carousel
     $('.carousel').carousel({
         interval: 7000 //changes the speed in miliseconds
@@ -46,61 +46,6 @@ $(function(){
     });
 
     //global getJSON for Posts
-    var myJSON = $.getJSON('../post-data.json');
-    var myAbout = $.getJSON('../about-data.json'); 
-
-    //fill with posts
-    myJSON.then(function(data) {
-        var result = "";
-        $.each(data, function(key, val) { 
-            var template = $('#post-prev-temp').html();
-            result += Mustache.render(template, val);
-        });
-        $('#fillup').html(result);
-    });
-
-    //make latest-post link refer to first item in json
-    myJSON.then(function(data) {
-       $('.latest-post').attr('href',data[0].url);
-    });
-
-    $('#search').keyup(function() {
-        var searchField = $('#search').val();
-        var myExp = new RegExp(searchField, "i");
-        myJSON.then(function(data) { 
-            var result = ""
-            $.each(data, function(key, val) {
-
-                if ((val.title.search(myExp) != -1) ||
-                    (val.description.search(myExp) != -1) ||
-                    (val.date.search(myExp) != -1)
-                ) {
-                    var template = $('#post-prev-temp').html();
-                    result += Mustache.render(template, val);
-                }
-            });
-            $('#fillup').html(result);
-        });
-    });
-    
-    //fill with languages
-    myAbout.then(function(data) {
-        var result = "";
-        $.each(data.know, function(key, val) { 
-            var template = $('#lang-temp').html();
-            result += Mustache.render(template, val);
-        });
-        $('#languages').html(result);
-    });
-    //fill with likes
-    myAbout.then(function(data) {
-        var result = "";
-        $.each(data.like, function(key, val) { 
-            var template = $('#like-temp').html();
-            result += Mustache.render(template, val);
-        });
-        $('#iLike').html(result);
-    });
-    
+  
 
 }); //end of main function
