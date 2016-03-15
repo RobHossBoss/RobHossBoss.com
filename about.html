@@ -1,209 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+permalink: about
+title: About Me
+---
 
-<head>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
+<style media="screen">
+@media (min-width: 1200px) {
+  .text{
+    width: 670px;
+  }
+}
+.text{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#element {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/img/263H.jpg') no-repeat center;
+    background-size:cover;
+    display: block;
+    height:50%;
+    width: 100%;
+}
+.center-item{
+  position:absolute;
+margin: 10px;
+border:10px solid #fff;
+border-radius: 500px;
+-webkit-border-radius: 500px;
+-moz-border-radius: 500px;
+}
+.divider{
+  background-color: #202020;
+  height: 50px;
+  width: 100%;
+}
 
-  <link rel="shortcut icon" type="image/x-icon" href="img/logo-small.ico" />
-  <title>About Robert</title>
+.text > p::first-letter {
+  font-weight: bold;
+    font-size: 200%;
+    color: rgb(25, 189, 225);
+}
+p{
+  font-family: serif;
+  line-height: 2em;
+}
+</style>
+<div id="element" class="fullheight">
 
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+</div>
+<img width="250px" class="img-circle center-item" src="/img/about/profile.jpg" alt="Robert Hosking" />
+<div class="divider"></div>
+<script type="text/javascript">
+var wheight = $(window).height()/2; //get the height of the window
+var width = $(window).width()/2;
+//fullHeight
+// set all elements with class "fullheight" to a height equal to height of viewport on load
+$('.fullheight').css('height', wheight);
+$('.center-item').css('top', wheight - 125);
+$('.center-item').css('left', width -125);
+//resize the "fullheight" elements on screen resize
+$(window).resize(function() {
+    width = $(window).width()/2;
 
-  <!-- Custom CSS -->
-  <link href="css/custom.css" rel="stylesheet">
+    wheight = $(window).height()/2; //get the height of the window
+    $('.fullheight').css('height', (wheight)); //set to window tallness
+    $('.center-item').css('top', wheight - 125);
+    $('.center-item').css('left', width - 150);
+});
+</script>
+<div class="container center-block">
+  <div class="text center-block">
+    <img class="center-block img-responsive" src="/img/rh.png" alt="Robert Hosking" />
+    <hr style="padding-bottom:none; margin-bottom:none; border-color:#818181">
+    <h5 align="center" style="font-family:serif; font-size:12pt;">
 
-  <!-- Custom Fonts -->
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Montserrat|Pacifico|Oleo+Script+Swash+Caps|Lora' rel='stylesheet' type='text/css'>
+      <a style="" target="_blank" href="ROBERT HOSKING.pdf">Resum&eacute;</a> | <a href="/blog">Blog</a> | <a href="/portfilio">Portfolio</a>
 
-</head>
+    </h5>
+    <hr style="padding-top:none; margin-top:none;border-color:#818181">
+    <p>
+      I am a student of <a href="https://www.berea.edu/">Berea College</a> class of 2017. I major in Computer Science with a concentration in Computational Mathematics. I am passionate about design and using mathematics to solve real problems. Whether I'm making the world more beautiful through design or providing value by solving a problem, I'm meticulous and creative.
+    </p>
+    <p>
+      I am very stoic and reserved. I am an <a href="https://www.16personalities.com/intj-personality">INTJ</a> after all. I spend +90% of my time alone, thinking, working, reflecting and planning. I am very deliberate in my actions. I prefer to get to know someone by working with them on a project or problem. When it comes to style, I prefer traditional and minimalist. I wear a button-up shirt, jeans, and a blazer every day. My desktop (computer and physical) is spotless.
+    </p>
+    <p>
+      Getting lost in a computer is one of my favorite ways to spend an afternoon. I'm not very active on social media but the occasional Reddit post or tweet can be expected. I like reading books about design and entrepreneurship. Check out <a href="/books">my favorite books</a>.
+    </p>
 
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-fixed-top" role="navigation">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html"><img src="img/logo-small.png"></a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="index.html">HOME</a>
-          </li>
-          <li>
-            <a href="about.html">ABOUT</a>
-          </li>
-          <li>
-            <a href="portfolio.html">PORTFOLIO</a>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">WORKS<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="/apps/speedread/speedread.html">Speed Reader</a>
-              </li>
-              <li>
-                <a href="/apps/dice/dice.html">Dice Simulator</a>
-              </li>
-              <li>
-                <a href="/apps/sandbox/index.html">Sandbox</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="blog.html">BLOG</a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-  </nav>
-  <!-- /.navbar-collapse -->
+  <p>
+My favorite movies are what most people would probably consider weird but I like them because they explore ideas. I like music that has interesting sounds that I've never heard before (e.g. Trap, Techno, Dubstep, etc.). For background music, I like classical piano and Spanish guitar. Although, lately, I've been listening to podcasts more than music. Check out <a href="/music">my favorite music</a> and <a href="podcasts">my favorite podcasts</a>.
+  </p>
+  <p>
+    I drink my coffee black. Good coffee doesn't need cream and sugar. Tea is also a favorite, sometimes four cups a day! I enjoy cultural foods and am always trying new cuisines. Sushi for days!
+  </p>
   </div>
-  <!-- /.container -->
-  </nav>
-
-
-  <header class="intro-header fullheight" style="background-image: url('img/about.jpg')">
-    <div class="container">
-      <div class="row">
-        <div class="site-heading">
-          <div class="center-block">
-            <img width="300px" style="top:5%;" class="img-circle center-block;" src="/img/about/alt-profile-square.jpg" alt="" />
-
-          </div>
-          <h2 style="font-size: .5em;">Robert Hosking</h2>
-          <p style=" text-indent:none; padding:none; marign: none;font-size: .2em; font-family:helvetica;">
-          </p>
-        </div>
-      </div>
-    </div>
-  </header>
-
-    <div style="padding-bottom:50px;"class="black-row">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <h1 align="center">You know,</h1>
-            <hr class="small">
-            <div style="text-align:center">
-              <p>        Robert is a student of <a href="https://www.berea.edu/">Berea College</a> class of 2017. He majors in Computer Science with a concentration in computational mathmatics. Robert is passionate about making a difference in what he does. Whether
-                      he's making the world more beautiful through design or providing value by solving a problem, Robert is maticulus and creative. But most importantly, </p>
-                      <h1 style="margin:25px;" align="center"> <i>Robert gets it done.</i> </h1>
-                      <br>
-
-              <a class="carousel-btn-alt" target="_blank" href="ROBERT HOSKING.pdf">Resum&eacute;</a>
-              <br>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="intro-header fullheight" style="background-image: url('img/internet.jpg')">
-    <div class="container">
-      <div class="row">
-        <div class="site-heading">
-          <h1>ABOUT</h1>
-          <hr class="small">
-          <h2 class="subheading">Robert J. Hosking III</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="intro-header fullheight" style="background-image: url('img/space-plane.jpg')">
-    <div class="container">
-      <div class="row">
-        <div class="site-heading">
-          <h1>ABOUT</h1>
-          <hr class="small">
-          <h2 class="subheading">Robert J. Hosking III</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <div class="teal-row" style="margin-top:25px;">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <h1>You know,</h1>
-          <hr class="small">
-          <div style="text-align:center">
-            <p>My portfolio contains all my favorite projects.</p>
-            <a class="carousel-btn-alt" href="portfolio.html">Check My Portfolio!</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <ul class="list-inline text-center">
-            <li>
-              <a href="https://github.com/RobHossBoss" target="_blank">
-                <span class="fa-stack fa-2x">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-github fa-stack-1x"></i>
-                        </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com/robhossboss" target="_blank">
-                <span class="fa-stack fa-2x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-instagram fa-stack-1x"></i>
-                                    </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/robhossboss">
-                <span class="fa-stack fa-2x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-linkedin fa-stack-1x"></i>
-                                    </span>
-              </a>
-            </li>
-          </ul>
-          <p class="copyright text-muted">Copyright &copy; RobHossBoss 2015</p>
-          <div class="attribution">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/plainicon" title="Plainicon">Plainicon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed
-            by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  </div>
-  <!-- /.container -->
-
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-
-  <!-- Bootstrap Core JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-  <!-- Custom JavaScript -->
-  <script src="js/custom.js"></script>
-
-</body>
-
-</html>
+</div>
