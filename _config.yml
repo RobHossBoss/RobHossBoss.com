@@ -18,3 +18,10 @@ github_username:  robhossboss
 
 # Build settings
 markdown: kramdown
+
+redirects: yes
+
+gems:
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from

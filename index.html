@@ -1,173 +1,382 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Robert H.
+---
 
-<head>
+<style media="screen">
+@media (min-width: 1200px) {
+  .text{
+    width: 670px;
+  }
+}
+.text{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#element {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/img/cover/skyline.jpg') no-repeat center;
+    background-size:cover;
+    display: block;
+    height:50%;
+    width: 100%;
+}
+.center-item{
+  position:absolute;
+margin: 10px;
+border:10px solid #fff;
+border-radius: 500px;
+-webkit-border-radius: 500px;
+-moz-border-radius: 500px;
+}
+.divider{
+  background-color: #202020;
+  height: 50px;
+  width: 100%;
+}
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+.text > p::first-letter {
+  font-weight: bold;
+    font-size: 200%;
+    color: rgb(25, 189, 225);
+}
+p{
+  font-family: serif;
+  line-height: 2em;
+}
+a {
+  text-decoration: none !important;
+}
 
-    <link rel="shortcut icon" type="image/x-icon" href="img/logo-small.ico" />
-    <title>Robert Hosking</title>
+.post:hover {
+  background-color: #FFF;
+  transition: background-color .5s ease-in-out;
+  -moz-transition: background-color .5s ease-in-out;
+  -webkit-transition: background-color .5s ease-in-out;
+}
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+.post,
+em {
+  text-decoration: none;
+  color: #000;
+  margin-left: 0em;
+}
 
-    <!-- Custom CSS -->
-    <link href="css/custom.css" rel="stylesheet">
+.post .title {
+  font-size: 1.8em;
+  color: #000;
+  font-weight: bolder;
+  padding-bottom: 15px;
+  font-family: helvetica;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat|Pacifico|Oleo+Script+Swash+Caps|Lora' rel='stylesheet' type='text/css'>
+.post p {
+  font-family: helvetica;
+  color: #404040;
+  font-size: 12pt;
+  text-decoration: none;
+}
 
-</head>
+.post h4 {
+  color: rgb(25, 189, 225);
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0em;
+  padding-bottom: 0;
+}
 
-<body>
+.post-list,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html"><img src="img/logo-small.png"></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="index.html">HOME</a>
-                    </li>
-                    <li>
-                        <a href="about.html">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html">PORTFOLIO</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">WORKS<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="/apps/speedread/speedread.html">Speed Reader</a>
-                            </li>
-                            <li>
-                                <a href="/apps/dice/dice.html">Dice Simulator</a>
-                            </li>
-                            <li>
-                                <a href="/apps/sandbox/index.html">Sandbox</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="blog.html">BLOG</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+.post-list,
+a {
+  display: block;
+  text-decoration: none;
+}
 
-    <!-- Header Carousel -->
-    <header id="featured" class="carousel faded" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-        </ol>
+.post-data {
+  color: #909090;
+  text-indent: 0;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
 
-        <!-- Slide Deck -->
-        <div class="carousel-inner fullheight">
-            <div class="item active">
-                <img src="img/slidedeck/wood.jpg">
-                <div class="carousel-caption">
-                    <h1>Hi. I'm Robert.</h1>
-                    <hr class="small">
-                    <h2>Let the awesome begin!</h2>
-                    <a class="btn carousel-btn-alt" href="about.html">What's my deal?</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/slidedeck/computer.jpg">
-                <div class="carousel-caption">
-                    <h1>I write code.</h1>
-                    <hr class="small">
-                    <h2>And work on some awesome projects!</h2>
-                    <a class="btn carousel-btn-alt" href="/portfolio.html">More about me!</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/slidedeck/station.jpg">
-                <div class="carousel-caption">
-                    <h1>I like tech.</h1>
-                    <hr class="small">
-                    <h2>... and other things too.</h2>
-                    <a class="btn carousel-btn-alt" href="about.html">Let's go!</a>
-                </div>
-            </div>
-        </div>
-       <!-- Controls -->
-        <a class="left carousel-control" href="#featured" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#featured" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
+.fade {
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
 
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <ul class="list-inline text-center">
-                           <li>
-                        <a href="https://github.com/RobHossBoss" target="_blank">
-                        <span class="fa-stack fa-2x">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-github fa-stack-1x"></i>
-                        </span>
-                        </a>
-                     </li>                            <li>
-                                <a href="https://instagram.com/robhossboss" target="_blank">
-                                    <span class="fa-stack fa-2x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-instagram fa-stack-1x"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/robhossboss">
-                                    <span class="fa-stack fa-2x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-linkedin fa-stack-1x"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                        <p class="copyright text-muted">Copyright &copy; RobHossBoss 2015</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+.fade:hover {
+  opacity: 0.7;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
 
-    </div>
-    <!-- /.container -->
+.post-data {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  font-size: 8pt;
+}
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+.bookmark {
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 2em;
+}
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+.text-content {
+  padding: 1em;
+}
 
-    <!-- Custom JavaScript -->
-    <script src="js/custom.js"></script>
+.date-text {
+  text-indent: none;
+  font-size: 1em;
+  color: #EEE;
+}
 
-</body>
+h6 {
+  font-size: 1.2em;
+  font-family: helvetica;
+  color: #404040;
+  line-height: 1.4em;
+}
 
-</html>
+.btn {
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgb(25, 189, 225);
+  color: #FFF;
+  border-radius: 0px;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: rgb(25, 189, 225);
+}
+
+#fa-facebook {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.6em;
+  color: rgb(25, 189, 225);
+}
+
+#fa-twitter {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  font-size: 1.6em;
+  color: rgb(25, 189, 225);
+}
+
+#fa-twitter:hover {
+  color: rgb(0, 114, 199);
+}
+
+#fa-facebook:hover {
+  color: rgb(0, 114, 199);
+}
+
+.hvr-radial-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+  background:  rgb(25, 189, 225);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-radial-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:#2098d1;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-radial-out:hover,
+.hvr-radial-out:focus,
+.hvr-radial-out:active {
+  color: #ffffff;
+}
+
+.hvr-radial-out:hover:before,
+.hvr-radial-out:focus:before,
+.hvr-radial-out:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #2098d1;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+.post {
+  margin: 20px;
+  background-color: #FFF;
+  box-shadow: 5px 5px 2px #ccc;
+  transition: background-color .5s ease-in-out;
+  -moz-transition: background-color .5s ease-in-out;
+  -webkit-transition: background-color .5s ease-in-out;
+}
+.btn-dark{
+  background-color: #202125;
+  margin: 5px;
+}
+.btn-dark:hover{
+  background-color: rgb(238,238,238);
+  color: #000;
+}
+.main{
+margin-top: 75px;
+}
+</style>
+<div id="element" class="fullheight">
+
+</div>
+<img width="250px" class="img-circle center-item" src="/img/about/profile.jpg" alt="Robert Hosking" />
+<div class="divider"></div>
+<script type="text/javascript">
+var wheight = $(window).height()/2; //get the height of the window
+var width = $(window).width()/2;
+//fullHeight
+// set all elements with class "fullheight" to a height equal to height of viewport on load
+$('.fullheight').css('height', wheight);
+$('.center-item').css('top', wheight - 125);
+$('.center-item').css('left', width -125);
+//resize the "fullheight" elements on screen resize
+$(window).resize(function() {
+    width = $(window).width()/2;
+
+    wheight = $(window).height()/2; //get the height of the window
+    $('.fullheight').css('height', (wheight)); //set to window tallness
+    $('.center-item').css('top', wheight - 125);
+    $('.center-item').css('left', width - 150);
+});
+</script>
+<div class="container center-block">
+  <div class="text center-block">
+
+
+
+
+
+    <div style="padding-top:75px;" class="masonry-grid">
+
+
+
+
+
+
+       <ul class="post-list">
+          {% for post in site.posts %}
+          <li>
+
+                <div style="width:300px;"class="hvr-underline-from-center  post grid-item {% if forloop.index > 3 %} wow fadeInLeftBig {% endif %}">
+
+                  <a style="display:block;" target="_blank" href="http://www.twitter.com/share?url=http://www.robhossboss.com{{ post.url }}">
+                    <i id="fa-twitter" class="fa fa-twitter"></i>
+                 </a>
+                  <a style="display:block;" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.robhossboss.com{{ post.url }}">
+                    <i id="fa-facebook"class="fa fa-facebook"></i>
+                </a>
+                <a style="display:block;" href="{{ post.url | prepend: site.baseurl }}">
+
+                   <div style="background-image: url('img/thumbnail/{{post.image}}.jpg'); height:0;padding-top: 54.166666666667%; width:100%; background-size:cover; background-repeat: no-repeat; background-position: center;"></div>
+
+    </a>
+                   {% if forloop.index == 1 %}
+                   <img src="/img/svg/bookmark.svg" class="bookmark"/>
+                   {% endif %}
+
+
+
+                   <div class="text-content">
+                      <span>
+                         <h4>{{post.categories}}</h4>
+                      </span>
+                      <h1 class="title">
+                         {{ post.title | upcase}}
+                      </h1>
+                      <h6 style="color:#999;"class="date-text">
+                         {{ post.date | date: "%b %-d, %Y" }}
+                      </h6>
+                      {% if post.abstract %}
+                      <h6>{{post.abstract}}</h6>
+                      {% else %}
+                      <h6>
+                         {{ post.content | strip_html | truncatewords:20 }}
+                      </h6>
+                      {% endif %}
+             <a href="{{ post.url | prepend: site.baseurl }}" class="btn hvr-radial-out">
+             VIEW
+             </a>
+             <p style="font-family:sans-serif; font-size:8pt;" class="post-data"> {{post.time}} min read</p>
+             </div>
+             </div>
+          </li>
+          {% endfor %}
+       </ul>

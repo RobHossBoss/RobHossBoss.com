@@ -26,6 +26,12 @@
 <body>
 
 <style>
+@media (min-width: 768px) {
+.container>p, li{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+}
 iframe{
   margin-top: 15px;
   margin-bottom: 15px;
@@ -34,7 +40,6 @@ iframe{
   background-color: #fff;
   box-shadow: 5px 5px 2px #ccc;
 margin-bottom: 25px;
-padding-bottom: 75px;
 }
 h1{
   position: relative;
@@ -186,6 +191,8 @@ p,li{
     </div>
 
     {{ content }}
+
+    <img class="img-responsive center-block"src="/img/fin.png" alt="Fin" />
      </div>
    </article>
    <div class="container" id="disqus_thread"></div>

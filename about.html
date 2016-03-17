@@ -3,6 +3,7 @@ layout: default
 permalink: about
 title: About Me
 ---
+<link rel="stylesheet" href="/css/animate.css" media="screen" title="no title" charset="utf-8">
 
 
 <style media="screen">
@@ -10,6 +11,18 @@ title: About Me
   .text{
     width: 670px;
   }
+}
+@media (min-width: 768px) {
+p{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+}
+.post {
+  margin-bottom: 75px;
+  padding: 20px;
+  background-color: #FFF;
+  box-shadow: 5px 5px 2px #ccc;
 }
 .text{
   margin-top: 100px;
@@ -36,10 +49,11 @@ border-radius: 500px;
   width: 100%;
 }
 
-.text > p::first-letter {
+.text > .post > .first-p > p::first-letter {
   font-weight: bold;
-    font-size: 200%;
-    color: rgb(25, 189, 225);
+    font-size: 300%;
+    color: #000;
+    font-family: gothic;
 }
 p{
   font-family: serif;
@@ -79,21 +93,27 @@ $(window).resize(function() {
 
     </h5>
     <hr style="padding-top:none; margin-top:none;border-color:#818181">
-    <p>
-      I am a student of <a href="https://www.berea.edu/">Berea College</a> class of 2017. I major in Computer Science with a concentration in Computational Mathematics. I am passionate about design and using mathematics to solve real problems. Whether I'm making the world more beautiful through design or providing value by solving a problem, I'm meticulous and creative.
-    </p>
-    <p>
-      I am very stoic and reserved. I am an <a href="https://www.16personalities.com/intj-personality">INTJ</a> after all. I spend +90% of my time alone, thinking, working, reflecting and planning. I am very deliberate in my actions. I prefer to get to know someone by working with them on a project or problem. When it comes to style, I prefer traditional and minimalist. I wear a button-up shirt, jeans, and a blazer every day. My desktop (computer and physical) is spotless.
-    </p>
-    <p>
-      Getting lost in a computer is one of my favorite ways to spend an afternoon. I'm not very active on social media but the occasional Reddit post or tweet can be expected. I like reading books about design and entrepreneurship. Check out <a href="/books">my favorite books</a>.
-    </p>
+    <div class="post">
+<div class="first-p">
+  <p>
+    I am a student of <a href="https://www.berea.edu/">Berea College</a> class of 2017. I major in Computer Science with a concentration in Computational Mathematics. I am passionate about design and using mathematics to solve real problems. Whether I'm making the world more beautiful through design or providing value by solving a problem, I'm meticulous and creative.
+  </p>
+</div>
 
-  <p>
-My favorite movies are what most people would probably consider weird but I like them because they explore ideas. I like music that has interesting sounds that I've never heard before (e.g. Trap, Techno, Dubstep, etc.). For background music, I like classical piano and Spanish guitar. Although, lately, I've been listening to podcasts more than music. Check out <a href="/music">my favorite music</a> and <a href="podcasts">my favorite podcasts</a>.
-  </p>
-  <p>
-    I drink my coffee black. Good coffee doesn't need cream and sugar. Tea is also a favorite, sometimes four cups a day! I enjoy cultural foods and am always trying new cuisines. Sushi for days!
-  </p>
+      <p>
+        I am very stoic and reserved. I am an <a href="https://www.16personalities.com/intj-personality">INTJ</a> after all. I spend +90% of my time alone, thinking, working, reflecting and planning. I am very deliberate in my actions. I prefer to get to know someone by working with them on a project or problem. When it comes to style, I prefer traditional and minimalist. I wear a button-up shirt, jeans, and a blazer every day. My desktop (computer and physical) is spotless.
+      </p>
+      <p>
+        Getting lost in a computer is one of my favorite ways to spend an afternoon. I'm not very active on social media but the occasional Reddit post or tweet can be expected. I like reading books about design and entrepreneurship. Check out <a href="/books">my favorite books</a>.
+      </p>
+
+    <p>
+  My favorite movies are what most people would probably consider weird but I like them because they explore ideas. I like music that has interesting sounds that I've never heard before (e.g. Trap, Techno, Dubstep, etc.). For background music, I like classical piano and Spanish guitar. Although, lately, I've been listening to podcasts more than music. Check out <a href="/music">my favorite music</a> and <a href="podcasts">my favorite podcasts</a>.
+    </p>
+    <p>
+      I drink my coffee black. Good coffee doesn't need cream and sugar. Tea is also a favorite, sometimes four cups a day! I enjoy cultural foods and am always trying new cuisines. Sushi for days!
+    </p>
+    </div>
+
   </div>
 </div>

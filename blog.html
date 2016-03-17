@@ -15,7 +15,7 @@ title: RobHossBlog
     -moz-transition: background-color .5s ease-in-out;
     -webkit-transition: background-color .5s ease-in-out;
   }
-
+  
   .post,
   em {
     text-decoration: none;
@@ -368,10 +368,6 @@ title: RobHossBlog
 </div>
 </div>
 
-<script src="/js/wow.min.js"></script>
-<script>
-  new WOW().init();
-</script>
 <script src="/js/masonry.min.js"></script>
 <script type="text/javascript">
   $('.masonry-grid').masonry({
@@ -386,15 +382,4 @@ columnWidth: 10,
 fitWidth: true
       //columnWidth:
   });
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-
-    //>=, not <=
-    if (scroll >= 50) {
-      //clearHeader, not clearheader - caps H
-      $(".fa-stack").removeClass("hidden");
-
-      $(".fa-stack").addClass("animated fadeInDownBig");
-    }
-  }); //missing );
 </script>

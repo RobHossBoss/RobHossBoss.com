@@ -3,7 +3,7 @@ layout: default
 title: Portfolio
 permalink: portfolio
 ---
-
+<link rel="stylesheet" href="/css/animate.css" media="screen" title="no title" charset="utf-8">
 <style media="screen">
 @media (min-width: 1200px) {
   .text{
@@ -44,14 +44,46 @@ p{
   font-family: serif;
   line-height: 2em;
 }
+h1{
+  font-family: helvetica;
+  font-weight: bold;
+}
+
 h2{
   font-size: 14pt;
+  font-family: helvetica;
+  font-weight: lighter;
+  color: #909090;
 }
 .post {
   margin-bottom: 75px;
   padding: 20px;
   background-color: #FFF;
   box-shadow: 5px 5px 2px #ccc;
+}
+.top-right{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 </style>
 
@@ -78,7 +110,7 @@ $(window).resize(function() {
     $('.center-item').css('left', width - 150);
 });
 </script>
-<div class="container center-block">
+<div class="container center-block grid-item">
   <div class="text center-block">
     <img class="center-block img-responsive" src="/img/portfolio.png" alt="Robert Hosking" />
     <hr style="padding-bottom:none; margin-bottom:none; border-color:#818181">
@@ -88,69 +120,56 @@ $(window).resize(function() {
 
     </h5>
     <hr style="padding-top:none; margin-top:none;border-color:#818181">
-<div class="post">
-  <h1>Wikipedia Shortest Path</h1>
-  <h2>November 2015 - present</h2>
-  <p>As an adaptation to <a href="https://en.wikipedia.org/wiki/Godwin%27s_Law">Godwin's Law</a> and a final project for my Data Structures course, <a href="https://www.linkedin.com/profile/view?id=AAkAABksQcQByFLllftZMldcC1eDzJVqRRBuaM0&authType=NAME_SEARCH&authToken=5y6x&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A422330820%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1447859753463%2Ctas%3Adavi">David Newswanger</a> and I took on the challange of indexing all of Wikipedia to find the shortest path between two articles by following the Wikipedia links within that article. The project taught me to deal with very large files and efficiently index and store information from the file. This was my first experience with a massive graph theory problem that was made even more difficult my the limited memory and processing power of a Dell laptop.</p>
-  <table>
-     <tr>
-        <th>SQL</th>
-        <th>C++</th>
-        <th>Python</th>
-        <th>Graph Theory</th>
-     </tr>
-  </table>
-  <a style="float:right;" class="carousel-btn" href="https://github.com/RobHossBoss" target="blank">Soon on GitHub!</a>
+
+<div class="masonry-grid">
+
+
+
+  {% for project in site.data.portfolio %}
+  <div class="post wow fadeInLeftBig grid-item">
+    <h1>{{project.title}}</h1>
+    <h2>{{project.timeframe}}</h2>
+    <p>{{project.sum}}</p>
+    <table>
+       <tr>
+          {{project.skills}}
+       </tr>
+    </table>
+    <a style="float:right;" class="carousel-btn hvr-grow-shadow" href="{{project.link}}" target="blank">{{project.link-text}}</a>
+{% if project.github != "none" %}
+<div class="top-right">
+  <a class="" href="{{project.github}}" target="_blank">
+      <span class="fa-stack fa-lg">
+          <i style="color:#404040;" class="fa fa-github fa-stack-2x hvr-fade"></i>
+      </span>
+  </a>
+</div>
+{% endif %}
+
+
+  </div>
+
+{% endfor %}
+  {% for img in (0..9) %}
+  <div class="wow  {% capture modulo %}{{ img | modulo:2 }}{% endcapture %} {% if modulo == '0' %}fadeInLeftBig{% else %}fadeInRightBig{% endif %} grid-item">
+    <img style="max-width:333px;  box-shadow: 5px 5px 2px #ccc;" src="/img/designs/{{img}}.jpg" alt="" />
+  </div>
+  {% endfor %}
+
+
+
 
 </div>
+<script src="/js/masonry.min.js"></script>
+<script src="/js/wow.min.js"></script>
+<script type="text/javascript">
+$('.masonry-grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 333
+});
+</script>
 
-<div class="post">
-  <h1>EPG Website</h1>
-  <h2>July 2015 - August 2015</h2>
-
-<p>I worked as a designer and front-end developer in building a professional commercial webapp for the Entrepreneurship for the Public Good program at Berea College. I was in charge of taking customer preferences and turning them into wire-frames, mockups, and finally the finished product. I used AJAX to retrieve profiles form a database and search them on the client side. This was an invaluable first experience in developing on a commercial scale and helped me to learn to make my designs universal and minimize server load by keeping calculations on the client side.</p>
-<table>
-  <tr>
-     <th>HTML</th>
-     <th>CSS</th>
-     <th>JavaScript</th>
-     <th>AJAX</th>
-  </tr>
-</table>
-<a style="float:right;" class="carousel-btn" href="http://www.berea.edu/epg" target="blank">See it live!</a>
-</div>
-
-
-<div class="post">
-  <h1>BluLocker</h1>
-  <h2>April 2015 - present (suspended)</h2>
-<p>As part of a final project for my Software Design and Implementation course I embarked on BluLocker. BluLocker is a PC based application that automatically locks the workstation when a paired Blutooth device goes out of range. If you pair something that you typically keep on your person (phone or wearable), this effectively locks your computer when you leave it. BluLocker was written in Python and I currently have a minimum viable product... but there is much to be desired. I will likely make a GitHub repo for it in the near future.</p>
-<table>
-  <tr>
-     <th>Python</th>
-     <th>Basic Networking</th>
-     <th>TKinter</th>
-  </tr>
-</table>
-
-
-<a style="float:right;" class="carousel-btn" href="https://github.com/RobHossBoss/BluLocker" target="blank">View on GitHub!</a>
-</div>
-
-
-
-<div class="post">
-  <h1>Personal Website</h1>
-  <h2>April 2015- present</h2>
-
-<p>This website was my attempt to make an online presence for myself (aside form social media platforms). In fact, it was an excuse for me to learn HTML, CSS, and JavaScript. Much of the learning took place over one summer and the site has undergone countless revisions and features are added as I learn them. This site serves as a testing ground for new web-based languages and frameworks that I am trying to learn. It also represents the best that I am currently capable of producing in terms of both design and functionality.</p>
-<table>
-  <tr>
-     <th>HTML</th>
-     <th>CSS</th>
-     <th>JavaScript</th>
-     <th>AJAX</th>
-  </tr>
-</table>
-<a style="float:right;" class="carousel-btn" href="index.html">In case you get lost...</a>
-</div>
+<script>
+  new WOW().init();
+</script>
