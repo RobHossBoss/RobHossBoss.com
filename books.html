@@ -1,0 +1,75 @@
+---
+layout: default
+permalink: books
+title: Books
+---
+<style media="screen">
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.7);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 10000;
+}
+.fullheight{
+  overflow: scroll;
+}
+</style>
+<div style="padding-top:100px;" class="container fullheight">
+
+  <div class="row">
+    <div>
+      <div class="col-sm-4 col-sm-offset-2 masonry-grid">
+        {% for book in site.data.books %}
+        <a class="grid-item hvr-grow-shadow" href="{{book.link}}" target="_blank">
+            <img width="100px" height="100%" src="/img/books/{{book.image}}.jpg" alt="" />
+        </a>
+        {% endfor %}
+      </div>
+
+      <div class="col-sm-4">
+        <h1>Books.</h1>
+        <p>
+          I enjoy a good book. Although it is hard to dedicate time to sit and read, I try to read as much as possible. These are the books that have brought me the most value in my life. If you know me personally I'd be happy to lend a copy. Enjoy!
+        </p>
+        <hr>
+        <p align="center" style="font-family:serif; font-size:12pt;">
+          <a style="" target="_blank" href="/books">Books</a> | <a href="/music">Music</a> | <a href="/podcasts">Podcasts</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="/js/masonry.min.js"></script>
+
+<script type="text/javascript">
+var wheight = $(window).height();
+
+$('.fullheight').css('height', wheight);
+
+//resize the "fullheight" elements on screen resize
+$(window).resize(function() {
+    wheight = $(window).height(); //get the height of the window
+    $('.fullheight').css('height', (wheight)); //set to window tallness
+});
+
+  $('.masonry-grid').masonry({
+    // options
+    itemSelector: '.grid-item'
+
+  });
+</script>
