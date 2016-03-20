@@ -15,7 +15,7 @@ title: RobHossBlog
     -moz-transition: background-color .5s ease-in-out;
     -webkit-transition: background-color .5s ease-in-out;
   }
-  
+
   .post,
   em {
     text-decoration: none;
@@ -26,9 +26,8 @@ title: RobHossBlog
   .post .title {
     font-size: 1.8em;
     color: #000;
-    font-weight: bolder;
     padding-bottom: 15px;
-    font-family: helvetica;
+    font-family: 'familiar';
     padding-bottom: 0;
     margin-bottom: 0;
   }
@@ -255,6 +254,18 @@ title: RobHossBlog
 .main{
   margin-top: 75px;
 }
+@font-face {
+    font-family: 'familiar';
+    src: url('/fonts/familiar/Familiar_Pro-Bold-webfont.eot');
+    src: url('/fonts/familiar/Familiar_Pro-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/familiar/Familiar_Pro-Bold-webfont.woff2') format('woff2'),
+         url('/fonts/familiar/Familiar_Pro-Bold-webfont.woff') format('woff'),
+         url('/fonts/familiar/Familiar_Pro-Bold-webfont.ttf') format('truetype'),
+         url('/fonts/familiar/Familiar_Pro-Bold-webfont.svg#norwesterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 </style>
 
 
@@ -372,7 +383,8 @@ title: RobHossBlog
 <script type="text/javascript">
   $('.masonry-grid').masonry({
     // options
-    itemSelector: '.grid-item'
+    itemSelector: '.grid-item',
+    isFitWidth: true
 
   });
   $('.cat-bin').masonry({

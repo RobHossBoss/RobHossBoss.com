@@ -1,201 +1,137 @@
-<!DOCTYPE html>
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="shortcut icon" type="image/x-icon" href="/img/logo-small.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/solo.css">
-  <link rel="stylesheet" href="/css/prism.css">
+{% include head.html %}
+<link rel="stylesheet" href="/css/prism.css">
 
-  <!-- Chrome, Firefox OS and Opera -->
-<meta name="theme-color" content="#fff">
-<!-- Windows Phone -->
-<meta name="msapplication-navbutton-color" content="#fff">
-<!-- iOS Safari -->
-<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-
-</head>
+{% include header.html %}
 
 
 <body>
 
-<style>
-@media (min-width: 768px) {
-.container>p, li{
-  margin-left: 50px;
-  margin-right: 50px;
-}
-}
-iframe{
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.container{
-  background-color: #fff;
-  box-shadow: 5px 5px 2px #ccc;
-margin-bottom: 25px;
-}
-h1{
-  position: relative;
-  left: 50px;
-}
-h2,h3{
-position: relative;
-left: 40px;
-}
-
-h4,h5{
-   position: relative;
-   left: 20px;
-}
-.navbar{
-	background-color:#252120;
-  box-shadow: 5px 5px 2px rgba(#000000, 0.3);
-
-}
-.nav>li>a{
-  font-weight: bold;
-}
-.nav>li>a:focus,
-.nav>li>a:hover {
-  background-color: #6abed8;
-  -webkit-transition: background-color 0.5s ease-in-out;
--moz-transition: background-color 0.5s ease-in-out;
--o-transition: background-color 0.5s ease-in-out;
-transition: background-color 0.5s ease-in-out;
-}
-ul.nav a:hover {
-	color: #f0f0f0;
-}
-.navbar-nav .open .dropdown-menu {
-    background-color: #727272;
-  }
- ul > li.dropdown.open > ul > li > a:hover{
-  color:#000;
- }
-.nav .open>a, .nav .open>a:focus, .nav .open:hover {
-	background-color:#6abed8;
-
-}
-.navbar a{
-	color:#f0f0f0;
-}
-.nav.navbar-nav{
-	font-color:#f0f0f0;
-}
-.list-inline a{
-	color:#727272;
-}
-.dropdown-menu>li>a{
-	color:#f0f0f0;
-}
-.navbar-brand{
-	margin: 0;
-	padding: 0;
-  top:0;
-}
-.icon-bar {
-  color: #f0f0f0;
-  border-color: #f0f0f0;
-  background-color: #f0f0f0;
+<style media="screen">
+.html{
+  background-color: rgb(147, 147, 147);
 }
 @font-face {
-    font-family: 'norwester';
-    src: url('/fonts/norwester/norwester-webfont.eot');
-    src: url('/fonts/norwester/norwester-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/norwester/norwester-webfont.woff2') format('woff2'),
-         url('/fonts/norwester/norwester-webfont.woff') format('woff'),
-         url('/fonts/norwester/norwester-webfont.ttf') format('truetype'),
-         url('/fonts/norwester/norwester-webfont.svg#norwesterregular') format('svg');
+    font-family: 'familiar';
+    src: url('/fonts/familiar/Familiar_Pro-Bold-webfont.eot');
+    src: url('/fonts/familiar/Familiar_Pro-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/familiar/Familiar_Pro-Bold-webfont.woff2') format('woff2'),
+         url('/fonts/familiar/Familiar_Pro-Bold-webfont.woff') format('woff'),
+         url('/fonts/familiar/Familiar_Pro-Bold-webfont.ttf') format('truetype'),
+         url('/fonts/familiar/Familiar_Pro-Bold-webfont.svg#norwesterregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'familiar';
+}
+h3{
+  text-align: center;
+  font-size: 3em;
+  margin-top: 2em;
+}
+.article{
+  background-color: #fff;
+  margin-top: 100px;
+}
+.title{
+  text-align: center;
+}
+.meta{
+text-align: center;
+color: rgb(157, 157, 157);
+text-indent: 0;
 
 }
-body{
-  margin:0px;
-  height: 100%;
-  background-color: rgb(238,238,238);
+.article p{
+  display: block;
+  font-family: helvetica;
+  padding-left: 1em;
+  margin-left: 1em;
+  padding-right: 1em;
+  margin-right: 1em;
+  text-indent: 0em;
 }
-#element {
-    background: url('/img/cover/{{page.image}}.jpg') no-repeat center;
-    background-size:cover;
-    display: block;
-    height:400px;;
-    width: 100%;
-    margin-bottom: 25px;
-    margin-top: 25px;
+#element{
+  background-image: url("/img/cover/{{page.image}}.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: block;
+  height:50%;
+  width: 100%
 }
-
-@media (max-width: @screen-xs) {
-    .post-header{
-      font-size: 40px;
-    }
+.container{
+  padding: 0px;
 }
-
-@media (max-width: @screen-sm) {
-    .container{
-      padding:0px;
-    }
+.article img, iframe{
+  width:100%;
 }
-@media (max-width: @screen-sm) {
-    .container{
-      padding:0px;
-    }
-}
-.post-header{
-  font-size: 18vw;
-  padding-bottom:20px;
-   margin-bottom:20px;
-   text-decoration:none;
-   font-weight:normal;
-   color:#fff;
-   font-family:norwester;
-   text-align:center;
-  padding-top:100px;
-}
-p,li{
-  font-family: serif;
-  font-size: 12pt;
-  line-height: 2em;
-}
-
 </style>
 
+<script type="text/javascript">
+var lastFixPos = 0;
 
+
+$(window).on('scroll', function(){
+  lastFixPos = $(window).scrollTop();
+  $("#element").css("height", 500 - lastFixPos);
+  $("#element").fadeTo(0, 1/(lastFixPos/70));
+
+});
+
+//fullHeight
+// set all elements with class "fullheight" to a height equal to height of viewport on load
+$('#element').css('height', wheight);
+//resize the "fullheight" elements on screen resize
+$(window).resize(function() {
+
+    wheight = $(window).height()/2; //get the height of the window
+    $('#element').css('height', (wheight)); //set to window tallness
+    $("#element").css("height", 500 - lastFixPos);
+    $("#element").fadeTo(0, 1/(lastFixPos/70));
+});
+
+
+
+
+</script>
+
+</script>
 
   <article>
 
-   <div class="container">
-
-     <a style="display:block;" href="/blog">
-     <img class="img-responsive canter-block"src="/img/robhossblog.png" alt="robhossblog" />
-     </a>
-
-
-     <hr style="padding-bottom:none; margin-bottom:none;">
-     <p align="center">
-
-       <a href="/about.html">About</a> | <a href="/blog.html">Blog</a> | <a href="/portfilio.html">Portfolio</a>
-
-     </p>     <hr style="padding-top:none; margin-top:none;">
-    <h3>{{ page.title }}</h3>
-    <em>{{ page.date | date: "%b %-d, %Y" }} by <a href="http://www.robhossboss.com">Robert Hosking</a></em>
-
-    <div id="element">
-    </div>
-
-    {{ content }}
-
-    <img class="img-responsive center-block"src="/img/fin.png" alt="Fin" />
+   <div class="container article">
+     <div id="element" class="fullheight" >
      </div>
+     <div class="row">
+       <div class="col-sm-8 col-sm-offset-2">
+         <h1 class="title">{{ page.title | upcase}}</h1>
+
+     <p class="meta">
+       {{ page.date | date: "%b %-d, %Y" }} by <a href="/">Robert Hosking</a>
+
+     </p>
+
+
+
+         {{ content }}
+
+         <img class="img-responsive center-block"src="/img/fin.png" alt="Fin" />
+          </div>
+       </div>
+
+     </div>
+
    </article>
-   <div class="container" id="disqus_thread"></div>
+   <div class="container">
+     <div class="row">
+        <div class="col-sm-8 col-sm-offset-2" id="disqus_thread"></div>
+     </div>
+   </div>
+
    <script>
 
        /**
@@ -219,7 +155,7 @@ p,li{
    </script>
    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </body>
-
+{% include footer.html %}
 </html>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->

@@ -27,12 +27,29 @@ title: Books
 .fullheight{
   overflow: scroll;
 }
+.post{
+  background-color: #fff;
+  box-shadow: 5px 5px 2px #ccc;
+  padding: 20px;
+}
 </style>
 <div style="padding-top:100px;" class="container fullheight">
 
-  <div class="row">
+  <div class="row post">
     <div>
-      <div class="col-sm-4 col-sm-offset-2 masonry-grid">
+
+      <div class="col-sm-4 col-sm-offset-2">
+        <h1>Books.</h1>
+        <p>
+          I enjoy a good book. Although it is hard to dedicate time to sit and read, I try to read as much as possible. These are the books that have brought me the most value in my life. If you know me personally I'd be happy to lend a copy. Enjoy!
+        </p>
+        <hr>
+        <p align="center" style="font-family:serif; font-size:12pt;">
+          <a style="" href="/books">Books</a> | <a href="/music">Music</a> | <a href="/podcasts">Podcasts</a>
+        </p>
+      </div>
+
+      <div class="col-sm-4  masonry-grid">
         {% for book in site.data.books %}
         <a class="grid-item hvr-grow-shadow" href="{{book.link}}" target="_blank">
             <img width="100px" height="100%" src="/img/books/{{book.image}}.jpg" alt="" />
@@ -40,16 +57,6 @@ title: Books
         {% endfor %}
       </div>
 
-      <div class="col-sm-4">
-        <h1>Books.</h1>
-        <p>
-          I enjoy a good book. Although it is hard to dedicate time to sit and read, I try to read as much as possible. These are the books that have brought me the most value in my life. If you know me personally I'd be happy to lend a copy. Enjoy!
-        </p>
-        <hr>
-        <p align="center" style="font-family:serif; font-size:12pt;">
-          <a style="" target="_blank" href="/books">Books</a> | <a href="/music">Music</a> | <a href="/podcasts">Podcasts</a>
-        </p>
-      </div>
     </div>
   </div>
 
