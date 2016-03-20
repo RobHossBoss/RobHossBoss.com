@@ -5,6 +5,7 @@ date:   2016-02-05 13:34:17 -0500
 time: 2
 categories: Reflection
 image: "google-physcist"
+permalink: stereotype
 ---
 
 An interview with Claude Steele, a researcher well known for his work on stereotype threat.
