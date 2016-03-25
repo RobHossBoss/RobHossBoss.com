@@ -1,3 +1,6 @@
+---
+permalink: speedread
+---
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,7 +14,7 @@
         <!-- Bootstrap Core CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        
+
     </head>
     <body id="body">
         <a id="top"name="here"></a>
@@ -26,10 +29,10 @@
         </div>
         <div id="progbar"style="background-color: #808080; height: 10px; position:absolute;"></div>
         <a href="#pannel">
-        <img class="ele" src="down.svg">
+        <img class="ele" src="/apps/speedread/down.svg">
         </a>
         <a id="pauselink" href="#here">
-        <img id="pause" src="pause.svg">
+        <img id="pause" src="/apps/speedread/pause.svg">
         </a>
     </body>
     <a name="pannel"></a>
@@ -58,7 +61,7 @@
                 <div class="col-sm-6">
                     <button style="padding:10px; margin:25px; color:#000; background-color:#f0f0f0" type="button" id="go" class="btn">Go!</button>
                 </div>
-                
+
                         <ul  class="list-inline text-center">
                             <li id="github">
                                 <a href="https://github.com/RobHossBoss/speedreader">
@@ -69,7 +72,7 @@
                                 </a>
                             </li>
                         </ul>
-                  
+
             </div>
         </div>
     </footer>
@@ -97,6 +100,9 @@
         position: absolute;
         width: 70px;
     }
+    #hold{
+      font-family: tahoma;
+    }
 </style>
 
 
@@ -122,7 +128,7 @@
         var wwidth = $(window).width();
            // set all elements with class "fullheight" to a height equal to height of viewport on load
            $('.fullheight').css('height', wheight);
-        
+
            //resize the "fullheight" elements on screen resize
            $(window).resize(function() {
                wheight = $(window).height(); //get the height of the window
@@ -147,11 +153,11 @@
         $('#pauselink').clickToggle(function() { //mouse enter
             $("#hold").addClass('pauseInterval');
             $("#progbar").pause();
-             $('#pause').attr('src', 'play.svg');
+             $('#pause').attr('src', '/apps/speedread/play.svg');
           },function() { //mouse leave
             $("#hold").removeClass('pauseInterval');
             $("#progbar").resume();
-            $('#pause').attr('src', 'pause.svg');
+            $('#pause').attr('src', '/apps/speedread/pause.svg');
           }
         );
 
@@ -159,36 +165,36 @@
         $("#body").toggleClass("Dark");
         $("#progbar").toggleClass(Darkele);
         });
-        
+
         $('#go').click(function(){
-            $('#pause').attr('src', 'pause.svg')
+            $('#pause').attr('src', '/apps/speedread/pause.svg')
         	var raw = $('#comment').val();
         	var words = raw.split(' ');
             $('.ele').hide();
-            
+
 
         	var wpm = $('#wpm').val();
         	var perframe = $('#wpf').val();
            // refresh = words per minure / 60 / frames per secont
         	var refresh = ((60 / wpm)*perframe) * 1000;
-        	
-            
-        
+
+
+
         	var groups = [];
-        
+
         	var temp = "";
-        
-        	
+
+
         	var len = words.length / perframe;
-            
+
 
             var r = len*perframe;
         	for (i=0; i < len; i++){
-                
+
         		temp ="";
         		for (c = 0; c < perframe; c++){
                     if(r <= 0){
-        			    temp += ""; 
+        			    temp += "";
         			}else{
                         temp += (words[c] + " ");
                     }
@@ -196,13 +202,13 @@
         		}
         		words.splice(0,perframe);
         		groups.push(temp);
-        
+
         	}
 
         	var e = 0;
         	function printit(){
 
-        		$("#hold").text(groups[e]);    
+        		$("#hold").text(groups[e]);
         		e++;
         	}
 
@@ -213,35 +219,31 @@
         	window.setInterval(function() { //declare new function
           if(!$('#hold').hasClass('pauseInterval')) { //only run if it hasn't got this class 'pauseInterval'
             printit();
-            
+
           }
         }, refresh);
-        	
+
         })
 
-        
+
         $("#go").click(function() {
             $('html, body').animate({
                 scrollTop: $("#top").offset().top
             }, 500);
-        });	
-        
-        
+        });
+
+
     </script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="../../js/custom.js"></script>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-554024cd47b43846" async="async"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        
+
         ga('create', 'UA-63023290-1', 'auto');
         ga('send', 'pageview');
-        
+
     </script>
 </html>

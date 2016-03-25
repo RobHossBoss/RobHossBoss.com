@@ -1,3 +1,6 @@
+---
+permalink: dice
+---
 <html lang="en">
 
 <head>
@@ -151,7 +154,7 @@ margin-left: -37.5%;
 */
 	function roll(){
    		side = Math.floor((Math.random() * 6) + 1);
-		$(".table").append("<img style='padding: 5px;' class='grid-item' src=" + side.toString() + ".svg>");
+		$(".table").append("<img style='padding: 5px;' class='grid-item' src="+'/apps/dice/' + side.toString() + ".svg>");
 	}
 	function cycle(){
 		if (index == num_colors){
