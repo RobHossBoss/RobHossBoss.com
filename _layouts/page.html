@@ -48,14 +48,25 @@ text-indent: 0;
 .article p{
   display: block;
   font-family: helvetica, verdana, sans-serif;
-  font-size: 1.4em;
-  line-height: 1.6em;
+  font-size: 1.2em;
+  line-height: 1.4em;
   padding-left: 1em;
   margin-left: 1em;
   padding-right: 1em;
   margin-right: 1em;
   text-indent: 0em;
-  margin-top: 1.8em;
+  margin-top: 1.6em;
+}
+.article li{
+  font-family: helvetica, verdana, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  padding-left: 1em;
+  margin-left: 1em;
+  padding-right: 1em;
+  margin-right: 1em;
+  text-indent: 0em;
+  margin-top: 1em;
 }
 #element{
   background-image: url("/img/cover/{{page.image}}.jpg");
@@ -77,6 +88,8 @@ text-indent: 0;
 <script type="text/javascript">
 var lastFixPos = 0;
 
+var wheight = $(window).height()/2; //get the height of the window
+
 $('#element').css('height', 500);
 
 $(window).on('scroll', function(){
@@ -96,10 +109,6 @@ $(window).resize(function() {
     $("#element").css("height", 500 - lastFixPos);
     $("#element").fadeTo(0, 1/(lastFixPos/70));
 });
-
-
-
-
 </script>
 
 </script>
