@@ -280,7 +280,7 @@ title: RobHossBlog
     <script type="text/javascript">
 
     $( "#All" ).click(function() {
-    $('.post').show().addClass("grid-item");
+    $('.post').show().addClass("grid-item", "wow", "fadeInLeftBig");
       $(".masonry-grid").masonry( 'reloadItems' );
       $( ".masonry-grid" ).masonry( 'layout' );
 });
@@ -291,7 +291,7 @@ title: RobHossBlog
     <script type="text/javascript">
 
     $( "#{{category | first}}" ).click(function() {
-        $('.post').hide().removeClass("grid-item");
+        $('.post').hide().removeClass("grid-item", "wow", "fadeInLeftBig");
 
        $('.{{category | first}}').show().addClass("grid-item");
 
