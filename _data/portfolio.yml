@@ -1,7 +1,7 @@
 Projects:
   - title: Wikipedia Shortest Path
     github: https://github.com/RobHossBoss/WikiLinks-Web
-    link:
+    link: /img/wiki-links.pdf
     link-text: View Full Report
     timeframe: November 2015 - Present
     skills: <th>SQL</th><th>C++</th><th>Python</th><th>Graph Theory</th>
