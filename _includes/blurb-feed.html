@@ -1,0 +1,42 @@
+
+{% for blurb in site.data.blurbs %}
+<div class="col-sm-4 blurb-item">
+<h6 class="date-text" >
+  {{blurb.date}}
+</h6>
+<p>
+ "{{blurb.text}}"
+</p>
+</div>
+{% endfor %}
+
+<style media="screen">
+.blurb-item{
+  background-color: #eee;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
+  .blurb-item > h6{
+    color:rgb(105, 105, 105);
+    font-size: 10pt;
+  }
+  .blurb-item > p{
+    font-size: 14pt;
+    color:#202125;
+    font-style: italic;
+  }
+  h1{
+    font-family: 'familiar', helvetica;
+    font-size: 2em;
+    text-align: center;
+    color: #202125;
+  }
+  hr{
+    max-width: 250px;
+    border-width: 5px;
+    color:#404040;
+  }
+  p{
+    text-align: center;
+  }
+
+</style>
