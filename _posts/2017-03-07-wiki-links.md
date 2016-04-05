@@ -10,6 +10,9 @@ permalink:  wikilinks
 Have you ever played the "Wikipedia Game"? You know, the game where you try to find out how many clicks it takes you to get from one article on Wikipedia to another? That was the inspiration behind this project.
 
 The goal: Create a graph of Wikipedia with articles as the nodes and links to other articles as directed edges.
+$$diameter = \frac{\ln(n)}{\ln(K)}\approx average \ path \  length$$
+
+$$\\ n = nodes \ in \ graph \\ K = average \ node \ degree$$
 
 The results:
 
@@ -20,7 +23,7 @@ The results:
 
 ### Cool data
 
-$$\vec{d} = \in E $$
+
 ![Pie chart wikipedia articles linking to adolph hitler](/img/links-to-adolph.jpg)
 
 
