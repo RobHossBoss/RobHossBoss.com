@@ -179,7 +179,7 @@ $(window).resize(function() {
 
 
 
-        var asd = "{% for project in site.data.portfolio.Projects %}<div class=\"post wow fadeInLeftBig grid-item\"><h1>{{project.title}}</h1><h2>{{project.timeframe}}</h2><p>{{project.sum}}</p><table><tr>{{project.skills}}</tr></table><a style=\"float:right;\" class=\"carousel-btn hvr-grow-rotate\" href=\"{{project.link}}\" target=\"blank\">{{project.link-text}}</a>{% if project.github != 'none' %}<div class=\"top-right\"><a class=\"\" href=\"{{project.github}}\" target=\"_blank\"><span class=\"fa-stack fa-lg\"><i style=\"color:#404040;\" class=\"fa fa-github fa-stack-2x hvr-fade\"></i></span></a></div>{% endif %}</div>{% endfor %}";
+        var asd = "{% for project in site.data.portfolio.Projects %}<div class=\"post wow fadeInLeftBig grid-item\"><h1>{{project.title}}</h1><h2>{{project.timeframe}}</h2><img src=\"/img/portfolio/{{project.short}}.png\" alt=\"{{project.title}}\" align=\"center\" width=\"60%\" style=\"margin-left:20%; margin-top:20px; margin-bottom:20px;\"/><p>{{project.sum}}</p><table><tr>{{project.skills}}</tr></table><a style=\"float:right;\" class=\"carousel-btn hvr-grow-rotate\" href=\"{{project.link}}\" target=\"blank\">{{project.link-text}}</a>{% if project.github != 'none' %}<div class=\"top-right\"><a class=\"\" href=\"{{project.github}}\" target=\"_blank\"><span class=\"fa-stack fa-lg\"><i style=\"color:#404040;\" class=\"fa fa-github fa-stack-2x hvr-fade\"></i></span></a></div>{% endif %}</div>{% endfor %}";
 
         var items = jQuery(asd);
         $(".masonry-grid").masonry( 'remove', $(".grid-item") );
@@ -187,7 +187,7 @@ $(window).resize(function() {
         $(".masonry-grid").masonry( 'reloadItems' );
         $( ".masonry-grid" ).masonry( 'layout' );
 
-        
+
   });
 
 
@@ -233,6 +233,8 @@ $( ".masonry-grid" ).masonry( 'layout' );
   <div class="post wow fadeInLeftBig grid-item">
     <h1>{{project.title}}</h1>
     <h2>{{project.timeframe}}</h2>
+
+    <img src="/img/portfolio/{{project.short}}.png" alt="{{project.title}}" align="center" width="60%" style="margin-left:20%; margin-top:20px; margin-bottom:20px;"/>
     <p>{{project.sum}}</p>
     <table>
        <tr>

@@ -1,5 +1,15 @@
 Projects:
+  - title: Splash and Dash Event Page
+    short: splash
+    github: none
+    link: http://www.bereatrails.com
+    link-text: See it live!
+    timeframe: Feb 2016 - May 2016
+    skills: <th>HTML</th><th>CSS</th><th>JavaScript</th>
+    sum: I designed, built, and mainained an event site for the First Berea Splash and Dash Youth Triathalon. I worked closely with a client and implemented a CMS as well as coached the client to manage their site. I also worked on customer discovery, content distribution, and event promotion for the event itself.
+
   - title: Wikipedia Shortest Path
+    short: wiki-links
     github: https://github.com/RobHossBoss/WikiLinks-Web
     link: /img/wiki-links.pdf
     link-text: View Full Report
@@ -8,6 +18,7 @@ Projects:
     sum: As an adaptation to <a href='https://en.wikipedia.org/wiki/Godwin%27s_Law'>Godwin's Law</a> and a final project for my Data Structures course, <a href='https://www.linkedin.com/profile/view?id=AAkAABksQcQByFLllftZMldcC1eDzJVqRRBuaM0&authType=NAME_SEARCH&authToken=5y6x&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A422330820%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1447859753463%2Ctas%3Adavi'>David Newswanger</a> and I took on the challange of indexing all of Wikipedia to find the shortest path between two articles by following the Wikipedia links within that article. The project taught me to deal with very large files and efficiently index and store information from the file. This was my first experience with a massive graph theory problem that was made even more difficult my the limited memory and processing power of a Dell laptop.
 
   - title: EPG Website
+    short: epg
     github: none
     link: http://104.131.44.191/en/
     link-text: See it live!
@@ -17,6 +28,7 @@ Projects:
 
 
   - title: BluLocker
+    short: blulocker
     github: https://github.com/RobHossBoss/BluLocker
     link: https://www.youtube.com/watch?v=llmYkjksxeM
     link-text: Product Video
@@ -25,6 +37,7 @@ Projects:
     sum: As part of a final project for my Software Design and Implementation course I embarked on BluLocker. BluLocker is a PC based application that automatically locks the workstation when a paired Blutooth device goes out of range. If you pair something that you typically keep on your person (phone or wearable), this effectively locks your computer when you leave it. BluLocker was written in Python and I currently have a minimum viable product... but there is much to be desired. I will likely make a GitHub repo for it in the near future.
 
   - title: Personal Website
+    short: blog
     github: none
     link: http://robhossboss.com/
     link-text: In case you get lost

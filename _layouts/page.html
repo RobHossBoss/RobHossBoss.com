@@ -92,7 +92,12 @@ var lastFixPos = 0;
 var wheight = $(window).height()/2; //get the height of the window
 
 $('#element').css('height', 500);
-
+var wwidth = $(window).width();
+if (wwidth < 500){
+  $('#follow-me-links').hide();
+}else{
+  $('#follow-me-links').show();
+}
 $(window).on('scroll', function(){
   lastFixPos = $(window).scrollTop();
   $("#element").css("height", 500 - lastFixPos);
@@ -104,7 +109,12 @@ $(window).on('scroll', function(){
 // set all elements with class "fullheight" to a height equal to height of viewport on load
 //resize the "fullheight" elements on screen resize
 $(window).resize(function() {
-
+    wwidth = $(window).width();
+    if (wwidth < 500){
+      $('#follow-me-links').hide();
+    }else{
+      $('#follow-me-links').show();
+    }
     wheight = $(window).height()/2; //get the height of the window
     $('#element').css('height', (wheight)); //set to window tallness
     $("#element").css("height", 500 - lastFixPos);
@@ -141,10 +151,12 @@ $(window).resize(function() {
    </article>
    <div class="container">
      <div class="row">
+       <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_recommended_horizontal"></div>
         <div class="col-sm-8 col-sm-offset-2" id="disqus_thread"></div>
      </div>
    </div>
-
+{% include sharing.html %}
    <script>
 
        /**
