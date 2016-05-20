@@ -3,7 +3,7 @@ layout: page
 title:  "Thoughts on Smart Watches"
 date:   2015-04-15 13:34:17 -0500
 time: 3
-categories: Thoughts
+categories: Tech
 image: watches-bg
 permalink: smartwatches
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Robert H.
+title: Robert Hosking
 ---
 
 <style media="screen">
@@ -378,56 +378,21 @@ a{
   transform: scale(1.1);
   z-index: 10000;
 }
+.img-responsive{
+  padding-bottom: 0em;
+  marin-bottom: 0em;
+}
+.text{
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
 </style>
-<div id="element" class="fullheight">
 
-</div>
-<img width="250px" class="img-circle center-item" src="/img/about/profile.jpg" alt="Robert Hosking" />
-<div class="divider"></div>
-<script type="text/javascript">
-var wheight = $(window).height()/2; //get the height of the window
-var width = $(window).width()/2;
-//fullHeight
-// set all elements with class "fullheight" to a height equal to height of viewport on load
-$('.fullheight').css('height', wheight);
-$('.center-item').css('top', wheight - 125);
-$('.center-item').css('left', width -125);
-//resize the "fullheight" elements on screen resize
-$(window).resize(function() {
-    width = $(window).width()/2;
-
-    wheight = $(window).height()/2; //get the height of the window
-    $('.fullheight').css('height', (wheight)); //set to window tallness
-    $('.center-item').css('top', wheight - 125);
-    $('.center-item').css('left', width - 150);
-});
-
-</script>
-
-<div class="container field">
-  <br>
-  <br>
-  <img class="center-block img-responsive" src="/img/rh.png" alt="Robert Hosking" />
-
-  <div class="row">
-    <a href="/about">
-      <div id="about"class="col-sm-4">
-        <h1>ABOUT</h1>
-      </div>
-    </a>
-    <a href="/portfolio">
-      <div id="portfolio"class="col-sm-4">
-        <h1>PORTFOLIO</h1>
-      </div>
-    </a>
-<a href="/blog">
-  <div id="blog"class="col-sm-4">
-    <h1>BLOG</h1>
-  </div>
-</a>
-
+  <div class="text center-block">
+    <h1 style="text-align: center; font-family:helvetica; font-size:5em; font-weight: bolder; margin-bottom:.5em;" class="center-block">Robert Hosking</h1>
 
   </div>
+
 
 <!--
   <div class="designs">
@@ -467,14 +432,6 @@ $(window).resize(function() {
      </a>
   </div>
 
-
-
-  <h1>Blurbs</h1>
-  <hr>
-  <p>
-    They're like Tweets but cooler.
-  </p>
-{% include blurb-feed.html %}
 </div>
 
 </div>

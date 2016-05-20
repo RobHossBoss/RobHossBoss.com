@@ -3,7 +3,7 @@ layout: page
 title:  "Downsizing: Focusing on the Important Things"
 date:   2016-03-25 13:34:17 -0500
 time: 2
-categories: Thoughts
+categories: Lifestyle
 image: "lone-iceburg"
 permalink: downsizing
 ---

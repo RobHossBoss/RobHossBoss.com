@@ -3,7 +3,7 @@ layout: page
 title:  "Cyanogenmod: A new Player in the Smartphone Market?"
 date:   2015-05-01 13:34:17 -0500
 time: 3
-categories: Thoughts
+categories: Tech
 image: "cyanogen"
 permalink: cyanogenmod
 ---

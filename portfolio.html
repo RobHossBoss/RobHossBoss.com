@@ -135,39 +135,13 @@ h2{
 }
 </style>
 
-<div id="element" class="fullheight">
-
-</div>
-<img width="250px" class="img-circle center-item" src="/img/about/profile.jpg" alt="Robert Hosking" />
-<div class="divider"></div>
-<script type="text/javascript">
-var wheight = $(window).height()/2; //get the height of the window
-var width = $(window).width()/2;
-//fullHeight
-// set all elements with class "fullheight" to a height equal to height of viewport on load
-$('.fullheight').css('height', wheight);
-$('.center-item').css('top', wheight - 125);
-$('.center-item').css('left', width -125);
-//resize the "fullheight" elements on screen resize
-$(window).resize(function() {
-    width = $(window).width()/2;
-
-    wheight = $(window).height()/2; //get the height of the window
-    $('.fullheight').css('height', (wheight)); //set to window tallness
-    $('.center-item').css('top', wheight - 125);
-    $('.center-item').css('left', width - 150);
-});
-
-
-</script>
-
 
 <script src="/js/masonry.min.js"></script>
 
 
 <div class="container center-block grid-item">
   <div class="text center-block">
-    <img class="center-block img-responsive" src="/img/portfolio.png" alt="Robert Hosking" />
+    <h1 style="text-align: center; font-family:helvetica; font-size:5em; font-weight: bolder; margin-bottom:.5em;" class="center-block">Portfolio</h1>
     <div class="cat-bin center-block">
 
       {% for type in site.data.portfolio %}
@@ -195,18 +169,19 @@ $(window).resize(function() {
 
 
 
-    var asd = "{% for img in site.data.portfolio.Photography %}<div class=\" hvr-grow-shadow grid-item\"><img style=\"max-width:333px;  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.62);\" src=\"/img/designs/{{img.image}}.jpg\" alt=\"\" /></div>{% endfor %}";
+    var asd = "{% for img in site.data.portfolio.Photography %}<div class=\" hvr-grow-shadow grid-item\"><img style=\"max-width:200px;  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.62);\" src=\"/img/designs/{{img.image}}.jpg\" alt=\"{{img.desc}}\" /></div>{% endfor %}";
 
     var items = jQuery(asd);
     $(".masonry-grid").masonry( 'remove', $(".grid-item") );
     $(".masonry-grid").prepend(asd);
     $(".masonry-grid").masonry( 'reloadItems' );
     $( ".masonry-grid" ).masonry( 'layout' );
+
 });
 
 $( "#Designs" ).click(function() {
 
-var asd = "{% for design in site.data.portfolio.Designs %}<div class=\" hvr-grow-shadow grid-item\"><img style=\"max-width:333px; box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.62);\" src=\"/img/designs/{{design.image}}.jpg\" alt=\"\" /></div>{% endfor %}";
+var asd = "{% for design in site.data.portfolio.Designs %}<div class=\" hvr-grow-shadow grid-item\"><img style=\"max-width:200px; box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.62);\" src=\"/img/designs/{{design.image}}.jpg\" alt=\"{{design.desc}}\" /></div>{% endfor %}";
 var items = jQuery(asd);
 $(".masonry-grid").masonry( 'remove', $(".grid-item") );
 $(".masonry-grid").prepend(asd);
@@ -217,13 +192,6 @@ $( ".masonry-grid" ).masonry( 'layout' );
       </script>
 
     </div>
-    <hr style="padding-bottom:none; margin-bottom:none; border-color:#818181">
-    <h5 align="center" style="font-family:serif; font-size:12pt;">
-
-      <a style="" target="_blank" href="ROBERT HOSKING.pdf">Resum&eacute;</a> | <a href="/blog">Blog</a> | <a href="/about">About</a>
-
-    </h5>
-    <hr style="padding-top:none; margin-top:none;border-color:#818181">
 
 <div class="masonry-grid">
 
@@ -264,7 +232,7 @@ $( ".masonry-grid" ).masonry( 'layout' );
 $('.masonry-grid').masonry({
   // options
   itemSelector: '.grid-item',
-  columnWidth: 333
+  columnWidth: 200
 });
 $('.cat-bin').masonry({
   // options
