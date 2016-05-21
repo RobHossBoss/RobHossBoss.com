@@ -386,14 +386,29 @@ a{
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
+.typed-cursor{
+    visibility: hidden;
+    opacity: 0;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+
 </style>
 
   <div class="text center-block">
-    <h1 style="text-align: center; font-family:helvetica; font-size:5em; font-weight: bolder; margin-bottom:.5em;" class="center-block">Robert Hosking</h1>
-
+    <div id="typed" style="min-height:100px; text-align: center; font-family:helvetica; font-size:5em; font-weight: bolder; margin-bottom:.5em;" class="center-block"></div>
   </div>
 
-
+  <script>
+    $(function(){
+        $("#typed").typed({
+          strings: ["Developer", "Designer", "Entrepreneur", "Robert Hosking"],
+          typeSpeed: 0
+        });
+    });
+  </script>
 <!--
   <div class="designs">
     {% for design in site.data.portfolio.Designs %}

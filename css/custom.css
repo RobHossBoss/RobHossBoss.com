@@ -14,10 +14,10 @@ body{
 
 }
 ::selection {
-  background: #6abed8; /* WebKit/Blink Browsers */
+  background:  #ffff00; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #6abed8; /* Gecko Browsers */
+  background:  #ffff00; /* Gecko Browsers */
 }
 
 /* Footer */
