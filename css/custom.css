@@ -46,6 +46,11 @@ footer .copyright {
 /* navbar */
 .navbar{
 	background-color:#252120;
+
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+
 }
 .nav>li>a{
   font-weight: bold;
