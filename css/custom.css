@@ -90,7 +90,7 @@ ul.nav a:hover {
 }
 .navbar-brand{
 	margin: 5px;
-	padding: 5px;
+	padding: 0em;
   max-width: 50px;
 }
 .icon-bar {
