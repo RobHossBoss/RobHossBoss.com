@@ -45,7 +45,7 @@ footer .copyright {
 }
 /* navbar */
 .navbar{
-	background-color:#252120;
+	background-color:#FFF;
 
     -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
@@ -77,7 +77,7 @@ ul.nav a:hover {
 
 }
 .navbar a{
-	color:#f0f0f0;
+	color:#252120;
 }
 .nav.navbar-nav{
 	font-color:#f0f0f0;
