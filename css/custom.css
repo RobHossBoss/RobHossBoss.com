@@ -91,6 +91,7 @@ ul.nav a:hover {
 .navbar-brand{
 	margin: 0em;
 	padding: 0em;
+  max-width: 50px;
 }
 .icon-bar {
   color: #f0f0f0;
