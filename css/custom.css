@@ -89,8 +89,8 @@ ul.nav a:hover {
 	color:#f0f0f0;
 }
 .navbar-brand{
-	margin: 0em;
-	padding: 0em;
+	margin: 5px;
+	padding: 5px;
   max-width: 50px;
 }
 .icon-bar {
