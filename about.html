@@ -65,8 +65,15 @@ p{
 
 <div class="container center-block">
   <div class="text center-block">
-    <h1 style="text-align: center; font-family:helvetica; font-size:5em; font-weight: bolder; margin-bottom:.5em;" class="center-block">Hello.</h1>
-
+    <h1 id="typed" style="text-align: center; font-family:helvetica; font-size:5em; font-weight: bolder; margin-bottom:.5em;" class="center-block">Hello.</h1>
+    <script>
+      $(function(){
+          $("#typed").typed({
+            strings: ["Developer", "Designer", "Entrepreneur", "Robert Hosking"],
+            typeSpeed: 0
+          });
+      });
+    </script>
     <div class="post">
 
       <p>

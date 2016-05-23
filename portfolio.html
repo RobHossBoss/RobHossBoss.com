@@ -141,9 +141,16 @@ h2{
 
 <div class="container center-block grid-item">
   <div class="text center-block">
-    <h1 style="text-align: center; font-family:helvetica; font-size:5em; font-weight: bolder; margin-bottom:.5em;" class="center-block">Portfolio</h1>
+    <h1 id="typed" style="text-align: center; font-family:helvetica; font-size:5em; font-weight: bolder; margin-bottom:.5em;" class="center-block">Portfolio</h1>
     <div class="cat-bin center-block">
-
+      <script>
+        $(function(){
+            $("#typed").typed({
+              strings: ["Developer", "Designer", "Entrepreneur", "Robert Hosking"],
+              typeSpeed: 0
+            });
+        });
+      </script>
       {% for type in site.data.portfolio %}
       <a class="btn btn-dark cat" id="{{type | first}}">{{type | first}}</a>
       {% endfor %}

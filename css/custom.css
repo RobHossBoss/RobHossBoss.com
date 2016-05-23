@@ -37,6 +37,9 @@ footer .copyright {
   margin: 0;
   text-indent: 0;
 }
+#typed{
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
 .fa-circle{
 	color:#6abed8;
 }

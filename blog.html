@@ -270,8 +270,15 @@ title: Blog
 
 
 <div class="container main">
-  <h1 style="text-align: center; font-family:helvetica; font-size:5em; font-weight: bolder; margin-bottom:.5em;" class="center-block">Blog</h1>
-
+  <h1 id="typed" style="text-align: center; font-family:helvetica; font-size:5em; font-weight: bolder; margin-bottom:.5em;" class="center-block">Blog</h1>
+  <script>
+    $(function(){
+        $("#typed").typed({
+          strings: ["Developer", "Designer", "Entrepreneur", "Robert Hosking"],
+          typeSpeed: 0
+        });
+    });
+  </script>
   <div style="margin: 0 auto;" class="cat-bin">
 
     <a class="btn btn-dark cat" id="All">All</a>
@@ -297,7 +304,7 @@ title: Blog
        $(".masonry-grid").masonry( 'reloadItems' );
        $( ".masonry-grid" ).masonry( 'layout' );
 
-       
+
 });
 
     </script>
