@@ -1,5 +1,81 @@
 <footer>
     <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h3>Navigation</h3>
+          <hr>
+          <p>
+            <a href="/blog">Blog</a>
+
+          </p>
+          <p>
+            <a href="/about">About</a>
+
+          </p>
+          <p>
+            <a href="/portfolio">Portfolio</a>
+
+          </p>
+          <p>
+            <a href="/">Home</a>
+
+          </p>
+
+        </div>
+        <div class="col-sm-3">
+          <h3>Blog</h3>
+          <hr>
+          {% for post in site.posts limit: 3 %}
+          <p>
+            <a href='{{ post.url | prepend: site.baseurl }}'>{{post.title}}</a>
+
+          </p>
+          {% endfor %}
+
+          <a style="text-decoration:underline;" href="/blog">More...</a>
+        </div>
+        <div class="col-sm-3">
+          <h3>Follow</h3>
+          <hr>
+          <p>
+            <a href="https://github.com/robhossboss"target="_blank">Github</a>
+          </p>
+          <p>
+            <a href="https://linkedin.com/in/robhossboss"target="_blank">LinkedIn</a>
+
+          </p>
+          <p>
+            <a href="https://beme.com/robhossboss"target="_blank">Beme</a>
+
+          </p>
+          <p>
+            <a href="https://instagram.com/robhossboss"target="_blank">Instagram</a>
+
+          </p>
+          <p>
+            <a href="/feed.xml">RSS</a>
+
+          </p>
+        </div>
+        <div class="col-sm-3">
+        <h1>RH</h1>
+        <p>
+          Robert Hosking
+        </p>
+        <p>
+          101 Chestnut St.
+        </p>
+        <p>
+          PO Box 731
+        </p>
+        <p>
+          Berea, KY 40404
+        </p>
+        <p>
+          USA
+        </p>
+        </div>
+      </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
@@ -28,8 +104,9 @@
                         </a>
                     </li>
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; RobHossBoss 2016</p>
+                <p class="copyright text-muted">Robert Hosking 2016</p>
             </div>
         </div>
     </div>
+
 </footer>
