@@ -53,6 +53,9 @@ footer br{
   margin: 0em;
 }
 footer h3{
+  font-size: 1em;
+  text-align: left;
+  font-weight: lighter;
   color: #808080;
   font-family: helvetica;
   font-weight: lighter;
