@@ -49,8 +49,6 @@ Designs:
     desc: dark theme material wire-frame
   - image: c
     desc: lips with sunglasses album
-  - image: a
-    desc: entrepreneurship for the public good logo
   - image: d
     desc: systemix cyborg album cover
   - image: g
@@ -78,7 +76,12 @@ Photography:
       desc: material modern structure
     - image: 7
       desc: applachian instruments
-    - image: 8
-      desc: tea set
-    - image: 9
-      desc: crater city adventures skateboard decks in middlesboro ky
+Writing:
+  - image: contensive
+    link: http://www.contensive.com/
+  - image: folio1
+    link: https://folio1.com.au/
+  - image: theengineeringdesign
+    link: https://www.theengineeringdesign.com/
+  - image: storyblockmedia
+    link: https://www.storyblock.media/
