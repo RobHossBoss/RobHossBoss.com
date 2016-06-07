@@ -16,7 +16,7 @@ The other notable player in making this layout is [MultiPicture Live Wallpaper p
 
 Let’s delve into my current layout (as of Spring 2015).
 
-![homescreen layout spring 2015](../../../../img/homescreen-spring2015/screens.jpg)
+![homescreen layout spring 2015](/img/post/screens.jpg)
 
 ### Main Screen
 
