@@ -143,6 +143,7 @@ h1{
 /*POST*/
 .post{
 	margin:20px;
+	padding: 0em !important;
 	transition:all 0.7s ;
   -webkit-transition:all 0.7s ;
   -o-transition:all 0.7s ;
