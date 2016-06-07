@@ -1,0 +1,48 @@
+<section id="blog">
+	
+<div class="container">
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3 card">
+		<h1 style="text-align:center;">Did I mention I have a blog?</h1>
+
+	</div>
+</div>
+	<div class="row">
+
+	<div class="center-block post-grid">
+			<ul class="post-list">
+			{% for post in site.posts limit:3 %}
+		{% include post-preview.html %}
+		{% endfor %}
+		</ul>
+		
+		
+
+
+		
+	</div>
+	<div style="padding-bottom:25px;" class="col-sm-6 col-sm-offset-3 card">
+		<h1 style="text-align:center">Well, I do.</h1>
+		<br>
+			<div style="text-align:center">
+			<a class="btn pill" href="/blog">Check it out!</a>	
+		</div> 
+
+	</div>
+
+
+	</div>
+
+</div>
+<script type="text/javascript">
+  $('.post-grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    isFitWidth: true
+
+  });
+ 
+</script>
+
+
+</section>

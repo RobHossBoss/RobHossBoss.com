@@ -1,0 +1,135 @@
+<section class="shade" id="portfolio">
+   <div class="container">
+      <div class="row">
+         <div style="padding-bottom:50px;" class="col-sm-4 col-sm-offset-1 card">
+            <h1>I Write Code.</h1>
+            <p>Writing code is the ultimate culmination of what I love to do. I get to explore, disect, and solve problems. In the end, I have made somehting usefull and beautiful out of essentially nothing. I've taken a few freelance jobs as a web designer. I've also done some pretty cool class and personal projects.</p>
+            <a onclick="ShowThings()" style="position:absolute; right:1em;" id="show-projects" class="btn pill" href="/#projects">View Projects</a>	
+         </div>
+
+
+         <div class="col-sm-6 col-sm-offset-1">
+            <style>
+               .mySlides {display:none;}
+            </style>
+            <body>
+               <div class="w3-content w3-section" style="max-width:500px">
+                  {% for project in site.data.portfolio.Projects %}
+                  <div class="mySlides">
+                     <img class=" w3-animate-right center-block noselect" draggable="false" src="/img/portfolio/projects/{{project.short}}.png" style="width:100%">
+                     <a onclick="ShowThings()" style=""id="show-projects" class="btn pill-invert active project-title" href="/#projects">{{project.title}}</a>
+                     
+                  </div>
+                  {% endfor %}
+               </div>
+               <script>
+                  var myIndex = 0;
+                  carousel();
+                  
+                  function carousel() {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < x.length; i++) {
+                         x[i].style.display = "none";  
+                      }
+                      myIndex++;
+                      if (myIndex > x.length) {myIndex = 1}    
+                      x[myIndex-1].style.display = "block";  
+                      setTimeout(carousel, 4000);    
+                  }
+                    
+                  
+               </script>
+         </div>
+    
+      </div>
+      </div>
+      <br>
+      <br>
+<div class="project-desc-con blue">
+  <div class="container">
+     <div class="row">
+          <div id="projects" class=" masonry-grid center-block ">
+            {% for project in site.data.portfolio.Projects %}
+              <div style="display:block;" class="card col-sm-3 grid-item project">
+                <h1>{{project.title}}</h1>
+                <p class="text-muted">{{project.timeframe}}</p>
+                <p>{{project.sum}}</p>
+              </div>
+            {% endfor %}
+            <div style="display:block; padding-bottom:25px;" class="card yellow col-sm-3 grid-item project">
+                <h1>Cool huh?</h1>
+                <p>There's more to read about in my blog.</p>
+                <a class="btn pill " href="/blog">Check it out!</a>
+            </div>
+              <a onclick="HideThings()"class="btn pill grid-item project" href="/#portfolio">X Close</a>
+
+          </div>
+        </div>
+  </div>
+</div>
+	     
+
+	      <script type="text/javascript">
+
+        function HideThings(){
+
+          $('.project').hide().removeClass("grid-item");
+           $('.project-desc-con').removeClass('opened');
+
+           $(".masonry-grid").masonry( 'reloadItems' );
+           $( ".masonry-grid" ).masonry( 'layout' );
+                                $('project-desc-con').css('min-height', 0);
+
+         }
+         HideThings();
+	      	   
+		       
+
+		       function ShowThings(){
+            $('.project').show().addClass("grid-item");
+           $(".masonry-grid").masonry( 'reloadItems' );
+           $('.project-desc-con').addClass('opened');
+           $( ".masonry-grid" ).masonry( 'layout' );
+           var height = $('.project-desc-con').height();
+           $('project-desc-con').css('min-height', height);
+		       };
+
+		      
+	      </script>
+      <div class="row">
+	      <div class="col-sm-4 col-sm-offset-1 card">
+		      <h1>I Write Prose.</h1>
+		      <p>Short stories, novellas, poems, songs, essays, and blog posts. Ever since I learned how to hold a pencil, I loved to write.</p>
+	      </div>
+	      <div class="col-sm-5 col-sm-offset-1 card">
+		      <h1 style="text-align:center;">Work Featured By:</h1>
+		      
+			      {% for feature in site.data.portfolio.Writing %}
+            <div class="col-xs-3 feature">
+				      <a style="display:block" href="{{feature.link}}">
+				      	<img class="img-responsive" width="100px" src="/img/portfolio/featured/{{feature.image}}.png">
+				      </a>
+            </div>
+			      {% endfor %}
+      	</div>
+      </div>
+   </div>
+   <script src="/js/masonry.min.js"></script>
+   <script type="text/javascript">
+      $('.masonry-grid').masonry({
+          // options
+          itemSelector: '.grid-item',
+          columnWidth: '.col-sm-3',
+          originLeft: false
+        });
+      
+      $('.f-grid').masonry({
+          // options
+          itemSelector: '.f-item',
+          columnWidth: 100,
+          isfitWidth: true
+        });
+      
+   </script>
+</section>

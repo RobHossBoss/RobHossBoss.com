@@ -5,46 +5,56 @@
      background-image: url('/img/thumbnail/{{post.image}}.jpg');
    }
    </style>
-   <li>
+   <article>
 
-         <div style='width:300px;'class='{{post.categories}} hvr-underline-from-center post grid-item {% if forloop.index > 3 %} wow fadeInLeftBig {% endif %}'>
+         <div style='width:300px;'class='{{post.categories}} card post grid-item'>
 
-           <a style='display:block;' target='_blank' href='http://www.twitter.com/share?url=http://www.robhossboss.com{{ post.url }}'>
-             <i id='fa-twitter' class='fa fa-twitter'></i>
-          </a>
-           <a style='display:block;' target='_blank' href='https://www.facebook.com/sharer/sharer.php?u=http://www.robhossboss.com{{ post.url }}'>
-             <i id='fa-facebook'class='fa fa-facebook'></i>
-         </a>
          <a style='display:block;' href='{{ post.url | prepend: site.baseurl }}'>
-            <div id='{{post.image}}' style='height:0;padding-top: 54.166666666667%; width:100%; background-size:cover; background-repeat: no-repeat; background-position: center;'></div>
+            <div class="thumbnail" id='{{post.image}}'></div>
 </a>
-            {% if forloop.index == 1 %}
-            <img src='/img/svg/bookmark.svg' class='bookmark'/>
-            {% endif %}
+          
 
-            <div class='text-content'>
+            <div>
+           
+            <div class="heading">
+                  <a href='{{ post.url | prepend: site.baseurl }}'>
+                      <h1 class='title'>
+                      {{ post.title }}
+                   </h1>
+                 </a>
+        </div>
+        <div class="col-xs-2">
+          {% if post.author %}
+          <a style="display:block;" href="{{post.author-link}}">
+          <img width="35px" class="img-circle" src="/img/avatars/{{post.author}}.jpg">
+          </a>
+          
+          {% else %}
+          <a style="display:block;" href="/about">
+          <img width="35px" class="img-circle" src="/img/profile.jpg">
+          </a>
+          {% endif %}
+
+        </div>
+              <div class="col-xs-8">
                <span>
                   <h4>{{post.categories}}</h4>
                </span>
-               <a href='{{ post.url | prepend: site.baseurl }}'>
-                 <h1 class='title'>
-                    {{ post.title }}
-                 </h1>
-               </a>
-               <h6 style='color:#999;'class='date-text'>
-                  {{ post.date | date: '%b %-d, %Y' }}
+                <h6 class='date-text'>
+                  {{ post.date | date: '%b %-d, %Y' | upcase}}
                </h6>
-               {% if post.abstract %}
-               <h6>{{post.abstract}}</h6>
-               {% else %}
-               <h6>
-                  {{ post.content | strip_html | truncatewords:20 }}
-               </h6>
-               {% endif %}
-      <a href='{{ post.url | prepend: site.baseurl }}' class='btn hvr-radial-out'>
-      VIEW
-      </a>
-      <p style='font-family:sans-serif; font-size:8pt;' class='post-data'> {{post.time}} min read</p>
+               </div>
+               
+               <a class="more"href="{{ post.url | prepend: site.baseurl }}" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-angle-right fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+      <span class="clock"><i class="fa fa-clock-o fa-stack-1x "></i></span>
+      <p class="time">{{post.time}} min</p>
+       
       </div>
+      
       </div>
-   </li>
+   </article>

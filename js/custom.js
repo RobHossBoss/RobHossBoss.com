@@ -1,51 +1,80 @@
-$(function(){
-    //Variables
-    var slideqty = $('#featured .item').length; //get the number of slides in the carousel deck
-    var wheight = $(window).height(); //get the height of the window
-    var randSlide = Math.floor(Math.random()*slideqty); //pick a random number from 0-slideqty
-    //makeIndicators
-    //Automatically make indicators on the carousel for each slide in the deck
-    for (var i=0; i < slideqty; i++) {
-        var insertText = '<li data-target="#featured" data-slide-to="' + i + '"';
-        if (i === 0) {
-            insertText += ' class="active" ';
-        }
-        insertText += '></li>';
-        $('#featured ol').append(insertText);
-    }
 
-    $('.carousel').carousel({
-        pause: false
-    }); // end of makeIndicator
+    $(document).ready(function(){
+            var wheight = $(window).height()-50; //get the height of the window
 
-     //replace IMG inside carousels with a background image
-    $('#featured .item img').each(function() {
-        var imgSrc = $(this).attr('src');
-        $(this).parent().css({'background-image':'linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('+imgSrc+')'});
-        $(this).remove();
-    });
+        $('.fullheight').css('height', wheight);
+                $('.halfheight').css('height', wheight/2);
 
-    //fullHeight
-    // set all elements with class "fullheight" to a height equal to height of viewport on load
-    $('.fullheight').css('height', wheight);
 
     //resize the "fullheight" elements on screen resize
     $(window).resize(function() {
         wheight = $(window).height(); //get the height of the window
         $('.fullheight').css('height', (wheight)); //set to window tallness
+                $('.halfheight').css('height', wheight/2);
+
     });
 
-    //adjust the interval of the carousel
-    $('.carousel').carousel({
-        interval: 7000 //changes the speed in miliseconds
-    })
-
-    //make images darker
-    $('.item img').each(function() {
-        $(this).wrap('<div class="tint"></div>'); //wraps the carousel images with a div of class "tint"
+    $(".pill").click(function() { 
+      $('.pill').removeClass('active');
+      $(this).addClass('active');
+    }); 
+    $('.post').mouseenter(function(){
+        $(this).find('.thumbnail').css('background-size', '110%');
+    });
+     $('.post').mouseleave(function(){
+        $(this).find('.thumbnail').css('background-size', '100%');
     });
 
-    //global getJSON for Posts
-  
+   
+      $("[href^='/#']").on("click", function( e ) {
 
-}); //end of main function
+        var target = $(this).attr('href').substring(1);
+
+        var scrollTop = $( target ).offset().top-$('nav').height();
+
+        if ( target =='#home'){
+           scrollTop = 0;
+        }
+
+        $("body, html").animate({
+                scrollTop: scrollTop
+            }, 800);
+
+        e.preventDefault();
+
+
+      });
+
+      var imgs = document.getElementsByTagName('img');
+
+    // loop through fetched images
+    for (i = 0; i < imgs.length; i++) {
+        // and define onmousedown event handler
+        imgs[i].onmousedown = disableDragging;
+    }
+          var post = $('.thumbnail');
+    // loop through fetched images
+    for (i = 0; i < post.length; i++) {
+        // and define onmousedown event handler
+        post[i].onmousedown = disableDragging;
+    }
+
+function disableDragging(e) {
+        e.preventDefault();
+    }
+
+/*
+        var lastFixPos = 0;
+
+$(window).on('scroll', function(){
+  lastFixPos = $(window).scrollTop();
+  console.log(lastFixPos);
+  $("#motd").css("height",  wheight - lastFixPos);
+  $("#motd").fadeTo(0, 1/(lastFixPos/70));
+
+}); */
+});
+
+
+
+ //end of main function

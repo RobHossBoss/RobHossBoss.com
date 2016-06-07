@@ -1,5 +1,5 @@
 Projects:
-  - title: Splash and Dash Event Page
+  - title: Splash and Dash
     short: splash
     github: none
     link: http://www.bereatrails.com
@@ -8,14 +8,14 @@ Projects:
     skills: <th>HTML</th><th>CSS</th><th>JavaScript</th>
     sum: I designed, built, and mainained an event site for the First Berea Splash and Dash Youth Triathalon. I worked closely with a client and implemented a CMS as well as coached the client to manage their site. I also worked on customer discovery, content distribution, and event promotion for the event itself.
 
-  - title: Wikipedia Shortest Path
+  - title: Wiki-Links
     short: wiki-links
     github: https://github.com/RobHossBoss/WikiLinks-Web
     link: /img/wiki-links.pdf
     link-text: View Full Report
     timeframe: November 2015 - Present
     skills: <th>SQL</th><th>C++</th><th>Python</th><th>Graph Theory</th>
-    sum: As an adaptation to <a href='https://en.wikipedia.org/wiki/Godwin%27s_Law'>Godwin's Law</a> and a final project for my Data Structures course, <a href='https://www.linkedin.com/profile/view?id=AAkAABksQcQByFLllftZMldcC1eDzJVqRRBuaM0&authType=NAME_SEARCH&authToken=5y6x&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A422330820%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1447859753463%2Ctas%3Adavi'>David Newswanger</a> and I took on the challange of indexing all of Wikipedia to find the shortest path between two articles by following the Wikipedia links within that article. The project taught me to deal with very large files and efficiently index and store information from the file. This was my first experience with a massive graph theory problem that was made even more difficult my the limited memory and processing power of a Dell laptop.
+    sum: In collaboration with <a href='https://github.com/SirTekno'>David Newswanger</a>, I created a MySQL graph from XML data that represented the relationship all Wikipedia pages share through links within articles. Using this graph, I devised an algorithm to find the shortest path between any two articles on Wikipedia.
 
   - title: EPG Website
     short: epg
@@ -24,7 +24,7 @@ Projects:
     link-text: See it live!
     timeframe: July 2015 - August 2015
     skills: <th>HTML</th><th>CSS</th><th>JavaScript</th><th>AJAX</th>
-    sum: I worked as a designer and front-end developer in building a professional commercial webapp for the Entrepreneurship for the Public Good program at Berea College. I was in charge of taking customer preferences and turning them into wire-frames, mockups, and finally the finished product. I used AJAX to retrieve profiles form a database and search them on the client side. This was an invaluable first experience in developing on a commercial scale and helped me to learn to make my designs universal and minimize server load by keeping calculations on the client side.
+    sum: I worked as a web designer for an organization on campus to design and implement their new website. It was through this project that I learned HTML, CSS, and JS. This was an invaluable experience for me. I learned how to design at scale and get usefull feedback from clients.
 
 
   - title: BluLocker
@@ -34,7 +34,7 @@ Projects:
     link-text: Product Video
     timeframe: April 2015 - Present (suspended)
     skills: <th>Python</th><th>Bluetooth Networking</th><th>TKinter</th>
-    sum: As part of a final project for my Software Design and Implementation course I embarked on BluLocker. BluLocker is a PC based application that automatically locks the workstation when a paired Blutooth device goes out of range. If you pair something that you typically keep on your person (phone or wearable), this effectively locks your computer when you leave it. BluLocker was written in Python and I currently have a minimum viable product... but there is much to be desired. I will likely make a GitHub repo for it in the near future.
+    sum: Partnered with <a href="https://github.com/memo330179">Guillermo Ramos-Macias</a> I created a complete Windows program in Python. BluLocker pairs your PC with a bluetooth device and locks the PC when the device goes out of range. Perfect for securing your PC at home, or the office.
 
   - title: Personal Website
     short: blog
@@ -43,7 +43,7 @@ Projects:
     link-text: In case you get lost
     timeframe: April 2015- Present
     skills:  <th>HTML</th><th>CSS</th><th>JavaScript</th><th>Jekyll</th><th>AJAX</th><th>Python</th>
-    sum: This website was my attempt to make an online presence for myself (aside form social media platforms). In fact, it was an excuse for me to learn HTML, CSS, and JavaScript. Much of the learning took place over one summer and the site has undergone countless revisions and features are added as I learn them. This site serves as a testing ground for new web-based languages and frameworks that I am trying to learn. It also represents the best that I am currently capable of producing in terms of both design and functionality.
+    sum: I started this website as a challange to myself to learn web development. Now, I use it to showcase my work and to host <a href="/blog"> my blog</a>. This site has undergone countless revisions and design overhauls. It is and probably allways will be a static site. Currently, it is built in Jekyll and hosted on Giuthub Pages.  
 Designs:
   - image: b
     desc: dark theme material wire-frame
@@ -85,3 +85,5 @@ Writing:
     link: https://www.theengineeringdesign.com/
   - image: storyblockmedia
     link: https://www.storyblock.media/
+  - image: dws
+    link: http://www.designerwebsites.co.nz/
