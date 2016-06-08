@@ -4,6 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    {% if page.image %}
+<meta property="og:image" content="/img/thumbnail/{{page.image}}.jpg" />
+  {% else %}
+  <meta property="og:image" content="/img/logo-small.png" />
+    {% endif %}
+
     <link rel="shortcut icon" type="image/x-icon" href="/img/logo-small.ico" />
     <title>{{page.title}}</title>
 
