@@ -26,6 +26,9 @@ section.blue{
 h1{
 	font-family: 'Roboto';
 }
+#motd{
+	background-color: #202125;
+}
 ::selection {
   background:  #ffff00; /* WebKit/Blink Browsers */
 }
@@ -61,6 +64,9 @@ h1{
 .w3-animate-left{position:relative;-webkit-animation:animateleft 0.4s;animation:animateleft 0.4s}
 @-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 @keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-top{position:relative;-webkit-animation:animatetop 1s;animation:animatetop 1s}
+@-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
 .w3-animate-fading{-webkit-animation:fading 10s infinite;animation:fading 10s infinite}
 @-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 @keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
