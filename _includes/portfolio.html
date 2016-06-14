@@ -16,7 +16,7 @@
                <div class="w3-content w3-section" style="max-width:500px">
                   {% for project in site.data.portfolio.Projects %}
                   <div class="mySlides">
-                     <img class=" w3-animate-right center-block noselect" draggable="false" src="/img/portfolio/projects/{{project.short}}.png" style="width:100%">
+                     <img class=" w3-animate-right center-block noselect" draggable="false" src="/img/portfolio/projects/{{project.short}}.png" style="width:100%; margin-top:50px;">
                      <a onclick="ShowThings()" style=""id="show-projects" class="btn pill-invert active project-title" href="/#projects">{{project.title}}</a>
                      
                   </div>
@@ -98,20 +98,21 @@
 		      
 	      </script>
       <div class="row">
-	      <div class="col-sm-4 col-sm-offset-1 card">
+	      <div class="col-sm-3 col-sm-offset-2 card" style="margin-bottom:50px;">
 		      <h1>I Write Prose.</h1>
 		      <p>Short stories, novellas, poems, songs, essays, and blog posts. Ever since I learned how to hold a pencil, I loved to write.</p>
 	      </div>
-	      <div class="col-sm-5 col-sm-offset-1 card">
+	      <div class="col-sm-4 col-sm-offset-1 card">
 		      <h1 style="text-align:center;">Work Featured By:</h1>
-		      
+		      <div class="row">
 			      {% for feature in site.data.portfolio.Writing %}
             <div class="col-xs-3 feature">
 				      <a target="_blank" style="display:block" href="{{feature.link}}">
-				      	<img class="img-responsive" width="100px" src="/img/portfolio/featured/{{feature.image}}.png">
+				      	<img class="img-responsive" width="100px;"  src="/img/portfolio/featured/{{feature.image}}.png">
 				      </a>
             </div>
 			      {% endfor %}
+            </div>
       	</div>
       </div>
    </div>
