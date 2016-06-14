@@ -89,3 +89,39 @@ Writing:
     link: http://www.designerwebsites.co.nz/
   - image: mpb
     link: http://mypersonalbest.com/
+
+Skills: 
+  - skill: PHP
+    ability: 70
+  - skill: Python
+    ability: 90
+  - skill: JavaScript
+    ability: 70
+  - skill: UNIX
+    ability: 80
+  - skill: MySQL
+    ability: 80
+  - skill: ASP.NET
+    ability: 40
+  - skill: HTML5
+    ability: 90
+  - skill: CSS3
+    ability: 90
+  - skill: C/C++ 
+    ability: 70
+  - skill: Ruby
+    ability: 40
+  - skill: JQuery
+    ability: 90
+  - skill: Bootstrap
+    ability: 90
+  - skill: AngularJS
+    ability: 40
+  - skill: Windows/DOS
+    ability: 40
+
+
+
+#   {% assign year = site.time | date: '%y' %}
+# {% assign start = site.data.Portfolio.Skills.year %}
+    # {{year | minus:start}}
