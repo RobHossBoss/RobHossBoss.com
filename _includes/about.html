@@ -1,7 +1,7 @@
-<section style="z-index:10">
+<section id="about" style="z-index:10">
 	<div class="container">
 		<div class="row">
-			<div id="about" class="card profile col-sm-6 col-sm-offset-3">
+			<div  class="card profile col-sm-6 col-sm-offset-3">
 				
 				<img width="200px;" class="noselect center-block img-circle" src="/img/profile.jpg">
 				<h1>Hi. I'm Robert.</h1>
@@ -17,26 +17,71 @@
 
 
 		<div class="row">
-		<div class="col-sm-4 col-sm-offset-4 card">
+		<div class="col-sm-4 col-sm-offset-4">
 			<h1 style="text-align:center;">I like...</h1>	
 		</div>
 		</div>
-		<<div class="row">
-			<div style="margin:25px" class="col-sm-3 center-block card">
-				<img class="center-block" height="100px" src="/img/pingpong.png">
-				<h1>Ping Pong</h1>
-				<p>I really love ping pong. It gives me a great outlet to release energy and show my competitive side.</p>
+		<div class="row">
+			
+				<div style="" class="col-sm-4 frame">
+					<img class="center-block" height="100px" src="/img/pingpong.png">
+					<h1>Ping Pong</h1>
+					<p>I really love ping pong. It gives me a great outlet to release energy and show my competitive side.</p>
+				</div>
+				<div style="" class="col-sm-4 frame">
+					<img class="center-block" height="100px" src="/img/skate.png">
+					<h1>Skate</h1>
+					<p>I like the simplicity, convinence, and freedom of skating. I skate for transportation. I don't know any tricks.</p>
+				</div>
+				<div style="" class="col-sm-4 frame">
+					<img class="center-block" height="100px" src="/img/coffee.png">
+					<h1>Coffee</h1>
+					<p>I'm an aspiring coffee enthusiast. I like trying exzotic blends and experimenting with brewing techniques.</p>
+				</div>
+			
+		</div>
+		<br>
+		<br>
+		<div class="row">
+			<div style="" class="col-sm-4">
+			<img class="center-block" height="100px" src="/img/camera.png">
+
+			<h1>Photography</h1>
+<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/dafa09cbe57c5f319eb7c219a1d84255.html" id="lightwidget_dafa09cbe5" name="lightwidget_dafa09cbe5"  scrolling="no" allowtransparency="true" class="lightwidget-widget card" style="padding:0;width: 100%; border: 0; overflow: hidden;"></iframe>
+
 			</div>
-			<div style="margin:25px" class="col-sm-3 center-block card">
-				<img class="center-block" height="100px" src="/img/skate.png">
-				<h1>Skate</h1>
-				<p>I like the simplicity, convinence, and freedom of skating. I skate for transportation. I don't know any tricks.</p>
-			</div>
-			<div style="margin:25px" class="col-sm-3 center-block card">
-				<img class="center-block" height="100px" src="/img/coffee.png">
-				<h1>Coffee</h1>
-				<p>I'm an aspiring coffee enthusiast. I like trying exzotic blends and experimenting with brewing techniques.</p>
-			</div>
+			<div style="" class="col-sm-4">
+				<img class="center-block" height="100px" src="/img/record.png">
+
+				<h1>Weird Music</h1>
+				<iframe class="center-block card" src="https://embed.spotify.com/?uri=spotify:user:robhossboss:playlist:4YzkHMf7HA68FbyF9MFPPM&theme=white" width="300" height="380" style="padding:0;" frameborder="0" allowtransparency="true"></iframe>			
+
+			</div>		
+			<div style="" class="col-sm-4">
+				<img class="center-block" height="100px" src="/img/book.png">
+
+				<h1>Reading</h1>
+	
+
+			</div>	
+		</div>
+			<div class="row">
+		<div class="col-sm-4 col-sm-offset-4">
+			<h1 style="text-align:center;">I know...</h1>	
+		</div>
+		<div class="col-sm-6 col-sm-offset-3">
+		{% for skill in site.data.Portfolio.Skills %}
+		<h1>{{skill.skill}}</h1>
+		<div class="progress-bar" id="{{skill.skill}}">hi</div>
+		<script type="text/javascript" charset="utf-8">
+			var {{skill.skill}}Color = randomColor({
+   											luminosity: 'bright',
+   											format: 'rgb' // e.g. 'rgb(225,200,20)'
+										});
+			$('#{{skill.skill}}').css('background-color', {{skill.skill}}Color );
+			$('#{{skill.skill}}').css('max-width', '{{skill.ability}}%');
+		</script>
+		{% endfor %}
 		</div>
 	</div>
 </section>
