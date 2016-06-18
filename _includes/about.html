@@ -13,27 +13,28 @@
 				</div>
 			</div>
 		</div>
+</div>
 
-
-
-		<div class="row">
+<section class="shade" id="like">
+<div class="container">
+	<div class="row">
 		<div class="col-sm-4 col-sm-offset-4">
-			<h1 style="text-align:center;">I like...</h1>	
+			<h1 style="text-align:center; color:#fff;">I like...</h1>	
 		</div>
 		</div>
 		<div class="row">
 			
-				<div style="" class="col-sm-4 frame">
+				<div style="color:#fff;" class="col-sm-4 frame">
 					<img class="center-block" height="100px" src="/img/pingpong.png">
 					<h1>Ping Pong</h1>
 					<p>I really love ping pong. It gives me a great outlet to release energy and show my competitive side.</p>
 				</div>
-				<div style="" class="col-sm-4 frame">
+				<div style="color:#fff;" class="col-sm-4 frame">
 					<img class="center-block" height="100px" src="/img/skate.png">
 					<h1>Skate</h1>
 					<p>I like the simplicity, convinence, and freedom of skating. I skate for transportation. I don't know any tricks.</p>
 				</div>
-				<div style="" class="col-sm-4 frame">
+				<div style="color:#fff;" class="col-sm-4 frame">
 					<img class="center-block" height="100px" src="/img/coffee.png">
 					<h1>Coffee</h1>
 					<p>I'm an aspiring coffee enthusiast. I like trying exzotic blends and experimenting with brewing techniques.</p>
@@ -46,42 +47,50 @@
 			<div style="" class="col-sm-4">
 			<img class="center-block" height="100px" src="/img/camera.png">
 
-			<h1>Photography</h1>
+			<h1 style="color:#fff;">Photography</h1>
 <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/dafa09cbe57c5f319eb7c219a1d84255.html" id="lightwidget_dafa09cbe5" name="lightwidget_dafa09cbe5"  scrolling="no" allowtransparency="true" class="lightwidget-widget card" style="padding:0;width: 100%; border: 0; overflow: hidden;"></iframe>
 
 			</div>
 			<div style="" class="col-sm-4">
 				<img class="center-block" height="100px" src="/img/record.png">
 
-				<h1>Weird Music</h1>
+				<h1 style="color:#fff;">Weird Music</h1>
 				<iframe class="center-block card" src="https://embed.spotify.com/?uri=spotify:user:robhossboss:playlist:4YzkHMf7HA68FbyF9MFPPM&theme=white" width="300" height="380" style="padding:0;" frameborder="0" allowtransparency="true"></iframe>			
 
 			</div>		
 			<div style="" class="col-sm-4">
 				<img class="center-block" height="100px" src="/img/book.png">
 
-				<h1>Reading</h1>
+				<h1 style="color:#fff;">Reading</h1>
 	
 
 			</div>	
 		</div>
-			<div class="row">
+	</div>	
+</section>
+<section id="know">
+<div class="container">
+		<div class="row">
 		<div class="col-sm-4 col-sm-offset-4">
 			<h1 style="text-align:center;">I know...</h1>	
 		</div>
-		<div class="col-sm-6 col-sm-offset-3">
-		{% for skill in site.data.Portfolio.Skills %}
-		<h1>{{skill.skill}}</h1>
-		<div class="progress-bar" id="{{skill.skill}}">hi</div>
+		<div class="col-sm-10 col-sm-offset-1">
+		{% for thing in site.data.portfolio.Skills %}
+		<div class="col-sm-6">
+			<span><h1 style="text-align:left; font-size:.8em;">{{thing.skill}}</h1>
+			<div id="{{thing.name}}" height="20px" style="color:#000;">|</div></span>
+		</div>
+		
 		<script type="text/javascript" charset="utf-8">
-			var {{skill.skill}}Color = randomColor({
-   											luminosity: 'bright',
-   											format: 'rgb' // e.g. 'rgb(225,200,20)'
-										});
-			$('#{{skill.skill}}').css('background-color', {{skill.skill}}Color );
-			$('#{{skill.skill}}').css('max-width', '{{skill.ability}}%');
+			var {{thing.name}}Color = randomColor();
+			console.log({{thing.name}}Color);
+			$('#{{thing.name}}').css('background-color', {{thing.name}}Color );
+			$('#{{thing.name}}').css('width', '{{thing.ability}}%');
+			
 		</script>
 		{% endfor %}
 		</div>
+</section>
+		
 	</div>
 </section>

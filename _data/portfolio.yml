@@ -92,32 +92,46 @@ Writing:
 
 Skills: 
   - skill: PHP
+    name: php
     ability: 70
   - skill: Python
+    name: python
     ability: 90
   - skill: JavaScript
+    name: js
     ability: 70
   - skill: UNIX
+    name: unix
     ability: 80
   - skill: MySQL
+    name: mysql
     ability: 80
   - skill: ASP.NET
+    name: asp
     ability: 40
   - skill: HTML5
+    name: html
     ability: 90
   - skill: CSS3
+    name: css
     ability: 90
   - skill: C/C++ 
+    name: c
     ability: 70
   - skill: Ruby
+    name: ruby
     ability: 40
   - skill: JQuery
-    ability: 90
+    name: jquery
+    ability: 100
   - skill: Bootstrap
-    ability: 90
+    name: bs
+    ability: 100
   - skill: AngularJS
-    ability: 40
+    name: angular
+    ability: 20
   - skill: Windows/DOS
+    name: windows
     ability: 40
 
 
