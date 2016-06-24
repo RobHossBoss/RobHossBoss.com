@@ -62,7 +62,18 @@
 				<img class="center-block" height="100px" src="/img/icons/book.png">
 
 				<h1 style="color:#fff;">Reading</h1>
-	
+
+				<div>
+				{% for book in site.data.portfolio.Books %}
+				<div style="height:150px;" class="col-xs-4 book">
+					<a target="_blank" href="{{book.url}}">
+					<img width="100%" src="{{book.image}}">						
+					</a>
+				</div>	
+				{% endfor %}
+				</div>
+				
+				
 
 			</div>	
 		</div>

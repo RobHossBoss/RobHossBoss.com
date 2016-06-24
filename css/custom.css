@@ -135,6 +135,20 @@ h1{
     -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
+.book{
+	transition:all 0.7s ;
+  -webkit-transition:all 0.7s ;
+  -o-transition:all 0.7s ;
+  -moz-transition:all 0.7s ;
+}
+.book:hover{
+		padding: 0em;
+		z-index: 1000;
+
+	-webkit-dow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
 /*PAGE*/
 .page-heading{
 	font-family: 'Roboto';

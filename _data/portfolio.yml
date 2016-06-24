@@ -134,8 +134,16 @@ Skills:
     name: windows
     ability: 40
 
-
-
-#   {% assign year = site.time | date: '%y' %}
-# {% assign start = site.data.Portfolio.Skills.year %}
-    # {{year | minus:start}}
+Books:
+  - image: https://images-na.ssl-images-amazon.com/images/I/51JktCRRHrL._SX327_BO1,204,203,200_.jpg
+    url: https://www.amazon.com/Smarter-Faster-Better-Productive-Business/dp/081299339X/ref=sr_1_1?ie=UTF8&qid=1466786999&sr=8-1&keywords=smarter+faster+better
+  - image: https://images-na.ssl-images-amazon.com/images/I/51bE6SBNroL._SX318_BO1,204,203,200_.jpg
+    url: https://www.amazon.com/Ready-Player-One-Ernest-Cline/dp/0307887448/ref=sr_1_1?ie=UTF8&qid=1466787069&sr=8-1&keywords=ready+player+one
+  - image: https://images-na.ssl-images-amazon.com/images/I/31dY%2B%2BnaesL._SX321_BO1,204,203,200_.jpg
+    url: https://www.amazon.com/God-New-Atheism-Critical-Response/dp/066423304X/ref=sr_1_1?ie=UTF8&qid=1466787119&sr=8-1&keywords=god+and+the+new+atheism
+  - image: https://images-na.ssl-images-amazon.com/images/I/41LMUsSTaNL._SX331_BO1,204,203,200_.jpg
+    url: https://www.amazon.com/God-Delusion-Richard-Dawkins/dp/0618918248/ref=sr_1_1?ie=UTF8&qid=1466787146&sr=8-1&keywords=the+god+delusion
+  - image: https://images-na.ssl-images-amazon.com/images/I/51JureSNOkL._SX331_BO1,204,203,200_.jpg
+    url: https://www.amazon.com/Creating-Innovators-Making-People-Change/dp/145161151X/ref=sr_1_1?ie=UTF8&qid=1466787236&sr=8-1&keywords=creating+innovators
+  - image: https://images-na.ssl-images-amazon.com/images/I/41iFUR83JML._SX329_BO1,204,203,200_.jpg
+    url: https://www.amazon.com/New-Ideas-Dead-CEOs-Lasting/dp/0061197629/ref=sr_1_1?ie=UTF8&qid=1466787260&sr=8-1&keywords=new+ideas+from+dead+ceo
