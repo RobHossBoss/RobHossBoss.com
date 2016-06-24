@@ -111,7 +111,9 @@ def getUsedImages():
 
 def removeUsedImages(usedImages):
     for image in usedImages:
-        os.remove(os.path.join(os.path.abspath(".")+"/img/unused",image+".jpg"))
+        path = os.path.join(os.path.abspath(".")+"/img/unused",image+".jpg")
+        if os.path.isfile(path):
+            os.remove(path)
 
 
 go()
