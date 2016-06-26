@@ -2,8 +2,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    {% if page.keywords %}
+    <meta name="keywords" content="{{page.keywords}}">
+    {% endif %}
+    {% if page.description%}
+    <meta name="description" content="{{page.description}}">
+    {% else %}
+    <meta name="description" content="{{site.description}}">
+    {% endif %}
+    {% if page.author %}
+    <meta name="author" content="{{page.author}}">
+    {% else %}
+    <meta name="author" content="Robert Hosking">
+    {% endif %}
+    <link rel="author" href="https://plus.google.com/u/0/102201954224054391465"/>
+
+
     {% if page.image %}
 <meta property="og:image" content="/img/thumbnail/{{page.image}}.jpg" />
   {% else %}
