@@ -6,6 +6,7 @@ time: 2
 categories: Lifestyle
 image: "lone-iceburg"
 permalink: downsizing
+description:
 ---
 Minimalism turns a lot of heads and inspires instant judgment. I've always been
 thoughtful with my purchases. But I've not been so conservative with the things

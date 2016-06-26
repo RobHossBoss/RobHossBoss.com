@@ -6,6 +6,7 @@ time: 3
 categories: Project
 image: blulocker-bg
 permalink: blulocker
+description:
 ---
 The story behind BluLocker began a few months ago when I left my dorm room full of "friends" to run to the cafe and grab a delicious wrap before we began our planned movie night. I slipped on my shoes grabbed my keys, college ID, and phone and stepped out of the room leaving my computer unlocked. Upon my return, my friends are trying to keep it together as I wake my computer to start the movie and find that my desktop wallpaper has been replaced with an admittedly glorious picture of a shirtless Nicholas Cage sprawled, sensually on the moon's surface. They also posted unmentionable Nick Cage photos and quotes on my Facebook profile.
 

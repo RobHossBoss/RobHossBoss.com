@@ -6,6 +6,7 @@ time: 2
 categories: Reflection
 image: "google-physcist"
 permalink: stereotype
+description:
 ---
 
 An interview with Claude Steele, a researcher well known for his work on stereotype threat.

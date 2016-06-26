@@ -6,6 +6,7 @@ time: 3
 categories: Reflection
 image: hand-block
 permalink: communication
+description:
 ---
 
 I have never considered communication to be my strong suit. In fact, it's been quite the opposite. I grew up as an only child in rural/backwoods North Carolina. I didn't speak much with my parents about day to day things. I attended a small private school after 2 years of homeschooling. I had only three fantastic friends until high school. My high school was a slightly larger charter school. Still less than a thousand enrolled students but it felt huge to me.

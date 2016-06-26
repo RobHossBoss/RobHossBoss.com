@@ -6,6 +6,7 @@ time: 2
 categories:  Reflection
 image: "coffee-beans"
 permalink: wrong
+description:
 ---
 Kathryn Schultz’ TED talk, “On Being Wrong” has been very popular on TED.com, totaling nearly 3,000,000 views. On a site about “ideas worth spreading” this gem seems to have been well worth it indeed.
 

@@ -116,4 +116,18 @@ def removeUsedImages(usedImages):
             os.remove(path)
 
 
+def insertAttribute(attr, line):
+    path= os.path.abspath(".")+"/_posts"
+
+    for post in os.listdir(path):
+        if os.path.isfile(os.path.join(path,post)):
+            with open(os.path.join(path,post)) as f:
+                contents = f.readlines()
+            contents.insert(line, attr+"\n")
+            f = open(os.path.join(path,post), "w")
+            contents = "".join(contents)
+            f.write(contents)
+            f.close()
+
+#insertAttribute('description:', 8)
 go()
