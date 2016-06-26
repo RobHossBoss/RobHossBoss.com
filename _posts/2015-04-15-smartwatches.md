@@ -6,7 +6,7 @@ time: 3
 categories: Tech
 image: watches-bg
 permalink: smartwatches
-description:
+description: The 3 biggest smartwatch varieties of 2015. Android Wear, the Apple Watch, and the Pebble. Pros of Android wear include Google support and a multitude of capable devices.
 ---
 Smartwatches have been the buzz for a while now and during my time in San Francisco this February I noticed a few of them on the wrists of some individuals I've come into contact with. I was only in the city for a weekend and didn't explore it to much but I noticed two Moto 360s, a Samsung Gear 2, and two other smart watches that I couldn't identify at a distance. This was a few months before the Apple Watch release and I did not see any Pebble watches.
 
