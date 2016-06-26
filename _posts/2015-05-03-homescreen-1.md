@@ -6,7 +6,7 @@ time: 4
 categories: Design
 image: "homescreen-spring2015-bg"
 permalink: homescreen
-description:
+description: My fully customized Android homescreen. Zooper widget custom widgets and a complete list of my most used apps for Android.
 ---
 Welcome to the first installment of my Android home screen setup series. In this series I will post pictures and animations showing off my current home screen setup. A new entry to this series will be made whenever I make a major change in the layout.
 
