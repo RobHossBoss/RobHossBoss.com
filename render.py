@@ -43,7 +43,7 @@ def thumbnail():
 
     def adjusted_size(width,height):
         if width>max_width or height>max_height:
-            if width>height:
+            if width>=height:
                 return max_width, int (max_width * height/ width)
             else:
                 return int (max_height*width/height), max_height
@@ -78,7 +78,7 @@ def resizeImages():
 
     def adjusted_size(width,height):
         if width>max_width or height>max_height:
-            if width>height:
+            if width>=height:
                 return max_width, int (max_width * height/ width)
             else:
                 return int (max_height*width/height), max_height
