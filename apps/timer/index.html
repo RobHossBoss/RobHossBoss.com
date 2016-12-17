@@ -1,0 +1,79 @@
+---
+permalink: timer
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <link rel="shortcut icon" href="/apps/timer/orange.ico" />
+
+    <title>Productivity Timer</title>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" />
+  </head>
+  
+  <body>
+   <div class="container">
+       <div class="row">
+           <div class="col-sm-6 col-sm-offset-3">
+               <div id="timer">
+                   <h1><span id=clock>00:00</span></h1>
+               </div>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-sm-6 col-sm-offset-3">
+               <div class="options center-block">
+
+                   <button class="center-block btn-large btn-success btn" onclick="starttimer(20*60)">20 minutes</button>
+                   <br>
+                   <button class="center-block btn-large btn-info btn" onclick="starttimer(5*60)">5 minutes</button>
+                   <br>
+                   <button class="center-block btn-large btn-warning btn" onclick="starttimer(30*60)">30 minutes</button>
+               </div>
+           </div>
+       </div>
+   </div>
+  </body>
+<script type="text/javascript"> 
+    window.onbeforeunload = function(){
+        return "Are you sure you want to close the window?";
+    }
+
+    function pad(num, size){ return ('000000000' + num).substr(-size); }
+    
+    function starttimer(seconds){
+        $('.options').hide();
+        var seconds = seconds
+        var minutes = Math.floor(seconds / 60);
+        var secondsInMinute = pad(Math.floor(seconds - (minutes*60)), 2);
+        
+        
+        
+        document.getElementById('clock').innerHTML = minutes + ":" + secondsInMinute;
+        document.title = minutes + ":" + secondsInMinute;
+        seconds = seconds - 1;
+        if(seconds > 0){
+            t = setTimeout(function() { starttimer(seconds); }, 1000);
+
+        }else{
+            document.getElementById('clock').innerHTML = "00:00";
+            new Audio('/apps/timer/gong.mp3').play()
+            alert("Time's up!")
+            $('.options').show();
+
+
+        }
+    }
+    
+</script>
+<style type="text/css">
+h1{
+    text-align:center;
+    font-family: helvetica;
+    font-size: 6em;
+    font-weight:bold;
+}    
+</style>
+
+</html>
