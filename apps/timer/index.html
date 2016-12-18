@@ -58,8 +58,8 @@ permalink: timer
 
         }else{
             document.getElementById('clock').innerHTML = "00:00";
-            new Audio('/apps/timer/gong.mp3').play()
-            alert("Time's up!")
+            s = setTimeout(new Audio('/apps/timer/gong.mp3').play(), 5000);
+            alert("Time's up!");
             $('.options').show();
 
 
