@@ -1,149 +1,163 @@
-Projects:
-  - title: Splash and Dash
-    short: splash
-    github: none
-    link: http://www.bereatrails.com
-    link-text: See it live!
-    timeframe: Feb 2016 - May 2016
-    skills: <th>HTML</th><th>CSS</th><th>JavaScript</th>
-    sum: I designed, built, and mainained an event site for the First Berea Splash and Dash Youth Triathalon. I worked closely with a client and implemented a CMS as well as coached the client to manage their site. I also worked on customer discovery, content distribution, and event promotion for the event itself.
-
-  - title: Wiki-Links
-    short: wiki-links
-    github: https://github.com/RobHossBoss/WikiLinks-Web
-    link: /img/wiki-links.pdf
-    link-text: View Full Report
-    timeframe: November 2015 - Present
-    skills: <th>SQL</th><th>C++</th><th>Python</th><th>Graph Theory</th>
-    sum: In collaboration with <a href='https://github.com/SirTekno'>David Newswanger</a>, I created a MySQL graph from XML data that represented the relationship all Wikipedia pages share through links within articles. Using this graph, I devised an algorithm to find the shortest path between any two articles on Wikipedia.
-
-  - title: EPG Website
-    short: epg
-    github: none
-    link: http://104.131.44.191/en/
-    link-text: See it live!
-    timeframe: July 2015 - August 2015
-    skills: <th>HTML</th><th>CSS</th><th>JavaScript</th><th>AJAX</th>
-    sum: I worked as a web designer for an organization on campus to design and implement their new website. It was through this project that I learned HTML, CSS, and JS. This was an invaluable experience for me. I learned how to design at scale and get usefull feedback from clients.
-
-
-  - title: BluLocker
-    short: blulocker
-    github: https://github.com/RobHossBoss/BluLocker
-    link: https://www.youtube.com/watch?v=llmYkjksxeM
-    link-text: Product Video
-    timeframe: April 2015 - Present (suspended)
-    skills: <th>Python</th><th>Bluetooth Networking</th><th>TKinter</th>
-    sum: Partnered with <a href="https://github.com/memo330179">Guillermo Ramos-Macias</a> I created a complete Windows program in Python. BluLocker pairs your PC with a bluetooth device and locks the PC when the device goes out of range. Perfect for securing your PC at home, or the office.
-
-  - title: Personal Website
-    short: blog
-    github: none
-    link: http://robhossboss.com/
-    link-text: In case you get lost
-    timeframe: April 2015- Present
-    skills:  <th>HTML</th><th>CSS</th><th>JavaScript</th><th>Jekyll</th><th>AJAX</th><th>Python</th>
-    sum: I started this website as a challange to myself to learn web development. Now, I use it to showcase my work and to host <a href="/blog"> my blog</a>. This site has undergone countless revisions and design overhauls. It is and probably allways will be a static site. Currently, it is built in Jekyll and hosted on Giuthub Pages.  
-Designs:
-  - image: b
-    desc: dark theme material wire-frame
-  - image: c
-    desc: lips with sunglasses album
-  - image: d
-    desc: systemix cyborg album cover
-  - image: g
-    desc: fly away typography design cali
-  - image: e
-    desc: personal promotion designer programmer
-  - image: f
-    desc: modal profile preview wireframe
-
-
-Photography:
-    - image: 0
-      desc: black and white bridge children
-    - image: 1
-      desc: geometric design beach house
-    - image: 2
-      desc: summer lake sunset
-    - image: 3
-      desc: coffee and aviator sunglasses
-    - image: 4
-      desc: flat material minimal birds flying
-    - image: 5
-      desc: canal boats ocean houses in holden beach
-    - image: 6
-      desc: material modern structure
-    - image: 7
-      desc: applachian instruments
-Writing:
-  - image: contensive
-    link: http://www.contensive.com/
-  - image: folio1
-    link: https://folio1.com.au/
-  - image: theengineeringdesign
-    link: https://www.theengineeringdesign.com/
-  - image: storyblockmedia
-    link: https://www.storyblock.media/
-  - image: dws
-    link: http://www.designerwebsites.co.nz/
-  - image: mpb
-    link: http://mypersonalbest.com/
-
-Skills: 
-  - skill: PHP
-    name: php
-    ability: 70
-  - skill: Python
-    name: python
-    ability: 90
-  - skill: JavaScript
-    name: js
-    ability: 70
-  - skill: UNIX
-    name: unix
-    ability: 80
-  - skill: MySQL
-    name: mysql
-    ability: 80
-  - skill: ASP.NET
-    name: asp
-    ability: 40
-  - skill: HTML5
-    name: html
-    ability: 90
-  - skill: CSS3
-    name: css
-    ability: 90
-  - skill: C/C++ 
-    name: c
-    ability: 70
-  - skill: Ruby
-    name: ruby
-    ability: 40
-  - skill: JQuery
-    name: jquery
-    ability: 100
-  - skill: Bootstrap
-    name: bs
-    ability: 100
-  - skill: AngularJS
-    name: angular
-    ability: 20
-  - skill: Windows/DOS
-    name: windows
-    ability: 40
-
 Books:
-  - image: https://images-na.ssl-images-amazon.com/images/I/51JktCRRHrL._SX327_BO1,204,203,200_.jpg
-    url: https://www.amazon.com/Smarter-Faster-Better-Productive-Business/dp/081299339X/ref=sr_1_1?ie=UTF8&qid=1466786999&sr=8-1&keywords=smarter+faster+better
-  - image: https://images-na.ssl-images-amazon.com/images/I/51bE6SBNroL._SX318_BO1,204,203,200_.jpg
-    url: https://www.amazon.com/Ready-Player-One-Ernest-Cline/dp/0307887448/ref=sr_1_1?ie=UTF8&qid=1466787069&sr=8-1&keywords=ready+player+one
-  - image: https://images-na.ssl-images-amazon.com/images/I/31dY%2B%2BnaesL._SX321_BO1,204,203,200_.jpg
-    url: https://www.amazon.com/God-New-Atheism-Critical-Response/dp/066423304X/ref=sr_1_1?ie=UTF8&qid=1466787119&sr=8-1&keywords=god+and+the+new+atheism
-  - image: https://images-na.ssl-images-amazon.com/images/I/41LMUsSTaNL._SX331_BO1,204,203,200_.jpg
-    url: https://www.amazon.com/God-Delusion-Richard-Dawkins/dp/0618918248/ref=sr_1_1?ie=UTF8&qid=1466787146&sr=8-1&keywords=the+god+delusion
-  - image: https://images-na.ssl-images-amazon.com/images/I/51JureSNOkL._SX331_BO1,204,203,200_.jpg
-    url: https://www.amazon.com/Creating-Innovators-Making-People-Change/dp/145161151X/ref=sr_1_1?ie=UTF8&qid=1466787236&sr=8-1&keywords=creating+innovators
-  - image: https://images-na.ssl-images-amazon.com/images/I/41iFUR83JML._SX329_BO1,204,203,200_.jpg
-    url: https://www.amazon.com/New-Ideas-Dead-CEOs-Lasting/dp/0061197629/ref=sr_1_1?ie=UTF8&qid=1466787260&sr=8-1&keywords=new+ideas+from+dead+ceo
+- image: https://images-na.ssl-images-amazon.com/images/I/51JktCRRHrL._SX327_BO1,204,203,200_.jpg
+  url: https://www.amazon.com/Smarter-Faster-Better-Productive-Business/dp/081299339X/ref=sr_1_1?ie=UTF8&qid=1466786999&sr=8-1&keywords=smarter+faster+better
+- image: https://images-na.ssl-images-amazon.com/images/I/51bE6SBNroL._SX318_BO1,204,203,200_.jpg
+  url: https://www.amazon.com/Ready-Player-One-Ernest-Cline/dp/0307887448/ref=sr_1_1?ie=UTF8&qid=1466787069&sr=8-1&keywords=ready+player+one
+- image: https://images-na.ssl-images-amazon.com/images/I/31dY%2B%2BnaesL._SX321_BO1,204,203,200_.jpg
+  url: https://www.amazon.com/God-New-Atheism-Critical-Response/dp/066423304X/ref=sr_1_1?ie=UTF8&qid=1466787119&sr=8-1&keywords=god+and+the+new+atheism
+- image: https://images-na.ssl-images-amazon.com/images/I/41LMUsSTaNL._SX331_BO1,204,203,200_.jpg
+  url: https://www.amazon.com/God-Delusion-Richard-Dawkins/dp/0618918248/ref=sr_1_1?ie=UTF8&qid=1466787146&sr=8-1&keywords=the+god+delusion
+- image: https://images-na.ssl-images-amazon.com/images/I/51JureSNOkL._SX331_BO1,204,203,200_.jpg
+  url: https://www.amazon.com/Creating-Innovators-Making-People-Change/dp/145161151X/ref=sr_1_1?ie=UTF8&qid=1466787236&sr=8-1&keywords=creating+innovators
+- image: https://images-na.ssl-images-amazon.com/images/I/41iFUR83JML._SX329_BO1,204,203,200_.jpg
+  url: https://www.amazon.com/New-Ideas-Dead-CEOs-Lasting/dp/0061197629/ref=sr_1_1?ie=UTF8&qid=1466787260&sr=8-1&keywords=new+ideas+from+dead+ceo
+Categories:
+- name: Project
+- name: Tech
+- name: Design
+- name: Experience
+- name: Reflection
+- name: Lifestyle
+Designs:
+- desc: dark theme material wire-frame
+  image: b
+- desc: lips with sunglasses album
+  image: c
+- desc: systemix cyborg album cover
+  image: d
+- desc: fly away typography design cali
+  image: g
+- desc: personal promotion designer programmer
+  image: e
+- desc: modal profile preview wireframe
+  image: f
+Photography:
+- desc: black and white bridge children
+  image: 0
+- desc: geometric design beach house
+  image: 1
+- desc: summer lake sunset
+  image: 2
+- desc: coffee and aviator sunglasses
+  image: 3
+- desc: flat material minimal birds flying
+  image: 4
+- desc: canal boats ocean houses in holden beach
+  image: 5
+- desc: material modern structure
+  image: 6
+- desc: applachian instruments
+  image: 7
+Projects:
+- github: none
+  link: http://www.bereatrails.com
+  link-text: See it live!
+  short: splash
+  skills: <th>HTML</th><th>CSS</th><th>JavaScript</th>
+  sum: I designed, built, and mainained an event site for the First Berea Splash and
+    Dash Youth Triathalon. I worked closely with a client and implemented a CMS as
+    well as coached the client to manage their site. I also worked on customer discovery,
+    content distribution, and event promotion for the event itself.
+  timeframe: Feb 2016 - May 2016
+  title: Splash and Dash
+- github: https://github.com/RobHossBoss/WikiLinks-Web
+  link: /img/wiki-links.pdf
+  link-text: View Full Report
+  short: wiki-links
+  skills: <th>SQL</th><th>C++</th><th>Python</th><th>Graph Theory</th>
+  sum: In collaboration with <a href='https://github.com/SirTekno'>David Newswanger</a>,
+    I created a MySQL graph from XML data that represented the relationship all Wikipedia
+    pages share through links within articles. Using this graph, I devised an algorithm
+    to find the shortest path between any two articles on Wikipedia.
+  timeframe: November 2015 - Present
+  title: Wiki-Links
+- github: none
+  link: http://104.131.44.191/en/
+  link-text: See it live!
+  short: epg
+  skills: <th>HTML</th><th>CSS</th><th>JavaScript</th><th>AJAX</th>
+  sum: I worked as a web designer for an organization on campus to design and implement
+    their new website. It was through this project that I learned HTML, CSS, and JS.
+    This was an invaluable experience for me. I learned how to design at scale and
+    get usefull feedback from clients.
+  timeframe: July 2015 - August 2015
+  title: EPG Website
+- github: https://github.com/RobHossBoss/BluLocker
+  link: https://www.youtube.com/watch?v=llmYkjksxeM
+  link-text: Product Video
+  short: blulocker
+  skills: <th>Python</th><th>Bluetooth Networking</th><th>TKinter</th>
+  sum: Partnered with <a href="https://github.com/memo330179">Guillermo Ramos-Macias</a>
+    I created a complete Windows program in Python. BluLocker pairs your PC with a
+    bluetooth device and locks the PC when the device goes out of range. Perfect for
+    securing your PC at home, or the office.
+  timeframe: April 2015 - Present (suspended)
+  title: BluLocker
+- github: none
+  link: http://robhossboss.com/
+  link-text: In case you get lost
+  short: blog
+  skills: <th>HTML</th><th>CSS</th><th>JavaScript</th><th>Jekyll</th><th>AJAX</th><th>Python</th>
+  sum: I started this website as a challange to myself to learn web development. Now,
+    I use it to showcase my work and to host <a href="/blog"> my blog</a>. This site
+    has undergone countless revisions and design overhauls. It is and probably allways
+    will be a static site. Currently, it is built in Jekyll and hosted on Giuthub
+    Pages.
+  timeframe: April 2015- Present
+  title: Personal Website
+Skills:
+- ability: 70
+  name: php
+  skill: PHP
+- ability: 90
+  name: python
+  skill: Python
+- ability: 70
+  name: js
+  skill: JavaScript
+- ability: 100
+  name: unix
+  skill: UNIX
+- ability: 80
+  name: mysql
+  skill: MySQL
+- ability: 40
+  name: asp
+  skill: ASP.NET
+- ability: 100
+  name: html
+  skill: HTML5
+- ability: 100
+  name: css
+  skill: CSS3
+- ability: 70
+  name: c
+  skill: C/C++
+- ability: 80
+  name: ruby
+  skill: Ruby
+- ability: 100
+  name: jquery
+  skill: JQuery
+- ability: 100
+  name: bs
+  skill: Bootstrap
+- ability: 20
+  name: angular
+  skill: AngularJS
+- ability: 40
+  name: windows
+  skill: Windows/DOS
+Writing:
+- image: contensive
+  link: http://www.contensive.com/
+- image: folio1
+  link: https://folio1.com.au/
+- image: theengineeringdesign
+  link: https://www.theengineeringdesign.com/
+- image: storyblockmedia
+  link: https://www.storyblock.media/
+- image: dws
+  link: http://www.designerwebsites.co.nz/
+- image: mpb
+  link: http://mypersonalbest.com/
