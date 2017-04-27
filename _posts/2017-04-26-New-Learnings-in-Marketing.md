@@ -1,15 +1,13 @@
 ---
 layout: page
-title: "New Learnings in Marketing"
+title: New Learnings in Marketing
 date: 2017-04-26 13:34:17 -0500
 time: 3
 categories: Reflection
 image: periodical
 permalink: new-learnings-in-marketing
-description: A reflection on Jonah Berger's Contagious: Why Things Catch On and his six principles of a viral marketing campaign
+description: A reflection on Jonah Berger's Contagious Why Things Catch On and his six principles of a viral marketing campaign
 ---
-
-
 Every successful marketing campaign and “viral” video exhibits one or more of the six principles outlined in Stanford School of Business graduate and professor at the Wharton School of Business, Jonah Berger’s Contagious: Why Things Catch On. In Contagious, Berger provides the mnemonic STEPPS which stands for Social Currency, Triggers, Emotion, Public, Practical Value, and Stories -- together forming the six principles of a contagious viral idea. Berger’s use of narratives throughout the book to illustrate each of the principles in action is itself a use of “Stories” and is part of what makes the book such an enjoyable read. Below, I will draw connections between Berger’s STEPPS and formal marketing principles. I will also reflect on how reading Contagious affected our product launch promotions and my own personal goals.
 
 In the realm of promotions, product placement is an easy to understand idea but its effects are less apparent. Take GAP for example, most of GAP’s clothing clearly branded with the letter’s “G”, “A”, and “P” on the front of the item. Further, when those letters appear on Jesse Eisenberg’s hoodie in Columbia Picture’s The Social Network in 2010, you know that GAP paid a pretty penny for that wardrobe choice. Product placement is an effort to employ that first “P” in STEPPS -- publicity. When millions of people saw Mark Zuckerberg wearing a GAP hoodie perhaps they thought nothing of it. Zuckerberg isn’t known for his style, after all. The audience’s thoughts didn’t matter; all that mattered was that they saw it. GAP projected its brand name to millions of people on a Hollywood screen signaling to them that the brand exists and that it's the brand of choice for Silicon Valley entrepreneurs or, at least, a college-aged Mark Zukerberg.
