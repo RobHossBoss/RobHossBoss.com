@@ -1,10 +1,10 @@
 ---
 layout: page
 title: 'Packing and Plans'
-date:2017-05-10 13:34:17 -0500
-time:1
+date: 2017-05-10 13:34:17 -0500
+time: 1
 categories: Westward Journey
-image:portland-dog
+image: portland-dog
 permalink: packing-and-plans
 description:
 ---
