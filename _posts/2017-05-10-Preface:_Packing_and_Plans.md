@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 'Preface: Packing and Plans'
+title: 'Packing and Plans'
 date:2017-05-10 13:34:17 -0500
 time:1
 categories: Westward Journey
 image:portland-dog
-permalink: westward-journey-forward
+permalink: packing-and-plans
 description:
 ---
 "It's really happening." is the thought that keeps playing on repeat in my head as I pack and distil all my belongings into a single suitcase. "What am I doing?" is the thought that usually follows the former. 
