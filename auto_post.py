@@ -120,7 +120,7 @@ def new_post():
     with open(file_name, 'r') as content_file:
         content = content_file.read()
     time = time_count(content)
-    post_contents = "---\nlayout: page\ntitle: '"+title+"'\ndate:"+date+" 13:34:17 -0500\ntime:"+str(time)+"\ncategories: "+category+"\nimage:"+image+"\npermalink: "+permalink+"\ndescription:"+description+"\n---\n"+content
+    post_contents = "---\nlayout: page\ntitle: '"+title+"'\ndate: "+date+" 13:34:17 -0500\ntime: "+str(time)+"\ncategories: "+category+"\nimage: "+image+"\npermalink: "+permalink+"\ndescription: "+description+"\n---\n"+content
     out_file = "_posts/"+date+"-"+title.replace(" ","_")+".md"
     with open(out_file, 'a') as the_file:
         the_file.write(post_contents)
