@@ -1,15 +1,3 @@
-'''
----
-layout: page
-title:  "Ultimate Tech Backpack"
-date:   2015-04-08 13:34:17 -0500
-time:
-categories:
-image:
-permalink:
-description: How I made a backpack tech hub. Rechargeable battery bank and solar power charging. Made from an ordinary backpack with parts from Amazon.
----
-'''
 import sys
 import datetime
 import yaml
@@ -139,7 +127,11 @@ def new_post():
 
 def time_count(contents):
     words = contents.count(" ")
-    return int(round(words/250))
+    mins = int(round(words/250))
+    if mins == 0:
+        return 1
+    else:
+        return mins
 
 def get_cats():
     with open("_data/portfolio.yml", 'r') as stream:
