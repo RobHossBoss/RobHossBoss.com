@@ -1,3 +1,13 @@
+---
+layout: page
+title: 'Day 2: Nebraska'
+date: 2017-05-18 13:34:17 -0500
+time: 1
+categories: Westward
+image: day2map
+permalink: road-trip-day-2
+description: 
+---
 Woke up early (6:30) in the cold next to the roaring creek. The air was moist so there was no chance for a fire; no chance for breakfast. We worked much faster to pack up camp.
 
 ![](http://i.imgur.com/ZBt71DW.jpg)
