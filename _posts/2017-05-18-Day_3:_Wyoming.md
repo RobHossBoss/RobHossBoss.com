@@ -1,3 +1,13 @@
+---
+layout: page
+title: 'Day 3: Wyoming'
+date: 2017-05-18 13:34:17 -0500
+time: 1
+categories: Westward
+image: day3map
+permalink: road-trip-day-3
+description: 
+---
 I woke up to a dull pain in my upper back. The others woke for other reasons. We packed up, took our showers at the campground facilities, and hit the road stopping immediately for breakfast at McDonald's and to refuel. 
 
 ![](http://i.imgur.com/EPwhzNh.jpg)
